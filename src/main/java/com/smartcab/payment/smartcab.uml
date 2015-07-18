@@ -1,19 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
-  <uml:Model xmi:id="_pUFL8C19EeWiz4fxnsLLJw" name="smartcab">
-    <eAnnotations xmi:id="_pmd8cC19EeWiz4fxnsLLJw" source="http://ns.yatta.de/umllab">
-      <contents xmi:type="ecore:EAnnotation" xmi:id="_pmejgC19EeWiz4fxnsLLJw" source="codegen">
-        <details xmi:id="_pmejgS19EeWiz4fxnsLLJw" key="codegenDirectory" value="/smartcab/src/main/java"/>
+  <uml:Model xmi:id="_DGin8C1_EeW7s6BrY-ZlNQ" name="smartcab">
+    <eAnnotations xmi:id="_DQ7TAC1_EeW7s6BrY-ZlNQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_DQ76EC1_EeW7s6BrY-ZlNQ" source="codegen">
+        <details xmi:id="_DQ76ES1_EeW7s6BrY-ZlNQ" key="codegenDirectory" value="/smartcab/src/main/java"/>
+        <details xmi:id="_E8YIMC1_EeW7s6BrY-ZlNQ" key="AssociatedSourceCode" value="/smartcab/src/main/java/com/smartcab/payment/CashPayment.java;3150188130/1;/smartcab/src/main/java/com/smartcab/payment/CreditCardPayment.java;635596821/1;/smartcab/src/main/java/com/smartcab/payment/MobilePayment.java;4248321313/1;/smartcab/src/main/java/com/smartcab/payment/PaymenProcessor.java;2831617959/1;/smartcab/src/main/java/com/smartcab/payment/Payment.java;3214747760/1;/smartcab/src/main/java/com/smartcab/payment/PaymentGateway.java;2138573163/1;"/>
       </contents>
     </eAnnotations>
-    <profileApplication xmi:id="_pmejgi19EeWiz4fxnsLLJw">
-      <eAnnotations xmi:id="_pmfKkC19EeWiz4fxnsLLJw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <elementImport xmi:id="_DiBDAC1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_DiBDAS1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_DiBDAi1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_DiBDAy1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_DiBDBC1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_DiBqEC1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_DiBqES1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_DiBqEi1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_DiCRIC1_EeW7s6BrY-ZlNQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DhJgUC1_EeW7s6BrY-ZlNQ" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DhKHYC1_EeW7s6BrY-ZlNQ" name="smartcab">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DhSqQC1_EeW7s6BrY-ZlNQ" name="payment">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Dh7jcC1_EeW7s6BrY-ZlNQ" name="CashPayment">
+            <generalization xmi:id="_DxPKwC1_EeW7s6BrY-ZlNQ" general="_Die9EC1_EeW7s6BrY-ZlNQ"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx4rAC1_EeW7s6BrY-ZlNQ" name="CashPayment" specification="_DxN8oC1_EeW7s6BrY-ZlNQ">
+              <ownedParameter xmi:id="_Dx5SEC1_EeW7s6BrY-ZlNQ" name="pp" type="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+              <ownedParameter xmi:id="_Dx5SES1_EeW7s6BrY-ZlNQ" type="_Dh7jcC1_EeW7s6BrY-ZlNQ" direction="return"/>
+              <language>java</language>
+              <body>super(pp);
+		// TODO Auto-generated constructor stub
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx55IC1_EeW7s6BrY-ZlNQ" name="process" specification="_DiEGUC1_EeW7s6BrY-ZlNQ">
+              <language>java</language>
+              <body>processPayment();
+		updateTransaction();
+		
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_DiEGUC1_EeW7s6BrY-ZlNQ" name="process" method="_Dx55IC1_EeW7s6BrY-ZlNQ"/>
+            <ownedOperation xmi:id="_DxN8oC1_EeW7s6BrY-ZlNQ" name="CashPayment" method="_Dx4rAC1_EeW7s6BrY-ZlNQ">
+              <eAnnotations xmi:id="_DxOjsC1_EeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DxOjsS1_EeW7s6BrY-ZlNQ" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DxN8oS1_EeW7s6BrY-ZlNQ" name="pp" type="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+              <ownedParameter xmi:id="_DxOjsi1_EeW7s6BrY-ZlNQ" type="_Dh7jcC1_EeW7s6BrY-ZlNQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DiLbEC1_EeW7s6BrY-ZlNQ" name="CreditCardPayment">
+            <generalization xmi:id="_DxQ_8C1_EeW7s6BrY-ZlNQ" general="_Die9EC1_EeW7s6BrY-ZlNQ"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx6gMC1_EeW7s6BrY-ZlNQ" name="CreditCardPayment" specification="_DxPx0C1_EeW7s6BrY-ZlNQ">
+              <ownedParameter xmi:id="_Dx6gMS1_EeW7s6BrY-ZlNQ" name="pp" type="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+              <ownedParameter xmi:id="_Dx6gMi1_EeW7s6BrY-ZlNQ" type="_DiLbEC1_EeW7s6BrY-ZlNQ" direction="return"/>
+              <language>java</language>
+              <body>super(pp);
+		// TODO Auto-generated constructor stub
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx7HQC1_EeW7s6BrY-ZlNQ" name="process" specification="_DiNQQC1_EeW7s6BrY-ZlNQ">
+              <language>java</language>
+              <body>processPayment();
+		updateTransaction();
+		
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_DiNQQC1_EeW7s6BrY-ZlNQ" name="process" method="_Dx7HQC1_EeW7s6BrY-ZlNQ"/>
+            <ownedOperation xmi:id="_DxPx0C1_EeW7s6BrY-ZlNQ" name="CreditCardPayment" method="_Dx6gMC1_EeW7s6BrY-ZlNQ">
+              <eAnnotations xmi:id="_DxQY4S1_EeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DxQY4i1_EeW7s6BrY-ZlNQ" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DxQY4C1_EeW7s6BrY-ZlNQ" name="pp" type="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+              <ownedParameter xmi:id="_DxQY4y1_EeW7s6BrY-ZlNQ" type="_DiLbEC1_EeW7s6BrY-ZlNQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DiRhsC1_EeW7s6BrY-ZlNQ" name="MobilePayment">
+            <generalization xmi:id="_DxS1IC1_EeW7s6BrY-ZlNQ" general="_Die9EC1_EeW7s6BrY-ZlNQ"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx7HQS1_EeW7s6BrY-ZlNQ" name="MobilePayment" specification="_DxRnAC1_EeW7s6BrY-ZlNQ">
+              <ownedParameter xmi:id="_Dx7HQi1_EeW7s6BrY-ZlNQ" name="pp" type="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+              <ownedParameter xmi:id="_Dx7HQy1_EeW7s6BrY-ZlNQ" type="_DiRhsC1_EeW7s6BrY-ZlNQ" direction="return"/>
+              <language>java</language>
+              <body>super(pp);
+		// TODO Auto-generated constructor stub
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx7uUC1_EeW7s6BrY-ZlNQ" name="process" specification="_DiT98C1_EeW7s6BrY-ZlNQ">
+              <language>java</language>
+              <body>processPayment();
+		updateTransaction();
+		
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_DiT98C1_EeW7s6BrY-ZlNQ" name="process" method="_Dx7uUC1_EeW7s6BrY-ZlNQ"/>
+            <ownedOperation xmi:id="_DxRnAC1_EeW7s6BrY-ZlNQ" name="MobilePayment" method="_Dx7HQS1_EeW7s6BrY-ZlNQ">
+              <eAnnotations xmi:id="_DxSOES1_EeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DxSOEi1_EeW7s6BrY-ZlNQ" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DxSOEC1_EeW7s6BrY-ZlNQ" name="pp" type="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+              <ownedParameter xmi:id="_DxSOEy1_EeW7s6BrY-ZlNQ" type="_DiRhsC1_EeW7s6BrY-ZlNQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DiZdgC1_EeW7s6BrY-ZlNQ" name="PaymenProcessor" isAbstract="true">
+            <ownedOperation xmi:id="_Dicg0C1_EeW7s6BrY-ZlNQ" name="updateTransaction" isAbstract="true"/>
+            <ownedOperation xmi:id="_DxjT0C1_EeW7s6BrY-ZlNQ" name="processPayment" isAbstract="true">
+              <ownedParameter xmi:id="_DxjT0S1_EeW7s6BrY-ZlNQ" name="amount">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Dxj64C1_EeW7s6BrY-ZlNQ" name="invoice" type="_DxTcMC1_EeW7s6BrY-ZlNQ"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Die9EC1_EeW7s6BrY-ZlNQ" name="Payment" isAbstract="true">
+            <ownedAttribute xmi:id="_DxsdwC1_EeW7s6BrY-ZlNQ" name="_pp" visibility="protected" type="_DiZdgC1_EeW7s6BrY-ZlNQ" association="_DyCcAC1_EeW7s6BrY-ZlNQ"/>
+            <ownedAttribute xmi:id="_DxuS8C1_EeW7s6BrY-ZlNQ" name="amount">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx8VYC1_EeW7s6BrY-ZlNQ" name="Payment" specification="_DxZi0C1_EeW7s6BrY-ZlNQ">
+              <ownedParameter xmi:id="_Dx8VYS1_EeW7s6BrY-ZlNQ" name="pp" type="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+              <ownedParameter xmi:id="_Dx8VYi1_EeW7s6BrY-ZlNQ" type="_Die9EC1_EeW7s6BrY-ZlNQ" direction="return"/>
+              <language>java</language>
+              <body>this._pp = pp;
+		
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx88cC1_EeW7s6BrY-ZlNQ" name="processPayment" specification="_DiincC1_EeW7s6BrY-ZlNQ">
+              <language>java</language>
+              <body>_pp.processPayment(amount, new Invoice());
+</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dx88cS1_EeW7s6BrY-ZlNQ" name="updateTransaction" specification="_DijOgC1_EeW7s6BrY-ZlNQ">
+              <language>java</language>
+              <body>_pp.updateTransaction();
+</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_DihZUC1_EeW7s6BrY-ZlNQ" name="process" isAbstract="true"/>
+            <ownedOperation xmi:id="_DiincC1_EeW7s6BrY-ZlNQ" name="processPayment" visibility="protected" method="_Dx88cC1_EeW7s6BrY-ZlNQ"/>
+            <ownedOperation xmi:id="_DijOgC1_EeW7s6BrY-ZlNQ" name="updateTransaction" visibility="protected" method="_Dx88cS1_EeW7s6BrY-ZlNQ"/>
+            <ownedOperation xmi:id="_DxZi0C1_EeW7s6BrY-ZlNQ" name="Payment" method="_Dx8VYC1_EeW7s6BrY-ZlNQ">
+              <eAnnotations xmi:id="_DxZi0i1_EeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_DxaJ4C1_EeW7s6BrY-ZlNQ" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_DxZi0S1_EeW7s6BrY-ZlNQ" name="pp" type="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+              <ownedParameter xmi:id="_DxaJ4S1_EeW7s6BrY-ZlNQ" type="_Die9EC1_EeW7s6BrY-ZlNQ" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_DiouEC1_EeW7s6BrY-ZlNQ" name="PaymentGateway">
+            <generalization xmi:id="_DxdNMC1_EeW7s6BrY-ZlNQ" general="_DiZdgC1_EeW7s6BrY-ZlNQ"/>
+            <ownedOperation xmi:id="_Dip8MC1_EeW7s6BrY-ZlNQ" name="updateTransaction"/>
+            <ownedOperation xmi:id="_DxmXIC1_EeW7s6BrY-ZlNQ" name="processPayment">
+              <ownedParameter xmi:id="_DxmXIS1_EeW7s6BrY-ZlNQ" name="amount">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Dxm-MC1_EeW7s6BrY-ZlNQ" name="invoice" type="_DxTcMC1_EeW7s6BrY-ZlNQ"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_DyCcAC1_EeW7s6BrY-ZlNQ" name="" memberEnd="_DyCcAS1_EeW7s6BrY-ZlNQ _DxsdwC1_EeW7s6BrY-ZlNQ">
+            <ownedEnd xmi:id="_DyCcAS1_EeW7s6BrY-ZlNQ" name="" type="_Die9EC1_EeW7s6BrY-ZlNQ" association="_DyCcAC1_EeW7s6BrY-ZlNQ"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_DhZ_AC1_EeW7s6BrY-ZlNQ" name="model">
+          <packagedElement xmi:type="uml:Class" xmi:id="_DxTcMC1_EeW7s6BrY-ZlNQ" name="Invoice"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_DQ9IMC1_EeW7s6BrY-ZlNQ">
+      <eAnnotations xmi:id="_DQ-9YC1_EeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
     </profileApplication>
   </uml:Model>
-  <UMLLabProfile:TargetLanguage xmi:id="_pmfKkS19EeWiz4fxnsLLJw" base_Package="_pUFL8C19EeWiz4fxnsLLJw">
+  <UMLLabProfile:TargetLanguage xmi:id="_DRBZoC1_EeW7s6BrY-ZlNQ" base_Package="_DGin8C1_EeW7s6BrY-ZlNQ">
     <languageName>java</languageName>
   </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DiGikC1_EeW7s6BrY-ZlNQ" base_Element="_DiEGUC1_EeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Annotations xmi:id="_DiHwsC1_EeW7s6BrY-ZlNQ" base_Element="_DiEGUC1_EeW7s6BrY-ZlNQ">
+    <annotations xmi:id="_DiI-0C1_EeW7s6BrY-ZlNQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DiOeYC1_EeW7s6BrY-ZlNQ" base_Element="_DiNQQC1_EeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Annotations xmi:id="_DiPFcC1_EeW7s6BrY-ZlNQ" base_Element="_DiNQQC1_EeW7s6BrY-ZlNQ">
+    <annotations xmi:id="_DiPFcS1_EeW7s6BrY-ZlNQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DiVMEC1_EeW7s6BrY-ZlNQ" base_Element="_DiT98C1_EeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Annotations xmi:id="_DiVzIC1_EeW7s6BrY-ZlNQ" base_Element="_DiT98C1_EeW7s6BrY-ZlNQ">
+    <annotations xmi:id="_DiVzIS1_EeW7s6BrY-ZlNQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DirKUC1_EeW7s6BrY-ZlNQ" base_Element="_Dip8MC1_EeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Annotations xmi:id="_DirKUS1_EeW7s6BrY-ZlNQ" base_Element="_Dip8MC1_EeW7s6BrY-ZlNQ">
+    <annotations xmi:id="_DirxYC1_EeW7s6BrY-ZlNQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_DxUqUC1_EeW7s6BrY-ZlNQ" base_Element="_DxTcMC1_EeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_DxnlQC1_EeW7s6BrY-ZlNQ" base_Element="_DxmXIC1_EeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Annotations xmi:id="_DxozYC1_EeW7s6BrY-ZlNQ" base_Element="_DxmXIC1_EeW7s6BrY-ZlNQ">
+    <annotations xmi:id="_DxozYS1_EeW7s6BrY-ZlNQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Dxtr4C1_EeW7s6BrY-ZlNQ" base_Element="_DxsdwC1_EeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Dxu6AC1_EeW7s6BrY-ZlNQ" base_Element="_DxuS8C1_EeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Reference xmi:id="_DyDqIC1_EeW7s6BrY-ZlNQ" base_Element="_DyCcAC1_EeW7s6BrY-ZlNQ"/>
 </xmi:XMI>
