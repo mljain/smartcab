@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_36-oEC12EeWiz4fxnsLLJw" name="Test">
+    <eAnnotations xmi:id="_4HbIoC12EeWiz4fxnsLLJw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_4HbIoS12EeWiz4fxnsLLJw" source="codegen">
+        <details xmi:id="_4HbIoi12EeWiz4fxnsLLJw" key="codegenDirectory" value="/Test/src"/>
+        <details xmi:id="_4TIpYC12EeWiz4fxnsLLJw" key="AssociatedSourceCode" value="/smartcab/src/main/java/com/test/designpattern/state1/Admission.java;3067969079/1;/smartcab/src/main/java/com/test/designpattern/state1/AdmissionInterface.java;3655731786/1;/smartcab/src/main/java/com/test/designpattern/state1/EvaluatingState.java;3565755479/1;/smartcab/src/main/java/com/test/designpattern/state1/ProcessingState.java;3022289474/1;/smartcab/src/main/java/com/test/designpattern/state1/State.java;513482467/1;/smartcab/src/main/java/com/test/designpattern/state1/WaitingState.java;2293120093/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_4Nab4C12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_4Nab4S12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_4Nab4i12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_4Nab4y12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_4NbC8C12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_4NbC8S12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_4NbC8i12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_4NbC8y12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_4NbqAC12EeWiz4fxnsLLJw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_4M8h0C12EeWiz4fxnsLLJw" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_4M8h0S12EeWiz4fxnsLLJw" name="test">
+        <packagedElement xmi:type="uml:Package" xmi:id="_4M8h0i12EeWiz4fxnsLLJw" name="designpattern">
+          <packagedElement xmi:type="uml:Package" xmi:id="_4M--EC12EeWiz4fxnsLLJw" name="state1">
+            <packagedElement xmi:type="uml:Class" xmi:id="_4NZNwC12EeWiz4fxnsLLJw" name="Admission">
+              <eAnnotations xmi:id="_pj_e8C13EeWiz4fxnsLLJw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_pkAGAC13EeWiz4fxnsLLJw" source="codegen">
+                  <details xmi:id="_pkAGAS13EeWiz4fxnsLLJw" key="codegenDirectory" value="/smartcab/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedAttribute xmi:id="_4OuqgC12EeWiz4fxnsLLJw" name="state" visibility="package" type="_4N4V8C12EeWiz4fxnsLLJw" association="_pkq0YC13EeWiz4fxnsLLJw"/>
+              <interfaceRealization xmi:id="_4Oh2MC12EeWiz4fxnsLLJw" client="_4NZNwC12EeWiz4fxnsLLJw" supplier="_4Njl0C12EeWiz4fxnsLLJw" contract="_4Njl0C12EeWiz4fxnsLLJw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O1YMC12EeWiz4fxnsLLJw" name="Admission" specification="_4NcREC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O1YMS12EeWiz4fxnsLLJw" type="_4NZNwC12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>state = new WaitingState(this);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O1_QC12EeWiz4fxnsLLJw" name="receiveApplication" specification="_4NdfMC12EeWiz4fxnsLLJw">
+                <language>java</language>
+                <body>System.out.println(state.receiveApplication());
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O1_QS12EeWiz4fxnsLLJw" name="qualifyApplicant" specification="_4NeGQC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O1_Qi12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>System.out.println(state.qualifyApplicant(g));
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O2mUC12EeWiz4fxnsLLJw" name="admitStudent" specification="_4NetUC12EeWiz4fxnsLLJw">
+                <language>java</language>
+                <body>System.out.println(state.admitStudent());
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O2mUS12EeWiz4fxnsLLJw" name="setState" specification="_4OjEUC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O2mUi12EeWiz4fxnsLLJw" name="s" type="_4N4V8C12EeWiz4fxnsLLJw"/>
+                <language>java</language>
+                <body>state = s;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O3NYC12EeWiz4fxnsLLJw" name="getState" specification="_4NfUYC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O3NYS12EeWiz4fxnsLLJw" type="_4N4V8C12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return state;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_4NcREC12EeWiz4fxnsLLJw" name="Admission" method="_4O1YMC12EeWiz4fxnsLLJw">
+                <eAnnotations xmi:id="_4Nc4IC12EeWiz4fxnsLLJw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_4Nc4IS12EeWiz4fxnsLLJw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_4Nc4Ii12EeWiz4fxnsLLJw" type="_4NZNwC12EeWiz4fxnsLLJw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4NdfMC12EeWiz4fxnsLLJw" name="receiveApplication" method="_4O1_QC12EeWiz4fxnsLLJw"/>
+              <ownedOperation xmi:id="_4NeGQC12EeWiz4fxnsLLJw" name="qualifyApplicant" method="_4O1_QS12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4NeGQS12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4NetUC12EeWiz4fxnsLLJw" name="admitStudent" method="_4O2mUC12EeWiz4fxnsLLJw"/>
+              <ownedOperation xmi:id="_4NfUYC12EeWiz4fxnsLLJw" name="getState" method="_4O3NYC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4OjEUi12EeWiz4fxnsLLJw" type="_4N4V8C12EeWiz4fxnsLLJw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4OjEUC12EeWiz4fxnsLLJw" name="setState" method="_4O2mUS12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4OjEUS12EeWiz4fxnsLLJw" name="s" type="_4N4V8C12EeWiz4fxnsLLJw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_4Njl0C12EeWiz4fxnsLLJw" name="AdmissionInterface">
+              <eAnnotations xmi:id="_pkEXcC13EeWiz4fxnsLLJw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_pkEXcS13EeWiz4fxnsLLJw" source="codegen">
+                  <details xmi:id="_pkEXci13EeWiz4fxnsLLJw" key="codegenDirectory" value="/smartcab/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedAttribute xmi:id="_4Nkz8C12EeWiz4fxnsLLJw" name="GPA" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_4Nkz8S12EeWiz4fxnsLLJw" value="3.0"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_4NnQMC12EeWiz4fxnsLLJw" name="state" type="_4N4V8C12EeWiz4fxnsLLJw" association="_4O9UAC12EeWiz4fxnsLLJw"/>
+              <ownedOperation xmi:id="_4NlbAC12EeWiz4fxnsLLJw" name="receiveApplication"/>
+              <ownedOperation xmi:id="_4NmCEC12EeWiz4fxnsLLJw" name="qualifyApplicant">
+                <ownedParameter xmi:id="_4NmCES12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4NmpIC12EeWiz4fxnsLLJw" name="admitStudent"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_4NpFYC12EeWiz4fxnsLLJw" name="EvaluatingState">
+              <eAnnotations xmi:id="_pkHawC13EeWiz4fxnsLLJw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_pkHawS13EeWiz4fxnsLLJw" source="codegen">
+                  <details xmi:id="_pkHawi13EeWiz4fxnsLLJw" key="codegenDirectory" value="/smartcab/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedAttribute xmi:id="_4Ov4oC12EeWiz4fxnsLLJw" name="admission" visibility="private" type="_4Njl0C12EeWiz4fxnsLLJw" association="_pko_MC13EeWiz4fxnsLLJw"/>
+              <interfaceRealization xmi:id="_4OkScC12EeWiz4fxnsLLJw" client="_4NpFYC12EeWiz4fxnsLLJw" supplier="_4N4V8C12EeWiz4fxnsLLJw" contract="_4N4V8C12EeWiz4fxnsLLJw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O30cC12EeWiz4fxnsLLJw" name="EvaluatingState" specification="_4Ok5gC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O30cS12EeWiz4fxnsLLJw" name="a" type="_4Njl0C12EeWiz4fxnsLLJw"/>
+                <ownedParameter xmi:id="_4O30ci12EeWiz4fxnsLLJw" type="_4NpFYC12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>admission = a;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O30cy12EeWiz4fxnsLLJw" name="receiveApplication" specification="_4Nq6kC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O30dC12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Already received an application.&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O4bgC12EeWiz4fxnsLLJw" name="qualifyApplicant" specification="_4NsIsC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O4bgS12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_4O4bgi12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>if (g >= AdmissionInterface.GPA) {
+			
+			admission.setState(new ProcessingState(admission));
+			return &quot;The application is accepted.&quot;;
+		} else {
+		
+			admission.setState(new WaitingState(admission));
+			return &quot;The applicant is denied.&quot;;
+		}
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O4bgy12EeWiz4fxnsLLJw" name="admitStudent" specification="_4NtW0C12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O4bhC12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Must be evaluated first.&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_4Nq6kC12EeWiz4fxnsLLJw" name="receiveApplication" method="_4O30cy12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4NrhoC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4NsIsC12EeWiz4fxnsLLJw" name="qualifyApplicant" method="_4O4bgC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4NsIsS12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_4NsvwC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4NtW0C12EeWiz4fxnsLLJw" name="admitStudent" method="_4O4bgy12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4Nt94C12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4Ok5gC12EeWiz4fxnsLLJw" name="EvaluatingState" method="_4O30cC12EeWiz4fxnsLLJw">
+                <eAnnotations xmi:id="_4Ok5gi12EeWiz4fxnsLLJw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_4OlgkC12EeWiz4fxnsLLJw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_4Ok5gS12EeWiz4fxnsLLJw" name="a" type="_4Njl0C12EeWiz4fxnsLLJw"/>
+                <ownedParameter xmi:id="_4OlgkS12EeWiz4fxnsLLJw" type="_4NpFYC12EeWiz4fxnsLLJw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_4NxBMC12EeWiz4fxnsLLJw" name="ProcessingState">
+              <eAnnotations xmi:id="_pkLFIC13EeWiz4fxnsLLJw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_pkLFIS13EeWiz4fxnsLLJw" source="codegen">
+                  <details xmi:id="_pkLFIi13EeWiz4fxnsLLJw" key="codegenDirectory" value="/smartcab/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedAttribute xmi:id="_4OxGwC12EeWiz4fxnsLLJw" name="admission" visibility="private" type="_4Njl0C12EeWiz4fxnsLLJw" association="_pkspkC13EeWiz4fxnsLLJw"/>
+              <interfaceRealization xmi:id="_4OmHoC12EeWiz4fxnsLLJw" client="_4NxBMC12EeWiz4fxnsLLJw" supplier="_4N4V8C12EeWiz4fxnsLLJw" contract="_4N4V8C12EeWiz4fxnsLLJw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O5CkC12EeWiz4fxnsLLJw" name="ProcessingState" specification="_4OnVwC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O5CkS12EeWiz4fxnsLLJw" name="a" type="_4Njl0C12EeWiz4fxnsLLJw"/>
+                <ownedParameter xmi:id="_4O5Cki12EeWiz4fxnsLLJw" type="_4NxBMC12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>admission = a;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O5poC12EeWiz4fxnsLLJw" name="receiveApplication" specification="_4NyPUC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O5poS12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;The appcation is finalized.&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O5poi12EeWiz4fxnsLLJw" name="qualifyApplicant" specification="_4NzdcC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O5poy12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_4O5ppC12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;The appcation is finalized.&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O6QsC12EeWiz4fxnsLLJw" name="admitStudent" specification="_4N0rkC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O6QsS12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>admission.setState(new WaitingState(admission));
+		return &quot;The application is finalized and an admission letter is in the mail.&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_4NyPUC12EeWiz4fxnsLLJw" name="receiveApplication" method="_4O5poC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4Ny2YC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4NzdcC12EeWiz4fxnsLLJw" name="qualifyApplicant" method="_4O5poi12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4NzdcS12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_4N0EgC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4N0rkC12EeWiz4fxnsLLJw" name="admitStudent" method="_4O6QsC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4N0rkS12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4OnVwC12EeWiz4fxnsLLJw" name="ProcessingState" method="_4O5CkC12EeWiz4fxnsLLJw">
+                <eAnnotations xmi:id="_4OnVwi12EeWiz4fxnsLLJw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_4OnVwy12EeWiz4fxnsLLJw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_4OnVwS12EeWiz4fxnsLLJw" name="a" type="_4Njl0C12EeWiz4fxnsLLJw"/>
+                <ownedParameter xmi:id="_4On80C12EeWiz4fxnsLLJw" type="_4NxBMC12EeWiz4fxnsLLJw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_4N4V8C12EeWiz4fxnsLLJw" name="State">
+              <eAnnotations xmi:id="_pkOIcC13EeWiz4fxnsLLJw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_pkOIcS13EeWiz4fxnsLLJw" source="codegen">
+                  <details xmi:id="_pkOIci13EeWiz4fxnsLLJw" key="codegenDirectory" value="/smartcab/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedOperation xmi:id="_4N49AC12EeWiz4fxnsLLJw" name="receiveApplication">
+                <ownedParameter xmi:id="_4N5kEC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4N6LIC12EeWiz4fxnsLLJw" name="qualifyApplicant">
+                <ownedParameter xmi:id="_4N6LIS12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_4N6yMC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4N7ZQC12EeWiz4fxnsLLJw" name="admitStudent">
+                <ownedParameter xmi:id="_4N8AUC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_4N8nYC12EeWiz4fxnsLLJw" name="WaitingState">
+              <eAnnotations xmi:id="_pkP9oC13EeWiz4fxnsLLJw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_pkQksC13EeWiz4fxnsLLJw" source="codegen">
+                  <details xmi:id="_pkQksS13EeWiz4fxnsLLJw" key="codegenDirectory" value="/smartcab/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedAttribute xmi:id="_4OzjAC12EeWiz4fxnsLLJw" name="admission" visibility="private" type="_4Njl0C12EeWiz4fxnsLLJw" association="_pkuewC13EeWiz4fxnsLLJw"/>
+              <interfaceRealization xmi:id="_4OqZEC12EeWiz4fxnsLLJw" client="_4N8nYC12EeWiz4fxnsLLJw" supplier="_4N4V8C12EeWiz4fxnsLLJw" contract="_4N4V8C12EeWiz4fxnsLLJw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O63wC12EeWiz4fxnsLLJw" name="WaitingState" specification="_4OrAIC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O63wS12EeWiz4fxnsLLJw" name="a" type="_4Njl0C12EeWiz4fxnsLLJw"/>
+                <ownedParameter xmi:id="_4O63wi12EeWiz4fxnsLLJw" type="_4N8nYC12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>admission = a;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O63wy12EeWiz4fxnsLLJw" name="receiveApplication" specification="_4N-ckC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O63xC12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>admission.setState(new EvaluatingState(admission));
+		return &quot;Received an application.&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O7e0C12EeWiz4fxnsLLJw" name="qualifyApplicant" specification="_4N_qsC12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O7e0S12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_4O7e0i12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Must receive an application first.&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_4O8F4C12EeWiz4fxnsLLJw" name="admitStudent" specification="_4OARwS12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4O8F4S12EeWiz4fxnsLLJw" direction="return">
+                  <name xsi:nil="true"/>
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return &quot;Must receive an application first.&quot;;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_4N-ckC12EeWiz4fxnsLLJw" name="receiveApplication" method="_4O63wy12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4N_DoC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4N_qsC12EeWiz4fxnsLLJw" name="qualifyApplicant" method="_4O7e0C12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4N_qsS12EeWiz4fxnsLLJw" name="g">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_4OARwC12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4OARwS12EeWiz4fxnsLLJw" name="admitStudent" method="_4O8F4C12EeWiz4fxnsLLJw">
+                <ownedParameter xmi:id="_4OA40C12EeWiz4fxnsLLJw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_4OrAIC12EeWiz4fxnsLLJw" name="WaitingState" method="_4O63wC12EeWiz4fxnsLLJw">
+                <eAnnotations xmi:id="_4OrnMS12EeWiz4fxnsLLJw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_4OrnMi12EeWiz4fxnsLLJw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_4OrnMC12EeWiz4fxnsLLJw" name="a" type="_4Njl0C12EeWiz4fxnsLLJw"/>
+                <ownedParameter xmi:id="_4OrnMy12EeWiz4fxnsLLJw" type="_4N8nYC12EeWiz4fxnsLLJw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_4O9UAC12EeWiz4fxnsLLJw" name="" memberEnd="_4NnQMC12EeWiz4fxnsLLJw _4O97EC12EeWiz4fxnsLLJw">
+              <ownedEnd xmi:id="_4O97EC12EeWiz4fxnsLLJw" name="" type="_4Njl0C12EeWiz4fxnsLLJw" association="_4O9UAC12EeWiz4fxnsLLJw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_pko_MC13EeWiz4fxnsLLJw" name="" memberEnd="_pko_MS13EeWiz4fxnsLLJw _4Ov4oC12EeWiz4fxnsLLJw">
+              <ownedEnd xmi:id="_pko_MS13EeWiz4fxnsLLJw" name="" type="_4NpFYC12EeWiz4fxnsLLJw" association="_pko_MC13EeWiz4fxnsLLJw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_pkq0YC13EeWiz4fxnsLLJw" name="" memberEnd="_pkq0YS13EeWiz4fxnsLLJw _4OuqgC12EeWiz4fxnsLLJw">
+              <ownedEnd xmi:id="_pkq0YS13EeWiz4fxnsLLJw" name="" type="_4NZNwC12EeWiz4fxnsLLJw" association="_pkq0YC13EeWiz4fxnsLLJw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_pkspkC13EeWiz4fxnsLLJw" name="" memberEnd="_pkspkS13EeWiz4fxnsLLJw _4OxGwC12EeWiz4fxnsLLJw">
+              <ownedEnd xmi:id="_pkspkS13EeWiz4fxnsLLJw" name="" type="_4NxBMC12EeWiz4fxnsLLJw" association="_pkspkC13EeWiz4fxnsLLJw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_pkuewC13EeWiz4fxnsLLJw" name="" memberEnd="_pkuewS13EeWiz4fxnsLLJw _4OzjAC12EeWiz4fxnsLLJw">
+              <ownedEnd xmi:id="_pkuewS13EeWiz4fxnsLLJw" name="" type="_4N8nYC12EeWiz4fxnsLLJw" association="_pkuewC13EeWiz4fxnsLLJw"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_4HbvsC12EeWiz4fxnsLLJw">
+      <eAnnotations xmi:id="_4HbvsS12EeWiz4fxnsLLJw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_4Hbvsi12EeWiz4fxnsLLJw" base_Package="_36-oEC12EeWiz4fxnsLLJw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_4OvRkC12EeWiz4fxnsLLJw" base_Element="_4OuqgC12EeWiz4fxnsLLJw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_4OwfsC12EeWiz4fxnsLLJw" base_Element="_4Ov4oC12EeWiz4fxnsLLJw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_4OyU4C12EeWiz4fxnsLLJw" base_Element="_4OxGwC12EeWiz4fxnsLLJw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_4O0KEC12EeWiz4fxnsLLJw" base_Element="_4OzjAC12EeWiz4fxnsLLJw"/>
+  <UMLLabProfile:Reference xmi:id="_pkqNUC13EeWiz4fxnsLLJw" base_Element="_pko_MC13EeWiz4fxnsLLJw"/>
+  <UMLLabProfile:Reference xmi:id="_pksCgC13EeWiz4fxnsLLJw" base_Element="_pkq0YC13EeWiz4fxnsLLJw"/>
+  <UMLLabProfile:Reference xmi:id="_pkt3sC13EeWiz4fxnsLLJw" base_Element="_pkspkC13EeWiz4fxnsLLJw"/>
+  <UMLLabProfile:Reference xmi:id="_pkvs4C13EeWiz4fxnsLLJw" base_Element="_pkuewC13EeWiz4fxnsLLJw"/>
+</xmi:XMI>
