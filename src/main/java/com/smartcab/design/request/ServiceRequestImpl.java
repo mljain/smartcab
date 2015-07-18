@@ -1,4 +1,4 @@
-package com.test.designpattern.state1;
+package com.smartcab.design.request;
 
 import com.smartcab.request.domain.Customer;
 import com.smartcab.request.domain.Request;

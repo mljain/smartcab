@@ -1,9 +1,15 @@
-package com.test.designpattern.state1;
+package com.smartcab.design.request;
 
 import com.smartcab.request.domain.Customer;
 import com.smartcab.request.domain.Request;
 
-public class CompleteRequestState implements State{
+public class ReceivedApplicationState implements State {
+
+	private ServiceRequest sericeRequest;
+
+	public ReceivedApplicationState(ServiceRequest request) {
+		sericeRequest = request;
+	}
 
 	public void receiveRequest() {
 		// TODO Auto-generated method stub
@@ -30,4 +36,5 @@ public class CompleteRequestState implements State{
 		
 	}
 
+	
 }
