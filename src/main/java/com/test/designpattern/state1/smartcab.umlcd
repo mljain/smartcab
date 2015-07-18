@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_KwH2MC2EEeW7s6BrY-ZlNQ">
+  <modelElement href="smartcab.uml#_LH6rIC2EEeW7s6BrY-ZlNQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_LwK98C2EEeW7s6BrY-ZlNQ" sourceAnchor="243.0,0.0" targetAnchor="35.0,124.0" target="_Lw4voC2EEeW7s6BrY-ZlNQ" source="_LwLlAC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LNsjAC2EEeW7s6BrY-ZlNQ"/>
+    <stereotypes xmi:id="_LwK98S2EEeW7s6BrY-ZlNQ" name="Reference">
+      <modelElement href="smartcab.uml#_LNuYMC2EEeW7s6BrY-ZlNQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_LwK98i2EEeW7s6BrY-ZlNQ" text="">
+      <visualProperties xmi:id="_L_yHQC2EEeW7s6BrY-ZlNQ" position="-32.4809350727881,99.66264535102087"/>
+    </nameVisual>
+    <sourceRole xmi:id="_LwK98y2EEeW7s6BrY-ZlNQ" aggregationKind="NONE" name="">
+      <modelElement href="smartcab.uml#_LNsjAS2EEeW7s6BrY-ZlNQ"/>
+      <visualProperties xmi:id="_L_w5IS2EEeW7s6BrY-ZlNQ" position="-19.34917821491257,-66.76495600177475"/>
+      <visibility xmi:id="_LwK99C2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwK99S2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_LwK99i2EEeW7s6BrY-ZlNQ" aggregationKind="NONE" name="sericeRequest" navigable="true">
+      <modelElement href="smartcab.uml#_LM7uAC2EEeW7s6BrY-ZlNQ"/>
+      <visualProperties xmi:id="_L_yHQS2EEeW7s6BrY-ZlNQ" position="-55.72900454196656,249.0207475942395"/>
+      <visibility xmi:id="_LwK99y2EEeW7s6BrY-ZlNQ" label="-"/>
+      <cardinality xmi:id="_LwK9-C2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_LwS5wC2EEeW7s6BrY-ZlNQ" sourceAnchor="131.0,0.0" targetAnchor="74.0,20.0" target="_LwUH4S2EEeW7s6BrY-ZlNQ" source="_Lw4voC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LNqt0C2EEeW7s6BrY-ZlNQ"/>
+    <bendpoints xmi:id="_L_w5IC2EEeW7s6BrY-ZlNQ" sourceY="-75" targetX="184"/>
+    <stereotypes xmi:id="_LwTg0i2EEeW7s6BrY-ZlNQ" name="Reference">
+      <modelElement href="smartcab.uml#_LNr78C2EEeW7s6BrY-ZlNQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_LwS5wS2EEeW7s6BrY-ZlNQ" text="">
+      <visualProperties xmi:id="_L_4N4C2EEeW7s6BrY-ZlNQ" position="-24.763360109479265,9.324923719914864"/>
+    </nameVisual>
+    <sourceRole xmi:id="_LwTg0C2EEeW7s6BrY-ZlNQ" aggregationKind="NONE" name="">
+      <modelElement href="smartcab.uml#_LNqt0S2EEeW7s6BrY-ZlNQ"/>
+      <visualProperties xmi:id="_L_2_wC2EEeW7s6BrY-ZlNQ" position="-17.593766734963538,-76.12604147099324"/>
+      <visibility xmi:id="_LwTg1C2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwTg0y2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_LwTg0S2EEeW7s6BrY-ZlNQ" aggregationKind="NONE" name="dispatcherStatus" navigable="true">
+      <modelElement href="smartcab.uml#_LJ5oIC2EEeW7s6BrY-ZlNQ"/>
+      <visualProperties xmi:id="_L_408C2EEeW7s6BrY-ZlNQ" position="122.4180085935028,-2.1200666282067004"/>
+      <stereotypes xmi:id="_LwUH4C2EEeW7s6BrY-ZlNQ" name="LegacyStyledElement">
+        <modelElement href="smartcab.uml#_LJ7dUC2EEeW7s6BrY-ZlNQ"/>
+      </stereotypes>
+      <visibility xmi:id="_LwTg1i2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwTg1S2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LwWkIC2EEeW7s6BrY-ZlNQ" sourceAnchor="369.0,0.0" targetAnchor="131.0,124.0" dashed="true" superClass="_LwZAYi2EEeW7s6BrY-ZlNQ" subClass="_LwLlAC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LLduYC2EEeW7s6BrY-ZlNQ"/>
+    <bendpoints xmi:id="_L_uc4C2EEeW7s6BrY-ZlNQ" sourceY="-34" targetX="-317" targetY="21"/>
+    <bendpoints xmi:id="_L_uc4S2EEeW7s6BrY-ZlNQ" sourceX="317" sourceY="-34" targetY="21"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_LwWkIS2EEeW7s6BrY-ZlNQ" sourceAnchor="0.0,62.0" targetAnchor="131.0,124.0" target="_Lw4voC2EEeW7s6BrY-ZlNQ" source="_LwZAYi2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LNhj4C2EEeW7s6BrY-ZlNQ"/>
+    <bendpoints xmi:id="_L_vD8C2EEeW7s6BrY-ZlNQ" sourceX="-216" targetY="107"/>
+    <nameVisual xmi:id="_LwXyQC2EEeW7s6BrY-ZlNQ" text="">
+      <visualProperties xmi:id="_L_z8cC2EEeW7s6BrY-ZlNQ" position="173.27334059711302,-0.4289321881345245"/>
+    </nameVisual>
+    <sourceRole xmi:id="_LwYZUC2EEeW7s6BrY-ZlNQ" aggregationKind="NONE" name="state" navigable="true">
+      <modelElement href="smartcab.uml#_LJ95kC2EEeW7s6BrY-ZlNQ"/>
+      <visualProperties xmi:id="_L_zVYC2EEeW7s6BrY-ZlNQ" position="-74.99011537017759,-9.893398282201787"/>
+      <visibility xmi:id="_LwYZUy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwYZUi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_LwYZUS2EEeW7s6BrY-ZlNQ" aggregationKind="NONE" name="">
+      <modelElement href="smartcab.uml#_LNhj4S2EEeW7s6BrY-ZlNQ"/>
+      <visualProperties xmi:id="_L_z8cS2EEeW7s6BrY-ZlNQ" position="192.34009742330272,97.46015510839149"/>
+      <visibility xmi:id="_LwZAYS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwZAYC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LwdR0C2EEeW7s6BrY-ZlNQ" sourceAnchor="131.0,0.0" targetAnchor="131.0,124.0" dashed="true" superClass="_LwZAYi2EEeW7s6BrY-ZlNQ" subClass="_Lwef8C2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LLXAsC2EEeW7s6BrY-ZlNQ"/>
+    <bendpoints xmi:id="_L_vD8S2EEeW7s6BrY-ZlNQ" sourceY="-20" targetX="448" targetY="21"/>
+    <bendpoints xmi:id="_L_vD8i2EEeW7s6BrY-ZlNQ" sourceX="-448" sourceY="-20" targetY="21"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_LwjYcC2EEeW7s6BrY-ZlNQ" sourceAnchor="262.0,54.0" targetAnchor="131.0,124.0" dashed="true" superClass="_LwZAYi2EEeW7s6BrY-ZlNQ" subClass="_LwlNoC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LLPr8C2EEeW7s6BrY-ZlNQ"/>
+    <bendpoints xmi:id="_L_vrAC2EEeW7s6BrY-ZlNQ" sourceX="15" targetX="594" targetY="256"/>
+    <bendpoints xmi:id="_L_vrAS2EEeW7s6BrY-ZlNQ" sourceX="15" sourceY="-235" targetX="594" targetY="21"/>
+    <bendpoints xmi:id="_L_vrAi2EEeW7s6BrY-ZlNQ" sourceX="-579" sourceY="-235" targetY="21"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_LwrUQC2EEeW7s6BrY-ZlNQ" sourceAnchor="231.0,0.0" targetAnchor="262.0,92.0" target="_LwZAYi2EEeW7s6BrY-ZlNQ" source="_LwypAC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LNuYMS2EEeW7s6BrY-ZlNQ"/>
+    <bendpoints xmi:id="_L_wSEC2EEeW7s6BrY-ZlNQ" sourceY="-97" targetX="51"/>
+    <stereotypes xmi:id="_LwsiYy2EEeW7s6BrY-ZlNQ" name="Reference">
+      <modelElement href="smartcab.uml#_LNwNYC2EEeW7s6BrY-ZlNQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_LwsiYC2EEeW7s6BrY-ZlNQ" text="">
+      <visualProperties xmi:id="_L_1xoC2EEeW7s6BrY-ZlNQ" position="-11.986464094943699,53.122667578442666"/>
+    </nameVisual>
+    <sourceRole xmi:id="_LwsiYS2EEeW7s6BrY-ZlNQ" aggregationKind="NONE" name="">
+      <modelElement href="smartcab.uml#_LNuYMi2EEeW7s6BrY-ZlNQ"/>
+      <visualProperties xmi:id="_L_0jgC2EEeW7s6BrY-ZlNQ" position="3.7182109930998877,-66.60207958557068"/>
+      <visibility xmi:id="_LwuXkS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwuXkC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_LwsiYi2EEeW7s6BrY-ZlNQ" aggregationKind="NONE" name="state" navigable="true">
+      <modelElement href="smartcab.uml#_LNAmgC2EEeW7s6BrY-ZlNQ"/>
+      <visualProperties xmi:id="_L_1xoS2EEeW7s6BrY-ZlNQ" position="40.63231364476587,42.09863510615713"/>
+      <visibility xmi:id="_LwuXky2EEeW7s6BrY-ZlNQ" label="~"/>
+      <cardinality xmi:id="_LwuXki2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Lwr7UC2EEeW7s6BrY-ZlNQ" sourceAnchor="0.0,83.0" targetAnchor="101.0,124.0" dashed="true" superClass="_Lw4voC2EEeW7s6BrY-ZlNQ" subClass="_LwypAC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LLs-8C2EEeW7s6BrY-ZlNQ"/>
+    <bendpoints xmi:id="_L_wSES2EEeW7s6BrY-ZlNQ" sourceX="-328" targetY="317"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_LwLlAC2EEeW7s6BrY-ZlNQ" name="ReceivedApplicationState" associationsOut="_LwK98C2EEeW7s6BrY-ZlNQ" generalizations="_LwWkIC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LJsz0C2EEeW7s6BrY-ZlNQ"/>
+    <visualProperties xmi:id="_LwLlAS2EEeW7s6BrY-ZlNQ" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LwLlAi2EEeW7s6BrY-ZlNQ" label="+"/>
+    <attributes xmi:id="_LwLlAy2EEeW7s6BrY-ZlNQ" name="sericeRequest">
+      <modelElement href="smartcab.uml#_LM7uAC2EEeW7s6BrY-ZlNQ"/>
+      <stereotypes xmi:id="_LwLlBC2EEeW7s6BrY-ZlNQ" name="LegacyStyledElement">
+        <modelElement href="smartcab.uml#_LM88IC2EEeW7s6BrY-ZlNQ"/>
+      </stereotypes>
+      <visibility xmi:id="_LwLlBS2EEeW7s6BrY-ZlNQ" label="-"/>
+      <cardinality xmi:id="_LwLlBi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <type xmi:id="_LwLlBy2EEeW7s6BrY-ZlNQ" name="ServiceRequest">
+        <modelElement href="smartcab.uml#_LJ5BEC2EEeW7s6BrY-ZlNQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_LwLlCC2EEeW7s6BrY-ZlNQ" name="receiveRequest">
+      <modelElement href="smartcab.uml#_LJv3IC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwLlCS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwLlCi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_LwLlCy2EEeW7s6BrY-ZlNQ" name="ReceivedApplicationState">
+      <modelElement href="smartcab.uml#_LLe8gC2EEeW7s6BrY-ZlNQ"/>
+      <keywords xmi:id="_LwLlDC2EEeW7s6BrY-ZlNQ" keyword="create"/>
+      <visibility xmi:id="_LwLlDS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwLlDi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LwLlDy2EEeW7s6BrY-ZlNQ">
+        <modelElement href="smartcab.uml#_LLfjki2EEeW7s6BrY-ZlNQ"/>
+        <type xmi:id="_LwLlEC2EEeW7s6BrY-ZlNQ" name="ReceivedApplicationState">
+          <modelElement href="smartcab.uml#_LJsz0C2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_LwLlES2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LLe8gS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwLlEi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwLlEy2EEeW7s6BrY-ZlNQ" name="ServiceRequest">
+          <modelElement href="smartcab.uml#_LJ5BEC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwLlFC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer">
+      <modelElement href="smartcab.uml#_LMV4IC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwLlFS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwLlFi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwLlFy2EEeW7s6BrY-ZlNQ" name="c">
+        <modelElement href="smartcab.uml#_LMWfMC2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwLlGC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwLlGS2EEeW7s6BrY-ZlNQ" name="Customer">
+          <modelElement href="smartcab.uml#_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwLlGi2EEeW7s6BrY-ZlNQ" name="processRequest">
+      <modelElement href="smartcab.uml#_LMXtUC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwLlGy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwLlHC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwLlHS2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMXtUS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwLlHi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwLlHy2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwLlIC2EEeW7s6BrY-ZlNQ" name="completeRequest">
+      <modelElement href="smartcab.uml#_LMZigC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwLlIS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwLlIi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwLlIy2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMZigS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwLlJC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwLlJS2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_LwUH4S2EEeW7s6BrY-ZlNQ" name="Dispatcher" associationsIn="_LwS5wC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LJhNoC2EEeW7s6BrY-ZlNQ"/>
+    <visualProperties xmi:id="_LwUH4i2EEeW7s6BrY-ZlNQ" position="111.0,-413.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LwUH4y2EEeW7s6BrY-ZlNQ" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_LwZAYi2EEeW7s6BrY-ZlNQ" name="State" associationsIn="_LwrUQC2EEeW7s6BrY-ZlNQ" associationsOut="_LwWkIS2EEeW7s6BrY-ZlNQ" subclassedBy="_LwWkIC2EEeW7s6BrY-ZlNQ _LwdR0C2EEeW7s6BrY-ZlNQ _LwjYcC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LKTQwC2EEeW7s6BrY-ZlNQ"/>
+    <visualProperties xmi:id="_LwZAYy2EEeW7s6BrY-ZlNQ" position="585.0,-149.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LwZAZC2EEeW7s6BrY-ZlNQ" label="+"/>
+    <operations xmi:id="_LwZAZS2EEeW7s6BrY-ZlNQ" name="receiveRequest">
+      <modelElement href="smartcab.uml#_LKUe4C2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwZAZi2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwZAZy2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_LwZAaC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer">
+      <modelElement href="smartcab.uml#_LMu5sC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwZAaS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwZAai2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwZAay2EEeW7s6BrY-ZlNQ" name="c">
+        <modelElement href="smartcab.uml#_LMu5sS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwZAbC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwZAbS2EEeW7s6BrY-ZlNQ" name="Customer">
+          <modelElement href="smartcab.uml#_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwZAbi2EEeW7s6BrY-ZlNQ" name="processRequest">
+      <modelElement href="smartcab.uml#_LMwu4C2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwZAby2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwZAcC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwZAcS2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMwu4S2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwZAci2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwZAcy2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwZAdC2EEeW7s6BrY-ZlNQ" name="completeRequest">
+      <modelElement href="smartcab.uml#_LMykEC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwZAdS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwZAdi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwZAdy2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMykES2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwZAeC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwZAeS2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Lwef8C2EEeW7s6BrY-ZlNQ" name="ProcessRequestState" generalizations="_LwdR0C2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LJibwC2EEeW7s6BrY-ZlNQ"/>
+    <visualProperties xmi:id="_Lwef8S2EEeW7s6BrY-ZlNQ" position="1033.0,16.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Lwef8i2EEeW7s6BrY-ZlNQ" label="+"/>
+    <operations xmi:id="_Lwef8y2EEeW7s6BrY-ZlNQ" name="receiveRequest">
+      <modelElement href="smartcab.uml#_LJkQ8C2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lwef9C2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lwef9S2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Lwef9i2EEeW7s6BrY-ZlNQ" name="qualifyCustomer">
+      <modelElement href="smartcab.uml#_LMPKcC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lwef9y2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lwef-C2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Lwef-S2EEeW7s6BrY-ZlNQ" name="c">
+        <modelElement href="smartcab.uml#_LMPKcS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_Lwef-i2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Lwef-y2EEeW7s6BrY-ZlNQ" name="Customer">
+          <modelElement href="smartcab.uml#_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Lwef_C2EEeW7s6BrY-ZlNQ" name="processRequest">
+      <modelElement href="smartcab.uml#_LMQ_oC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lwef_S2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lwef_i2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Lwef_y2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMQ_oS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwegAC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwegAS2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwegAi2EEeW7s6BrY-ZlNQ" name="completeRequest">
+      <modelElement href="smartcab.uml#_LMS00C2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwegAy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwegBC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwegBS2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMS00S2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwegBi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwegBy2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_LwlNoC2EEeW7s6BrY-ZlNQ" name="CompleteRequestState" generalizations="_LwjYcC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LJXcoC2EEeW7s6BrY-ZlNQ"/>
+    <visualProperties xmi:id="_LwlNoS2EEeW7s6BrY-ZlNQ" position="1033.0,177.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LwlNoi2EEeW7s6BrY-ZlNQ" label="+"/>
+    <operations xmi:id="_LwlNoy2EEeW7s6BrY-ZlNQ" name="receiveRequest">
+      <modelElement href="smartcab.uml#_LJbHAC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwlNpC2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwlNpS2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_LwlNpi2EEeW7s6BrY-ZlNQ" name="qualifyCustomer">
+      <modelElement href="smartcab.uml#_LMJD0C2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwlNpy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwlNqC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwlNqS2EEeW7s6BrY-ZlNQ" name="c">
+        <modelElement href="smartcab.uml#_LMJq4C2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwlNqi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwlNqy2EEeW7s6BrY-ZlNQ" name="Customer">
+          <modelElement href="smartcab.uml#_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwlNrC2EEeW7s6BrY-ZlNQ" name="processRequest">
+      <modelElement href="smartcab.uml#_LMK5AC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwlNrS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwlNri2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwlNry2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMK5AS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwlNsC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwlNsS2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwlNsi2EEeW7s6BrY-ZlNQ" name="completeRequest">
+      <modelElement href="smartcab.uml#_LMMuMC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwlNsy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwlNtC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwlNtS2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMMuMS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwlNti2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwlNty2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_LwypAC2EEeW7s6BrY-ZlNQ" name="ServiceRequestImpl" associationsOut="_LwrUQC2EEeW7s6BrY-ZlNQ" generalizations="_Lwr7UC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LKGccC2EEeW7s6BrY-ZlNQ"/>
+    <visualProperties xmi:id="_LwypAS2EEeW7s6BrY-ZlNQ" position="667.0,40.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_LwypAi2EEeW7s6BrY-ZlNQ" label="+"/>
+    <attributes xmi:id="_LwypAy2EEeW7s6BrY-ZlNQ" name="state">
+      <modelElement href="smartcab.uml#_LNAmgC2EEeW7s6BrY-ZlNQ"/>
+      <stereotypes xmi:id="_LwypBC2EEeW7s6BrY-ZlNQ" name="LegacyStyledElement">
+        <modelElement href="smartcab.uml#_LNB0oC2EEeW7s6BrY-ZlNQ"/>
+      </stereotypes>
+      <visibility xmi:id="_LwypBS2EEeW7s6BrY-ZlNQ" label="~"/>
+      <cardinality xmi:id="_LwypBi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <type xmi:id="_LwypBy2EEeW7s6BrY-ZlNQ" name="State">
+        <modelElement href="smartcab.uml#_LKTQwC2EEeW7s6BrY-ZlNQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_LwypCC2EEeW7s6BrY-ZlNQ" name="ServiceRequestImpl">
+      <modelElement href="smartcab.uml#_LKHqkC2EEeW7s6BrY-ZlNQ"/>
+      <keywords xmi:id="_LwypCS2EEeW7s6BrY-ZlNQ" keyword="create"/>
+      <visibility xmi:id="_LwypCi2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwypCy2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LwypDC2EEeW7s6BrY-ZlNQ">
+        <modelElement href="smartcab.uml#_LKIRoi2EEeW7s6BrY-ZlNQ"/>
+        <type xmi:id="_LwypDS2EEeW7s6BrY-ZlNQ" name="ServiceRequestImpl">
+          <modelElement href="smartcab.uml#_LKGccC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_LwypDi2EEeW7s6BrY-ZlNQ" name="getState">
+      <modelElement href="smartcab.uml#_LKI4sC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwypDy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwypEC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_LwypES2EEeW7s6BrY-ZlNQ">
+        <modelElement href="smartcab.uml#_LLvbMC2EEeW7s6BrY-ZlNQ"/>
+        <type xmi:id="_LwypEi2EEeW7s6BrY-ZlNQ" name="State">
+          <modelElement href="smartcab.uml#_LKTQwC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_LwypEy2EEeW7s6BrY-ZlNQ" name="receiveRequest">
+      <modelElement href="smartcab.uml#_LKJfwC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwypFC2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwypFS2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_LwypFi2EEeW7s6BrY-ZlNQ" name="setState">
+      <modelElement href="smartcab.uml#_LLu0IC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwypFy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwypGC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwypGS2EEeW7s6BrY-ZlNQ" name="s">
+        <modelElement href="smartcab.uml#_LLu0IS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwypGi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwypGy2EEeW7s6BrY-ZlNQ" name="State">
+          <modelElement href="smartcab.uml#_LKTQwC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwypHC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer">
+      <modelElement href="smartcab.uml#_LMm94C2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwypHS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwypHi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwypHy2EEeW7s6BrY-ZlNQ" name="c">
+        <modelElement href="smartcab.uml#_LMnk8C2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwypIC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwypIS2EEeW7s6BrY-ZlNQ" name="Customer">
+          <modelElement href="smartcab.uml#_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwypIi2EEeW7s6BrY-ZlNQ" name="processRequest">
+      <modelElement href="smartcab.uml#_LMozEC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwypIy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwypJC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwypJS2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMozES2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwypJi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwypJy2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_LwypKC2EEeW7s6BrY-ZlNQ" name="completeRequest">
+      <modelElement href="smartcab.uml#_LMqoQC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_LwypKS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_LwypKi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_LwypKy2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMqoQS2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_LwypLC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_LwypLS2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_Lw4voC2EEeW7s6BrY-ZlNQ" name="ServiceRequest" associationsIn="_LwWkIS2EEeW7s6BrY-ZlNQ _LwK98C2EEeW7s6BrY-ZlNQ" associationsOut="_LwS5wC2EEeW7s6BrY-ZlNQ" subclassedBy="_Lwr7UC2EEeW7s6BrY-ZlNQ">
+    <modelElement href="smartcab.uml#_LJ5BEC2EEeW7s6BrY-ZlNQ"/>
+    <visualProperties xmi:id="_Lw4voS2EEeW7s6BrY-ZlNQ" position="238.0,-318.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Lw4voi2EEeW7s6BrY-ZlNQ" label="+"/>
+    <attributes xmi:id="_Lw4voy2EEeW7s6BrY-ZlNQ" defaultValue="null" name="dispatcherStatus">
+      <modelElement href="smartcab.uml#_LJ5oIC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lw4vpC2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lw4vpS2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <type xmi:id="_Lw4vpi2EEeW7s6BrY-ZlNQ" name="Dispatcher">
+        <modelElement href="smartcab.uml#_LJhNoC2EEeW7s6BrY-ZlNQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Lw4vpy2EEeW7s6BrY-ZlNQ" name="state">
+      <modelElement href="smartcab.uml#_LJ95kC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lw4vqC2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lw4vqS2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <type xmi:id="_Lw4vqi2EEeW7s6BrY-ZlNQ" name="State">
+        <modelElement href="smartcab.uml#_LKTQwC2EEeW7s6BrY-ZlNQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Lw4vqy2EEeW7s6BrY-ZlNQ" name="receiveRequest">
+      <modelElement href="smartcab.uml#_LJ8EYC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lw4vrC2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lw4vrS2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Lw4vri2EEeW7s6BrY-ZlNQ" name="qualifyCustomer">
+      <modelElement href="smartcab.uml#_LMdz8C2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lw4vry2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lw4vsC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Lw4vsS2EEeW7s6BrY-ZlNQ" name="c">
+        <modelElement href="smartcab.uml#_LMdz8S2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_Lw4vsi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Lw4vsy2EEeW7s6BrY-ZlNQ" name="Customer">
+          <modelElement href="smartcab.uml#_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Lw4vtC2EEeW7s6BrY-ZlNQ" name="processRequest">
+      <modelElement href="smartcab.uml#_LMfpIC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lw4vtS2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lw4vti2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Lw4vty2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMgQMC2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_Lw4vuC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Lw4vuS2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Lw4vui2EEeW7s6BrY-ZlNQ" name="completeRequest">
+      <modelElement href="smartcab.uml#_LMheUC2EEeW7s6BrY-ZlNQ"/>
+      <visibility xmi:id="_Lw4vuy2EEeW7s6BrY-ZlNQ" label="+"/>
+      <cardinality xmi:id="_Lw4vvC2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Lw4vvS2EEeW7s6BrY-ZlNQ" name="request">
+        <modelElement href="smartcab.uml#_LMiFYC2EEeW7s6BrY-ZlNQ"/>
+        <cardinality xmi:id="_Lw4vvi2EEeW7s6BrY-ZlNQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Lw4vvy2EEeW7s6BrY-ZlNQ" name="Request">
+          <modelElement href="smartcab.uml#_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
