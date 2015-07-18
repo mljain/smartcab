@@ -11,4 +11,6 @@ public interface State {
 	public void processRequest(Request request);
 
 	public void completeRequest(Request request);
+	
+	public void cancelRequest(Request request);
 }

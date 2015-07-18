@@ -1,4 +1,4 @@
-package com.smartcab.payment;
+package com.smartcab.design.payment;
 
 import com.smartcab.model.Invoice;
 

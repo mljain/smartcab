@@ -1,4 +1,4 @@
-package com.smartcab.payment;
+package com.smartcab.design.payment;
 
 public class CashPayment extends Payment {
 
@@ -6,12 +6,11 @@ public class CashPayment extends Payment {
 		super(pp);
 		// TODO Auto-generated constructor stub
 	}
-
-	@Override
-	public void process() {
-		processPayment();
-		updateTransaction();
-		
-	}
-
+   public void process() {
+   processPayment();
+      		updateTransaction();
+      		
+      	}
+   
+   
 }

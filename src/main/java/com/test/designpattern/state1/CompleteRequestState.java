@@ -25,4 +25,9 @@ public class CompleteRequestState implements State{
 		
 	}
 
+	public void cancelRequest(Request request) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
