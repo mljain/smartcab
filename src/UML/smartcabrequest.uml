@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_K5PV8C2EEeW7s6BrY-ZlNQ" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_K5PV8S2EEeW7s6BrY-ZlNQ" source="codegen">
         <details xmi:id="_K5PV8i2EEeW7s6BrY-ZlNQ" key="codegenDirectory" value="/smartcab/src/main/java"/>
-        <details xmi:id="_Ls9R4C2EEeW7s6BrY-ZlNQ" key="AssociatedSourceCode" value="/smartcab/src/main/java/com/test/designpattern/state1/CompleteRequestState.java;1004971834/1;/smartcab/src/main/java/com/test/designpattern/state1/Dispatcher.java;4196594466/1;/smartcab/src/main/java/com/test/designpattern/state1/ProcessRequestState.java;2416211269/1;/smartcab/src/main/java/com/test/designpattern/state1/ReceivedApplicationState.java;1005551991/1;/smartcab/src/main/java/com/test/designpattern/state1/ServiceRequest.java;1059730870/1;/smartcab/src/main/java/com/test/designpattern/state1/ServiceRequestImpl.java;3747496157/1;/smartcab/src/main/java/com/test/designpattern/state1/State.java;2737093372/1;"/>
+        <details xmi:id="_Ls9R4C2EEeW7s6BrY-ZlNQ" key="AssociatedSourceCode" value="/smartcab/src/main/java/com/smartcab/design/request/CompleteRequestState.java;1949381810/1;/smartcab/src/main/java/com/smartcab/design/request/Dispatcher.java;467492142/1;/smartcab/src/main/java/com/smartcab/design/request/ProcessRequestState.java;1447473503/1;/smartcab/src/main/java/com/smartcab/design/request/ReceiveRequestState.java;2366847521/1;/smartcab/src/main/java/com/smartcab/design/request/ReceivedApplicationState.java;1787461309/1;/smartcab/src/main/java/com/smartcab/design/request/ServiceRequest.java;2974444856/1;/smartcab/src/main/java/com/smartcab/design/request/ServiceRequestImpl.java;4181555733/1;/smartcab/src/main/java/com/smartcab/design/request/State.java;4246802901/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_LJZR0C2EEeW7s6BrY-ZlNQ">
@@ -38,6 +38,91 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_LH3AwS2EEeW7s6BrY-ZlNQ" name="test">
         <packagedElement xmi:type="uml:Package" xmi:id="_LH3n0C2EEeW7s6BrY-ZlNQ" name="designpattern">
           <packagedElement xmi:type="uml:Package" xmi:id="_LH6rIC2EEeW7s6BrY-ZlNQ" name="state1">
+            <packagedElement xmi:type="uml:Association" xmi:id="_LNhj4C2EEeW7s6BrY-ZlNQ" name="" memberEnd="_LJ95kC2EEeW7s6BrY-ZlNQ _LNhj4S2EEeW7s6BrY-ZlNQ">
+              <ownedEnd xmi:id="_LNhj4S2EEeW7s6BrY-ZlNQ" name="" type="_LJ5BEC2EEeW7s6BrY-ZlNQ" association="_LNhj4C2EEeW7s6BrY-ZlNQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_wegHEC2EEeW7s6BrY-ZlNQ" name="ReceiveRequestState">
+              <ownedAttribute xmi:id="_wek_kC2EEeW7s6BrY-ZlNQ" name="sericeRequest" visibility="private" type="_LJ5BEC2EEeW7s6BrY-ZlNQ" association="_wenb0C2EEeW7s6BrY-ZlNQ"/>
+              <interfaceRealization xmi:id="_weguIC2EEeW7s6BrY-ZlNQ" client="_wegHEC2EEeW7s6BrY-ZlNQ" supplier="_LKTQwC2EEeW7s6BrY-ZlNQ" contract="_LKTQwC2EEeW7s6BrY-ZlNQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wemNsC2EEeW7s6BrY-ZlNQ" name="ReceiveRequestState" specification="_wehVMC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_wemNsS2EEeW7s6BrY-ZlNQ" name="request" type="_LJ5BEC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_wemNsi2EEeW7s6BrY-ZlNQ" type="_wegHEC2EEeW7s6BrY-ZlNQ" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>sericeRequest = request;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wemNsy2EEeW7s6BrY-ZlNQ" name="receiveRequest" specification="_weh8Qy2EEeW7s6BrY-ZlNQ">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wemNtC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer" specification="_weijUC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_wemNtS2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wem0wC2EEeW7s6BrY-ZlNQ" name="processRequest" specification="_weijUi2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_wem0wS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_wem0wi2EEeW7s6BrY-ZlNQ" name="completeRequest" specification="_wejKYC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_wem0wy2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_48TZ0C2EEeW7s6BrY-ZlNQ" name="cancelRequest" specification="_48Q9kC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_48TZ0S2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_wehVMC2EEeW7s6BrY-ZlNQ" name="ReceiveRequestState" method="_wemNsC2EEeW7s6BrY-ZlNQ">
+                <eAnnotations xmi:id="_weh8QC2EEeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_weh8QS2EEeW7s6BrY-ZlNQ" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_wehVMS2EEeW7s6BrY-ZlNQ" name="request" type="_LJ5BEC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_weh8Qi2EEeW7s6BrY-ZlNQ" type="_wegHEC2EEeW7s6BrY-ZlNQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_weh8Qy2EEeW7s6BrY-ZlNQ" name="receiveRequest" method="_wemNsy2EEeW7s6BrY-ZlNQ"/>
+              <ownedOperation xmi:id="_weijUC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer" method="_wemNtC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_weijUS2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_weijUi2EEeW7s6BrY-ZlNQ" name="processRequest" method="_wem0wC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_weijUy2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_wejKYC2EEeW7s6BrY-ZlNQ" name="completeRequest" method="_wem0wi2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_wejKYS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_48Q9kC2EEeW7s6BrY-ZlNQ" name="cancelRequest" method="_48TZ0C2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_48RkoC2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_wenb0C2EEeW7s6BrY-ZlNQ" name="" memberEnd="_wenb0S2EEeW7s6BrY-ZlNQ _wek_kC2EEeW7s6BrY-ZlNQ">
+              <ownedEnd xmi:id="_wenb0S2EEeW7s6BrY-ZlNQ" name="" type="_wegHEC2EEeW7s6BrY-ZlNQ" association="_wenb0C2EEeW7s6BrY-ZlNQ"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LH3n0S2EEeW7s6BrY-ZlNQ" name="smartcab">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LH4O4C2EEeW7s6BrY-ZlNQ" name="request">
+          <packagedElement xmi:type="uml:Package" xmi:id="_LH4O4S2EEeW7s6BrY-ZlNQ" name="domain">
+            <packagedElement xmi:type="uml:Class" xmi:id="_LLI-QC2EEeW7s6BrY-ZlNQ" name="Customer"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_LLKzcC2EEeW7s6BrY-ZlNQ" name="Request"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_fwNS4C2GEeW7s6BrY-ZlNQ" name="design">
+          <packagedElement xmi:type="uml:Package" xmi:id="_fwOhAC2GEeW7s6BrY-ZlNQ" name="request">
             <packagedElement xmi:type="uml:Class" xmi:id="_LJXcoC2EEeW7s6BrY-ZlNQ" name="CompleteRequestState">
               <interfaceRealization xmi:id="_LLPr8C2EEeW7s6BrY-ZlNQ" client="_LJXcoC2EEeW7s6BrY-ZlNQ" supplier="_LKTQwC2EEeW7s6BrY-ZlNQ" contract="_LKTQwC2EEeW7s6BrY-ZlNQ"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LNJJYC2EEeW7s6BrY-ZlNQ" name="receiveRequest" specification="_LJbHAC2EEeW7s6BrY-ZlNQ">
@@ -67,6 +152,13 @@
 		
 	</body>
               </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_0SkOkC2EEeW7s6BrY-ZlNQ" name="cancelRequest" specification="_0SiZYC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_0SkOkS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
               <ownedOperation xmi:id="_LJbHAC2EEeW7s6BrY-ZlNQ" name="receiveRequest" method="_LNJJYC2EEeW7s6BrY-ZlNQ"/>
               <ownedOperation xmi:id="_LMJD0C2EEeW7s6BrY-ZlNQ" name="qualifyCustomer" method="_LNJwcC2EEeW7s6BrY-ZlNQ">
                 <ownedParameter xmi:id="_LMJq4C2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
@@ -76,6 +168,9 @@
               </ownedOperation>
               <ownedOperation xmi:id="_LMMuMC2EEeW7s6BrY-ZlNQ" name="completeRequest" method="_LNK-kC2EEeW7s6BrY-ZlNQ">
                 <ownedParameter xmi:id="_LMMuMS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_0SiZYC2EEeW7s6BrY-ZlNQ" name="cancelRequest" method="_0SkOkC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_0SjAcC2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Interface" xmi:id="_LJhNoC2EEeW7s6BrY-ZlNQ" name="Dispatcher"/>
@@ -108,6 +203,13 @@
 		
 	</body>
               </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_178AIC2EEeW7s6BrY-ZlNQ" name="cancelRequest" specification="_176K8C2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_178AIS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
               <ownedOperation xmi:id="_LJkQ8C2EEeW7s6BrY-ZlNQ" name="receiveRequest" method="_LNMMsC2EEeW7s6BrY-ZlNQ"/>
               <ownedOperation xmi:id="_LMPKcC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer" method="_LNMzwC2EEeW7s6BrY-ZlNQ">
                 <ownedParameter xmi:id="_LMPKcS2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
@@ -118,13 +220,81 @@
               <ownedOperation xmi:id="_LMS00C2EEeW7s6BrY-ZlNQ" name="completeRequest" method="_LNOB4C2EEeW7s6BrY-ZlNQ">
                 <ownedParameter xmi:id="_LMS00S2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
+              <ownedOperation xmi:id="_176K8C2EEeW7s6BrY-ZlNQ" name="cancelRequest" method="_178AIC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_176K8S2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_nH8nYC2EEeW7s6BrY-ZlNQ" name="ReceiveRequestState">
+              <ownedAttribute xmi:id="_nIHmgC2EEeW7s6BrY-ZlNQ" name="sericeRequest" visibility="private" type="_LJ5BEC2EEeW7s6BrY-ZlNQ" association="_fwzv0S2GEeW7s6BrY-ZlNQ"/>
+              <interfaceRealization xmi:id="_nH9OcC2EEeW7s6BrY-ZlNQ" client="_nH8nYC2EEeW7s6BrY-ZlNQ" supplier="_LKTQwC2EEeW7s6BrY-ZlNQ" contract="_LKTQwC2EEeW7s6BrY-ZlNQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_nILQ4C2EEeW7s6BrY-ZlNQ" name="ReceiveRequestState" specification="_nH-ckC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_fwql4C2GEeW7s6BrY-ZlNQ" type="_nH8nYC2EEeW7s6BrY-ZlNQ" direction="return"/>
+                <language>java</language>
+                <body>sericeRequest = request;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_nIL38C2EEeW7s6BrY-ZlNQ" name="qualifyCustomer" specification="_nIARwC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_nIL38S2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fwrM8C2GEeW7s6BrY-ZlNQ" name="receiveRequest" specification="_fwVOsC2GEeW7s6BrY-ZlNQ">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fwrM8S2GEeW7s6BrY-ZlNQ" name="processRequest" specification="_fwVOsS2GEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_fwrM8i2GEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fwr0AC2GEeW7s6BrY-ZlNQ" name="completeRequest" specification="_fwV1wC2GEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_fwr0AS2GEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fwr0Ai2GEeW7s6BrY-ZlNQ" name="cancelRequest" specification="_fwV1wi2GEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_fwr0Ay2GEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_nH-ckC2EEeW7s6BrY-ZlNQ" name="ReceiveRequestState" method="_nILQ4C2EEeW7s6BrY-ZlNQ">
+                <eAnnotations xmi:id="_nH_DoC2EEeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_nH_DoS2EEeW7s6BrY-ZlNQ" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_fwTZgC2GEeW7s6BrY-ZlNQ" type="_nH8nYC2EEeW7s6BrY-ZlNQ" direction="return"/>
+                <ownedParameter xmi:id="_LNP3ES2EEeW7s6BrY-ZlNQ" name="request" type="_LJ5BEC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_nIARwC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer" method="_nIL38C2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_LMWfMC2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_fwVOsC2GEeW7s6BrY-ZlNQ" name="receiveRequest" method="_fwrM8C2GEeW7s6BrY-ZlNQ"/>
+              <ownedOperation xmi:id="_fwVOsS2GEeW7s6BrY-ZlNQ" name="processRequest" method="_fwrM8S2GEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_fwVOsi2GEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_fwV1wC2GEeW7s6BrY-ZlNQ" name="completeRequest" method="_fwr0AC2GEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_fwV1wS2GEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_fwV1wi2GEeW7s6BrY-ZlNQ" name="cancelRequest" method="_fwr0Ai2GEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_fwV1wy2GEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_LJsz0C2EEeW7s6BrY-ZlNQ" name="ReceivedApplicationState">
-              <ownedAttribute xmi:id="_LM7uAC2EEeW7s6BrY-ZlNQ" name="sericeRequest" visibility="private" type="_LJ5BEC2EEeW7s6BrY-ZlNQ" association="_LNsjAC2EEeW7s6BrY-ZlNQ"/>
+              <ownedAttribute xmi:id="_LM7uAC2EEeW7s6BrY-ZlNQ" name="sericeRequest" visibility="private" type="_LJ5BEC2EEeW7s6BrY-ZlNQ" association="_fw0W4S2GEeW7s6BrY-ZlNQ"/>
               <interfaceRealization xmi:id="_LLduYC2EEeW7s6BrY-ZlNQ" client="_LJsz0C2EEeW7s6BrY-ZlNQ" supplier="_LKTQwC2EEeW7s6BrY-ZlNQ" contract="_LKTQwC2EEeW7s6BrY-ZlNQ"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LNP3EC2EEeW7s6BrY-ZlNQ" name="ReceivedApplicationState" specification="_LLe8gC2EEeW7s6BrY-ZlNQ">
-                <ownedParameter xmi:id="_LNP3ES2EEeW7s6BrY-ZlNQ" name="request" type="_LJ5BEC2EEeW7s6BrY-ZlNQ"/>
-                <ownedParameter xmi:id="_LNP3Ei2EEeW7s6BrY-ZlNQ" type="_LJsz0C2EEeW7s6BrY-ZlNQ" direction="return"/>
+                <ownedParameter xmi:id="_LNP3Ei2EEeW7s6BrY-ZlNQ" type="_LJsz0C2EEeW7s6BrY-ZlNQ" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>sericeRequest = request;
 	</body>
@@ -156,6 +326,13 @@
 		
 	</body>
               </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_3eZ4cC2EEeW7s6BrY-ZlNQ" name="cancelRequest" specification="_3eYDQC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_3eZ4cS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
               <ownedOperation xmi:id="_LJv3IC2EEeW7s6BrY-ZlNQ" name="receiveRequest" method="_LNQeIC2EEeW7s6BrY-ZlNQ"/>
               <ownedOperation xmi:id="_LLe8gC2EEeW7s6BrY-ZlNQ" name="ReceivedApplicationState" method="_LNP3EC2EEeW7s6BrY-ZlNQ">
                 <eAnnotations xmi:id="_LLfjkC2EEeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -165,36 +342,46 @@
                 <ownedParameter xmi:id="_LLfjki2EEeW7s6BrY-ZlNQ" type="_LJsz0C2EEeW7s6BrY-ZlNQ" direction="return"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMV4IC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer" method="_LNRFMC2EEeW7s6BrY-ZlNQ">
-                <ownedParameter xmi:id="_LMWfMC2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMdz8S2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMXtUC2EEeW7s6BrY-ZlNQ" name="processRequest" method="_LNRsQC2EEeW7s6BrY-ZlNQ">
                 <ownedParameter xmi:id="_LMXtUS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMgQMC2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMZigC2EEeW7s6BrY-ZlNQ" name="completeRequest" method="_LNSTUC2EEeW7s6BrY-ZlNQ">
                 <ownedParameter xmi:id="_LMZigS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMiFYC2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_3eYDQC2EEeW7s6BrY-ZlNQ" name="cancelRequest" method="_3eZ4cC2EEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_3eYDQS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Interface" xmi:id="_LJ5BEC2EEeW7s6BrY-ZlNQ" name="ServiceRequest">
-              <ownedAttribute xmi:id="_LJ5oIC2EEeW7s6BrY-ZlNQ" name="dispatcherStatus" type="_LJhNoC2EEeW7s6BrY-ZlNQ" association="_LNqt0C2EEeW7s6BrY-ZlNQ">
+              <ownedAttribute xmi:id="_LJ5oIC2EEeW7s6BrY-ZlNQ" name="dispatcherStatus" type="_LJhNoC2EEeW7s6BrY-ZlNQ" association="_fwyhsS2GEeW7s6BrY-ZlNQ">
                 <defaultValue xmi:type="uml:LiteralString" xmi:id="_LJ6PMC2EEeW7s6BrY-ZlNQ" value="null"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_LJ95kC2EEeW7s6BrY-ZlNQ" name="state" type="_LKTQwC2EEeW7s6BrY-ZlNQ" association="_LNhj4C2EEeW7s6BrY-ZlNQ"/>
               <ownedOperation xmi:id="_LJ8EYC2EEeW7s6BrY-ZlNQ" name="receiveRequest"/>
               <ownedOperation xmi:id="_LMdz8C2EEeW7s6BrY-ZlNQ" name="qualifyCustomer">
-                <ownedParameter xmi:id="_LMdz8S2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMnk8C2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMfpIC2EEeW7s6BrY-ZlNQ" name="processRequest">
-                <ownedParameter xmi:id="_LMgQMC2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMozES2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMheUC2EEeW7s6BrY-ZlNQ" name="completeRequest">
-                <ownedParameter xmi:id="_LMiFYC2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMqoQS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Hw95cC2wEeW7s6BrY-ZlNQ" name="cancelRequest">
+                <ownedParameter xmi:id="_Hw95cS2wEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_LKGccC2EEeW7s6BrY-ZlNQ" name="ServiceRequestImpl">
-              <ownedAttribute xmi:id="_LNAmgC2EEeW7s6BrY-ZlNQ" name="state" visibility="package" type="_LKTQwC2EEeW7s6BrY-ZlNQ" association="_LNuYMS2EEeW7s6BrY-ZlNQ"/>
+              <ownedAttribute xmi:id="_LNAmgC2EEeW7s6BrY-ZlNQ" name="state" visibility="package" type="_LKTQwC2EEeW7s6BrY-ZlNQ" association="_fwwsgC2GEeW7s6BrY-ZlNQ"/>
               <interfaceRealization xmi:id="_LLs-8C2EEeW7s6BrY-ZlNQ" client="_LKGccC2EEeW7s6BrY-ZlNQ" supplier="_LJ5BEC2EEeW7s6BrY-ZlNQ" contract="_LJ5BEC2EEeW7s6BrY-ZlNQ"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LNUvkC2EEeW7s6BrY-ZlNQ" name="ServiceRequestImpl" specification="_LKHqkC2EEeW7s6BrY-ZlNQ">
-                <ownedParameter xmi:id="_LNUvkS2EEeW7s6BrY-ZlNQ" type="_LKGccC2EEeW7s6BrY-ZlNQ" direction="return"/>
+                <ownedParameter xmi:id="_LNUvkS2EEeW7s6BrY-ZlNQ" type="_LKGccC2EEeW7s6BrY-ZlNQ" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>state = new ReceivedApplicationState(new ServiceRequestImpl());
 	</body>
@@ -206,7 +393,9 @@
 	</body>
               </ownedBehavior>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LNV9sC2EEeW7s6BrY-ZlNQ" name="getState" specification="_LKI4sC2EEeW7s6BrY-ZlNQ">
-                <ownedParameter xmi:id="_LNV9sS2EEeW7s6BrY-ZlNQ" type="_LKTQwC2EEeW7s6BrY-ZlNQ" direction="return"/>
+                <ownedParameter xmi:id="_LNV9sS2EEeW7s6BrY-ZlNQ" type="_LKTQwC2EEeW7s6BrY-ZlNQ" direction="return">
+                  <name xsi:nil="true"/>
+                </ownedParameter>
                 <language>java</language>
                 <body>return state;
 	</body>
@@ -238,6 +427,13 @@
 
 	</body>
               </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZZ_wC2wEeW7s6BrY-ZlNQ" name="cancelRequest" specification="_LZYKkC2wEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_LZZ_wS2wEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
               <ownedOperation xmi:id="_LKHqkC2EEeW7s6BrY-ZlNQ" name="ServiceRequestImpl" method="_LNUvkC2EEeW7s6BrY-ZlNQ">
                 <eAnnotations xmi:id="_LKIRoC2EEeW7s6BrY-ZlNQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
                   <details xmi:id="_LKIRoS2EEeW7s6BrY-ZlNQ" key="create"/>
@@ -252,47 +448,45 @@
                 <ownedParameter xmi:id="_LLu0IS2EEeW7s6BrY-ZlNQ" name="s" type="_LKTQwC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMm94C2EEeW7s6BrY-ZlNQ" name="qualifyCustomer" method="_LNXL0C2EEeW7s6BrY-ZlNQ">
-                <ownedParameter xmi:id="_LMnk8C2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMu5sS2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMozEC2EEeW7s6BrY-ZlNQ" name="processRequest" method="_LNXy4C2EEeW7s6BrY-ZlNQ">
-                <ownedParameter xmi:id="_LMozES2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMwu4S2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMqoQC2EEeW7s6BrY-ZlNQ" name="completeRequest" method="_LNYZ8C2EEeW7s6BrY-ZlNQ">
-                <ownedParameter xmi:id="_LMqoQS2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_LMykES2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_LZYKkC2wEeW7s6BrY-ZlNQ" name="cancelRequest" method="_LZZ_wC2wEeW7s6BrY-ZlNQ">
+                <ownedParameter xmi:id="_LZYKkS2wEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Interface" xmi:id="_LKTQwC2EEeW7s6BrY-ZlNQ" name="State">
               <ownedOperation xmi:id="_LKUe4C2EEeW7s6BrY-ZlNQ" name="receiveRequest"/>
               <ownedOperation xmi:id="_LMu5sC2EEeW7s6BrY-ZlNQ" name="qualifyCustomer">
-                <ownedParameter xmi:id="_LMu5sS2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_nIARwS2EEeW7s6BrY-ZlNQ" name="c" type="_LLI-QC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMwu4C2EEeW7s6BrY-ZlNQ" name="processRequest">
-                <ownedParameter xmi:id="_LMwu4S2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_nIBf4C2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
               <ownedOperation xmi:id="_LMykEC2EEeW7s6BrY-ZlNQ" name="completeRequest">
-                <ownedParameter xmi:id="_LMykES2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+                <ownedParameter xmi:id="_nICG8S2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_y48wQC2EEeW7s6BrY-ZlNQ" name="cancelRequest">
+                <ownedParameter xmi:id="_y49XUC2EEeW7s6BrY-ZlNQ" name="request" type="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
               </ownedOperation>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_LNhj4C2EEeW7s6BrY-ZlNQ" name="" memberEnd="_LJ95kC2EEeW7s6BrY-ZlNQ _LNhj4S2EEeW7s6BrY-ZlNQ">
-              <ownedEnd xmi:id="_LNhj4S2EEeW7s6BrY-ZlNQ" name="" type="_LJ5BEC2EEeW7s6BrY-ZlNQ" association="_LNhj4C2EEeW7s6BrY-ZlNQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_fwwsgC2GEeW7s6BrY-ZlNQ" name="" memberEnd="_fwwsgS2GEeW7s6BrY-ZlNQ _LNAmgC2EEeW7s6BrY-ZlNQ">
+              <ownedEnd xmi:id="_fwwsgS2GEeW7s6BrY-ZlNQ" name="" type="_LKGccC2EEeW7s6BrY-ZlNQ" association="_fwwsgC2GEeW7s6BrY-ZlNQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_LNqt0C2EEeW7s6BrY-ZlNQ" name="" memberEnd="_LNqt0S2EEeW7s6BrY-ZlNQ _LJ5oIC2EEeW7s6BrY-ZlNQ">
-              <ownedEnd xmi:id="_LNqt0S2EEeW7s6BrY-ZlNQ" name="" type="_LJ5BEC2EEeW7s6BrY-ZlNQ" association="_LNqt0C2EEeW7s6BrY-ZlNQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_fwyhsS2GEeW7s6BrY-ZlNQ" name="" memberEnd="_fwyhsi2GEeW7s6BrY-ZlNQ _LJ5oIC2EEeW7s6BrY-ZlNQ">
+              <ownedEnd xmi:id="_fwyhsi2GEeW7s6BrY-ZlNQ" name="" type="_LJ5BEC2EEeW7s6BrY-ZlNQ" association="_fwyhsS2GEeW7s6BrY-ZlNQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_LNsjAC2EEeW7s6BrY-ZlNQ" name="" memberEnd="_LNsjAS2EEeW7s6BrY-ZlNQ _LM7uAC2EEeW7s6BrY-ZlNQ">
-              <ownedEnd xmi:id="_LNsjAS2EEeW7s6BrY-ZlNQ" name="" type="_LJsz0C2EEeW7s6BrY-ZlNQ" association="_LNsjAC2EEeW7s6BrY-ZlNQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_fwzv0S2GEeW7s6BrY-ZlNQ" name="" memberEnd="_fwzv0i2GEeW7s6BrY-ZlNQ _nIHmgC2EEeW7s6BrY-ZlNQ">
+              <ownedEnd xmi:id="_fwzv0i2GEeW7s6BrY-ZlNQ" name="" type="_nH8nYC2EEeW7s6BrY-ZlNQ" association="_fwzv0S2GEeW7s6BrY-ZlNQ"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_LNuYMS2EEeW7s6BrY-ZlNQ" name="" memberEnd="_LNuYMi2EEeW7s6BrY-ZlNQ _LNAmgC2EEeW7s6BrY-ZlNQ">
-              <ownedEnd xmi:id="_LNuYMi2EEeW7s6BrY-ZlNQ" name="" type="_LKGccC2EEeW7s6BrY-ZlNQ" association="_LNuYMS2EEeW7s6BrY-ZlNQ"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_fw0W4S2GEeW7s6BrY-ZlNQ" name="" memberEnd="_fw0W4i2GEeW7s6BrY-ZlNQ _LM7uAC2EEeW7s6BrY-ZlNQ">
+              <ownedEnd xmi:id="_fw0W4i2GEeW7s6BrY-ZlNQ" name="" type="_LJsz0C2EEeW7s6BrY-ZlNQ" association="_fw0W4S2GEeW7s6BrY-ZlNQ"/>
             </packagedElement>
-          </packagedElement>
-        </packagedElement>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_LH3n0S2EEeW7s6BrY-ZlNQ" name="smartcab">
-        <packagedElement xmi:type="uml:Package" xmi:id="_LH4O4C2EEeW7s6BrY-ZlNQ" name="request">
-          <packagedElement xmi:type="uml:Package" xmi:id="_LH4O4S2EEeW7s6BrY-ZlNQ" name="domain">
-            <packagedElement xmi:type="uml:Class" xmi:id="_LLI-QC2EEeW7s6BrY-ZlNQ" name="Customer"/>
-            <packagedElement xmi:type="uml:Class" xmi:id="_LLKzcC2EEeW7s6BrY-ZlNQ" name="Request"/>
           </packagedElement>
         </packagedElement>
       </packagedElement>
@@ -312,7 +506,13 @@
   <UMLLabProfile:Reference xmi:id="_LLMBkC2EEeW7s6BrY-ZlNQ" base_Element="_LLKzcC2EEeW7s6BrY-ZlNQ"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_LM88IC2EEeW7s6BrY-ZlNQ" base_Element="_LM7uAC2EEeW7s6BrY-ZlNQ"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_LNB0oC2EEeW7s6BrY-ZlNQ" base_Element="_LNAmgC2EEeW7s6BrY-ZlNQ"/>
-  <UMLLabProfile:Reference xmi:id="_LNr78C2EEeW7s6BrY-ZlNQ" base_Element="_LNqt0C2EEeW7s6BrY-ZlNQ"/>
-  <UMLLabProfile:Reference xmi:id="_LNuYMC2EEeW7s6BrY-ZlNQ" base_Element="_LNsjAC2EEeW7s6BrY-ZlNQ"/>
-  <UMLLabProfile:Reference xmi:id="_LNwNYC2EEeW7s6BrY-ZlNQ" base_Element="_LNuYMS2EEeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_nII0oC2EEeW7s6BrY-ZlNQ" base_Element="_nIHmgC2EEeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_welmoC2EEeW7s6BrY-ZlNQ" base_Element="_wek_kC2EEeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Reference xmi:id="_weop8C2EEeW7s6BrY-ZlNQ" base_Element="_wenb0C2EEeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Reference xmi:id="_fwyhsC2GEeW7s6BrY-ZlNQ" base_Element="_fwwsgC2GEeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Reference xmi:id="_fwzv0C2GEeW7s6BrY-ZlNQ" base_Element="_fwyhsS2GEeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Reference xmi:id="_fw0W4C2GEeW7s6BrY-ZlNQ" base_Element="_fwzv0S2GEeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Reference xmi:id="_fw098C2GEeW7s6BrY-ZlNQ" base_Element="_fw0W4S2GEeW7s6BrY-ZlNQ"/>
+  <UMLLabProfile:Patch xmi:id="_j4TJoC2GEeW7s6BrY-ZlNQ" base_Element="_wegHEC2EEeW7s6BrY-ZlNQ" patchText="@@ -1,843 +0,0 @@&#xA;-package com.test.designpattern.state1;%0Aimport com.smartcab.design.request.ServiceRequest;%0D%0Aimport com.smartcab.design.request.State;%0D%0A%0Aimport com.smartcab.request.domain.Customer;%0Aimport com.smartcab.request.domain.Request;%0A%0Apublic class ReceiveRequestState implements State %7B%0A%0A%09private ServiceRequest sericeRequest;%0A%0A%09public ReceiveRequestState(ServiceRequest request) %7B%0A%09%09sericeRequest = request;%0A%09%7D%0A%0A%09public void receiveRequest() %7B%0A%09%09// TODO Auto-generated method stub%0A%09%09%0A%09%7D%0A%0A%09public void qualifyCustomer(Customer c) %7B%0A%09%09// TODO Auto-generated method stub%0A%09%09%0A%09%7D%0A%0A%09public void processRequest(Request request) %7B%0A%09%09// TODO Auto-generated method stub%0A%09%09%0A%09%7D%0A%0A%09public void completeRequest(Request request) %7B%0A%09%09// TODO Auto-generated method stub%0A%09%09%0A%09%7D%0A%0A%09public void cancelRequest(Request request) %7B%0A%09%09// TODO Auto-generated method stub%0A%09%09%0A%09%7D%0A%0A%09%0A%7D%0A&#xA;" conflicting="false"/>
+  <UMLLabProfile:Patch xmi:id="_j4UXwC2GEeW7s6BrY-ZlNQ" base_Element="_LJsz0C2EEeW7s6BrY-ZlNQ" patchText="@@ -508,33 +508,16 @@&#xA; Request &#xA;-request, Request &#xA; request)&#xA;@@ -604,25 +604,8 @@&#xA; est &#xA;-request, Request &#xA; requ&#xA;" conflicting="false"/>
 </xmi:XMI>
