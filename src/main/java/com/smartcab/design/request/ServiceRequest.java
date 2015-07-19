@@ -13,6 +13,7 @@ public interface ServiceRequest {
 	public void processRequest(Request request);
 
 	public void completeRequest(Request request);
+	public void cancelRequest(Request request);
 
 	public State getState();
 

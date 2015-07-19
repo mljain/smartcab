@@ -6,11 +6,11 @@ public class CashPayment extends Payment {
 		super(pp);
 		// TODO Auto-generated constructor stub
 	}
-   public void process() {
-   processPayment();
-      		updateTransaction();
-      		
-      	}
-   
-   
+
+	public void process() {
+		processPayment();
+		updateTransaction();
+
+	}
+
 }

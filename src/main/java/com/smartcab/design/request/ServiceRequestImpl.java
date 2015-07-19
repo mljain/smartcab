@@ -38,4 +38,9 @@ public class ServiceRequestImpl implements ServiceRequest {
 
 	}
 
+	public void cancelRequest(Request request) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
