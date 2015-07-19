@@ -1,6 +1,5 @@
 package com.smartcab.design.invoice;
 
-import com.smartcab.design.payment.Payment;
 
 public class Invoice {
 	

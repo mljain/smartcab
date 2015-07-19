@@ -15,6 +15,7 @@ public class TaxCalculator {
 	}
 
 	public double salesTotal() { 
+		//TODO calculation logic goes here
 		return taxvalue;
 	}
 }

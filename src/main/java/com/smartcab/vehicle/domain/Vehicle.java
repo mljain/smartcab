@@ -10,6 +10,7 @@ private String modelName;
 private String driverId;
 private VehicleType vehicleType;
 private GeoLocation geolocation;
+private String licencePlate;
 /**
  * @return the vehicleId
  */
