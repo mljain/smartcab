@@ -1,6 +1,6 @@
 package com.smartcab.design.payment;
 
-import com.smartcab.model.Invoice;
+import com.smartcab.design.invoice.Invoice;
 
 public abstract class Payment {
 	protected PaymenProcessor _pp;
