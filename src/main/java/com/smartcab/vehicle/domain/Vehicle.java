@@ -12,6 +12,18 @@ private VehicleType vehicleType;
 private GeoLocation geolocation;
 private String licencePlate;
 /**
+ * @return the licencePlate
+ */
+public String getLicencePlate() {
+	return licencePlate;
+}
+/**
+ * @param licencePlate the licencePlate to set
+ */
+public void setLicencePlate(String licencePlate) {
+	this.licencePlate = licencePlate;
+}
+/**
  * @return the vehicleId
  */
 public int getVehicleId() {
