@@ -2,6 +2,8 @@ package com.smartcab.request.domain;
 
 import java.util.Date;
 
+import com.smartcab.notification.domain.Notification;
+
 public class Request {	
 	private int requestId;
 	private Date deparatureTime;
@@ -9,6 +11,21 @@ public class Request {
 	private RequestStatus requestStatus; 
 	private GeoLocation geoLocation;
 	private Zone zone;
+
+	private Notification notification;
+
+	/**
+	 * @return the notification
+	 */
+	public Notification getNotification() {
+		return notification;
+	}
+	/**
+	 * @param notification the notification to set
+	 */
+	public void setNotification(Notification notification) {
+		this.notification = notification;
+	}
 	/**
 	 * @return the zone
 	 */

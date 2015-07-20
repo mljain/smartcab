@@ -11,6 +11,18 @@ public class Driver {
 	private DriverType driverType;
 	private DriverBackgroundCheck bgCheck;
 	/**
+	 * @return the bgCheck
+	 */
+	public DriverBackgroundCheck getBgCheck() {
+		return bgCheck;
+	}
+	/**
+	 * @param bgCheck the bgCheck to set
+	 */
+	public void setBgCheck(DriverBackgroundCheck bgCheck) {
+		this.bgCheck = bgCheck;
+	}
+	/**
 	 * @return the driverId
 	 */
 	public int getDriverId() {

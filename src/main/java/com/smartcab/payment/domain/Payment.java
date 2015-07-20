@@ -1,5 +1,8 @@
 package com.smartcab.payment.domain;
 
+import com.smartcab.notification.domain.Notification;
+import com.smartcab.request.domain.Request;
+
 public class Payment {
 	private int invoiceId;
 	private double amount;
@@ -7,6 +10,20 @@ public class Payment {
 	private int customerId;
 	private int requestId;
 	private int driverId;
+	private Notification notification;
+	/**
+	 * @return the notification
+	 */
+	public Notification getNotification() {
+		return notification;
+	}
+
+	/**
+	 * @param notification the notification to set
+	 */
+	public void setNotification(Notification notification) {
+		this.notification = notification;
+	}
 
 	/**
 	 * @return the invoiceId
