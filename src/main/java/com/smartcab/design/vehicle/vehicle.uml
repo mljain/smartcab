@@ -320,6 +320,9 @@
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_P1LwMC6wEeWN-YWiwVyHLQ" name="VehicleManagerAbstruct" isAbstract="true">
+              <ownedComment xmi:id="_vVBXAC63EeWUGulxEaPKfw" annotatedElement="_P1LwMC6wEeWN-YWiwVyHLQ">
+                <body>Abstruct Factory Design Pattern</body>
+              </ownedComment>
               <interfaceRealization xmi:id="_P1460S6wEeWN-YWiwVyHLQ" client="_P1LwMC6wEeWN-YWiwVyHLQ" supplier="_P1HewC6wEeWN-YWiwVyHLQ" contract="_P1HewC6wEeWN-YWiwVyHLQ"/>
               <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2ZRIy6wEeWN-YWiwVyHLQ" name="getVehicleManager" specification="_P1OzgC6wEeWN-YWiwVyHLQ">
                 <ownedParameter xmi:id="_P2ZRJC6wEeWN-YWiwVyHLQ" name="managerType">

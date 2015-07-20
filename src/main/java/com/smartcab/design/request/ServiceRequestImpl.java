@@ -7,7 +7,7 @@ public class ServiceRequestImpl implements ServiceRequest {
 	State state;
 
 	public ServiceRequestImpl() {
-		state = new ReceivedApplicationState(new ServiceRequestImpl());
+		state = new ReceiveRequestState(new ServiceRequestImpl());
 	}
 
 	public void setState(State s) {

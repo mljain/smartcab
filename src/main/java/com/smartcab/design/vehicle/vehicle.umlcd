@@ -3,32 +3,33 @@
   <modelElement href="vehicle.uml#_P0nvgC6wEeWN-YWiwVyHLQ"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_QBML4C6wEeWN-YWiwVyHLQ" sourceAnchor="168.0,0.0" targetAnchor="256.0,56.0" dashed="true" superClass="_QBJIkC6wEeWN-YWiwVyHLQ" subClass="_QBQdUC6wEeWN-YWiwVyHLQ">
     <modelElement href="vehicle.uml#_P1460S6wEeWN-YWiwVyHLQ"/>
-    <bendpoints xmi:id="_sfVLAi6xEeWN-YWiwVyHLQ" sourceY="-126" targetX="176"/>
+    <bendpoints xmi:id="_v080Qy63EeWUGulxEaPKfw" sourceY="-126" targetX="176"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_QBMy8C6wEeWN-YWiwVyHLQ" sourceAnchor="104.0,0.0" targetAnchor="168.0,71.0" superClass="_QBQdUC6wEeWN-YWiwVyHLQ" subClass="_QA0_gC6wEeWN-YWiwVyHLQ">
     <modelElement href="vehicle.uml#_P1uiwC6wEeWN-YWiwVyHLQ"/>
-    <bendpoints xmi:id="_sfVyEi6xEeWN-YWiwVyHLQ" sourceY="-30" targetX="70" targetY="92"/>
-    <bendpoints xmi:id="_sfVyEy6xEeWN-YWiwVyHLQ" sourceX="-70" sourceY="-30" targetY="92"/>
+    <bendpoints xmi:id="_v080QS63EeWUGulxEaPKfw" sourceY="-30" targetX="70" targetY="92"/>
+    <bendpoints xmi:id="_v080Qi63EeWUGulxEaPKfw" sourceX="-70" sourceY="-30" targetY="92"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_QBMy8S6wEeWN-YWiwVyHLQ" sourceAnchor="129.0,0.0" targetAnchor="168.0,71.0" superClass="_QBQdUC6wEeWN-YWiwVyHLQ" subClass="_QA6fEC6wEeWN-YWiwVyHLQ">
     <modelElement href="vehicle.uml#_P1wX8C6wEeWN-YWiwVyHLQ"/>
-    <bendpoints xmi:id="_sfVyFC6xEeWN-YWiwVyHLQ" sourceY="-31" targetX="-153" targetY="92"/>
-    <bendpoints xmi:id="_sfWZIC6xEeWN-YWiwVyHLQ" sourceX="153" sourceY="-31" targetY="92"/>
+    <bendpoints xmi:id="_v08NMC63EeWUGulxEaPKfw" sourceY="-31" targetX="-153" targetY="92"/>
+    <bendpoints xmi:id="_v08NMS63EeWUGulxEaPKfw" sourceX="153" sourceY="-31" targetY="92"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_QBMy8i6wEeWN-YWiwVyHLQ" sourceAnchor="88.0,0.0" targetAnchor="168.0,71.0" superClass="_QBQdUC6wEeWN-YWiwVyHLQ" subClass="_QA_-oC6wEeWN-YWiwVyHLQ">
     <modelElement href="vehicle.uml#_P1y0MC6wEeWN-YWiwVyHLQ"/>
-    <bendpoints xmi:id="_sfWZIS6xEeWN-YWiwVyHLQ" sourceY="-31" targetX="278" targetY="92"/>
-    <bendpoints xmi:id="_sfWZIi6xEeWN-YWiwVyHLQ" sourceX="-278" sourceY="-31" targetY="92"/>
+    <bendpoints xmi:id="_v08NMi63EeWUGulxEaPKfw" sourceY="-31" targetX="278" targetY="92"/>
+    <bendpoints xmi:id="_v080QC63EeWUGulxEaPKfw" sourceX="-278" sourceY="-31" targetY="92"/>
   </edges>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_QBMy8y6wEeWN-YWiwVyHLQ" sourceAnchor="107.0,0.0" targetAnchor="168.0,71.0" superClass="_QBQdUC6wEeWN-YWiwVyHLQ" subClass="_QBE3IC6wEeWN-YWiwVyHLQ">
     <modelElement href="vehicle.uml#_P10pYC6wEeWN-YWiwVyHLQ"/>
-    <bendpoints xmi:id="_sfVLAC6xEeWN-YWiwVyHLQ" sourceY="-32" targetX="-413" targetY="92"/>
-    <bendpoints xmi:id="_sfVLAS6xEeWN-YWiwVyHLQ" sourceX="413" sourceY="-32" targetY="92"/>
+    <bendpoints xmi:id="_v07mIC63EeWUGulxEaPKfw" sourceY="-32" targetX="-413" targetY="92"/>
+    <bendpoints xmi:id="_v07mIS63EeWUGulxEaPKfw" sourceX="413" sourceY="-32" targetY="92"/>
   </edges>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hrLr8C6xEeWN-YWiwVyHLQ" sourceAnchor="137.0,80.0" targetAnchor="134.0,0.0" targetItem="_QA0_gC6wEeWN-YWiwVyHLQ" sourceItem="_hrGzcC6xEeWN-YWiwVyHLQ">
     <bendpoints xmi:id="_sfVyEC6xEeWN-YWiwVyHLQ" sourceY="239" targetX="208" targetY="-8"/>
     <bendpoints xmi:id="_sfVyES6xEeWN-YWiwVyHLQ" sourceX="-208" sourceY="239" targetY="-8"/>
   </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_vVB-EC63EeWUGulxEaPKfw" sourceAnchor="63.0,80.0" targetAnchor="321.0,0.0" targetItem="_QBQdUC6wEeWN-YWiwVyHLQ" sourceItem="_vVAv8C63EeWUGulxEaPKfw"/>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_QBJIkC6wEeWN-YWiwVyHLQ" name="VehicleManager" subclassedBy="_QBML4C6wEeWN-YWiwVyHLQ">
     <modelElement href="vehicle.uml#_P1HewC6wEeWN-YWiwVyHLQ"/>
     <visualProperties xmi:id="_QBJIkS6wEeWN-YWiwVyHLQ" position="-387.0,-253.0" size="256.0,111.0"/>
@@ -534,7 +535,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_QBQdUC6wEeWN-YWiwVyHLQ" name="VehicleManagerAbstruct" abstractClass="true" generalizations="_QBML4C6wEeWN-YWiwVyHLQ" subclassedBy="_QBMy8C6wEeWN-YWiwVyHLQ _QBMy8S6wEeWN-YWiwVyHLQ _QBMy8i6wEeWN-YWiwVyHLQ _QBMy8y6wEeWN-YWiwVyHLQ">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_QBQdUC6wEeWN-YWiwVyHLQ" comments="_vVAv8C63EeWUGulxEaPKfw" targetConnectionVisual="_vVB-EC63EeWUGulxEaPKfw" name="VehicleManagerAbstruct" abstractClass="true" generalizations="_QBML4C6wEeWN-YWiwVyHLQ" subclassedBy="_QBMy8C6wEeWN-YWiwVyHLQ _QBMy8S6wEeWN-YWiwVyHLQ _QBMy8i6wEeWN-YWiwVyHLQ _QBMy8y6wEeWN-YWiwVyHLQ">
     <modelElement href="vehicle.uml#_P1LwMC6wEeWN-YWiwVyHLQ"/>
     <visualProperties xmi:id="_QBQdUS6wEeWN-YWiwVyHLQ" position="-123.0,-71.0" size="336.0,71.0"/>
     <visibility xmi:id="_QBQdUi6wEeWN-YWiwVyHLQ" label="+"/>
@@ -633,5 +634,9 @@
         </type>
       </parameters>
     </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_vVAv8C63EeWUGulxEaPKfw" sourceConnectionVisual="_vVB-EC63EeWUGulxEaPKfw" text="Abstruct Factory Design Pattern" item="_QBQdUC6wEeWN-YWiwVyHLQ">
+    <modelElement href="vehicle.uml#_vVBXAC63EeWUGulxEaPKfw"/>
+    <visualProperties xmi:id="_vVAv8S63EeWUGulxEaPKfw" position="135.0,-239.0" size="150.0,80.0"/>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
