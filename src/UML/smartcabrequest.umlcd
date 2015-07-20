@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_KwH2MC2EEeW7s6BrY-ZlNQ">
-  <modelElement href="smartcabrequest.uml#_KvkckC2EEeW7s6BrY-ZlNQ"/>
-  <requiredModelsLocators xmi:id="_YNvYcC2xEeW7s6BrY-ZlNQ" location="/smartcab/src/UML/smartcabrequest.uml"/>
-</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

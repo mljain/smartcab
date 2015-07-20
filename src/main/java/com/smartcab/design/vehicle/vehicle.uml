@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_PhTx8C6wEeWN-YWiwVyHLQ" name="vehicle">
+    <eAnnotations xmi:id="_PvjCQC6wEeWN-YWiwVyHLQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_PvjCQS6wEeWN-YWiwVyHLQ" source="codegen">
+        <details xmi:id="_PvjCQi6wEeWN-YWiwVyHLQ" key="codegenDirectory" value="/smartcab/src/main/java"/>
+        <details xmi:id="_P7WCkC6wEeWN-YWiwVyHLQ" key="AssociatedSourceCode" value="/smartcab/src/main/java/com/smartcab/design/vehicle/AddVehicleManager.java;1569256391/1;/smartcab/src/main/java/com/smartcab/design/vehicle/GetVehicleManager.java;2057304583/1;/smartcab/src/main/java/com/smartcab/design/vehicle/RemoveVehicleManager.java;1261876402/1;/smartcab/src/main/java/com/smartcab/design/vehicle/UpdateVehicleManager.java;3025289551/1;/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleManager.java;1226590197/1;/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleManagerAbstruct.java;1343979243/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_P03AEC6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_P03nIC6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_P03nIS6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_P03nIi6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_P03nIy6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_P03nJC6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_P03nJS6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_P03nJi6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_P04OMC6wEeWN-YWiwVyHLQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_P0l6UC6wEeWN-YWiwVyHLQ" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_P0l6US6wEeWN-YWiwVyHLQ" name="smartcab">
+        <packagedElement xmi:type="uml:Package" xmi:id="_P0l6Ui6wEeWN-YWiwVyHLQ" name="design">
+          <packagedElement xmi:type="uml:Package" xmi:id="_P0nvgC6wEeWN-YWiwVyHLQ" name="vehicle">
+            <packagedElement xmi:type="uml:Class" xmi:id="_P02ZAC6wEeWN-YWiwVyHLQ" name="AddVehicleManager">
+              <ownedComment xmi:id="_hrKd0C6xEeWN-YWiwVyHLQ" annotatedElement="_P02ZAC6wEeWN-YWiwVyHLQ">
+                <body></body>
+              </ownedComment>
+              <generalization xmi:id="_P1uiwC6wEeWN-YWiwVyHLQ" general="_P1LwMC6wEeWN-YWiwVyHLQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2U_sC6wEeWN-YWiwVyHLQ" name="addVehicle" specification="_P1-aYC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2U_sS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2U_si6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2U_sy6wEeWN-YWiwVyHLQ" name="removeVehicle" specification="_P2APkC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2U_tC6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2U_tS6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2U_ti6wEeWN-YWiwVyHLQ" name="updateVehicle" specification="_P2BdsC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2U_ty6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2U_uC6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2VmwC6wEeWN-YWiwVyHLQ" name="getVehicle" specification="_P041QC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2VmwS6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2Vmwi6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+                <language>java</language>
+                <body>return null;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_P041QC6wEeWN-YWiwVyHLQ" name="getVehicle" method="_P2VmwC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P041QS6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2Cr0C6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P1-aYC6wEeWN-YWiwVyHLQ" name="addVehicle" method="_P2U_sC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P1_BcC6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P1_BcS6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2APkC6wEeWN-YWiwVyHLQ" name="removeVehicle" method="_P2U_sy6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2APkS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2APki6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2BdsC6wEeWN-YWiwVyHLQ" name="updateVehicle" method="_P2U_ti6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2BdsS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2Bdsi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_P074kC6wEeWN-YWiwVyHLQ" name="GetVehicleManager">
+              <generalization xmi:id="_P1wX8C6wEeWN-YWiwVyHLQ" general="_P1LwMC6wEeWN-YWiwVyHLQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2Vmwy6wEeWN-YWiwVyHLQ" name="addVehicle" specification="_P2Cr0S6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2VmxC6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2VmxS6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2WN0C6wEeWN-YWiwVyHLQ" name="removeVehicle" specification="_P2EhAC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2WN0S6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2WN0i6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2WN0y6wEeWN-YWiwVyHLQ" name="updateVehicle" specification="_P2FvIi6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2WN1C6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2WN1S6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2WN1i6wEeWN-YWiwVyHLQ" name="getVehicle" specification="_P09GsC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2WN1y6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2WN2C6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+                <language>java</language>
+                <body>return null;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_P09GsC6wEeWN-YWiwVyHLQ" name="getVehicle" method="_P2WN1i6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P09GsS6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2G9Qi6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2Cr0S6wEeWN-YWiwVyHLQ" name="addVehicle" method="_P2Vmwy6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2Cr0i6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2DS4C6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2EhAC6wEeWN-YWiwVyHLQ" name="removeVehicle" method="_P2WN0C6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2EhAS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2EhAi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2FvIi6wEeWN-YWiwVyHLQ" name="updateVehicle" method="_P2WN0y6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2FvIy6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2GWMC6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_P0-74C6wEeWN-YWiwVyHLQ" name="RemoveVehicleManager">
+              <generalization xmi:id="_P1y0MC6wEeWN-YWiwVyHLQ" general="_P1LwMC6wEeWN-YWiwVyHLQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2W04C6wEeWN-YWiwVyHLQ" name="addVehicle" specification="_P2HkUC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2W04S6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2W04i6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2W04y6wEeWN-YWiwVyHLQ" name="removeVehicle" specification="_P2IycC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2W05C6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2W05S6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2Xb8C6wEeWN-YWiwVyHLQ" name="updateVehicle" specification="_P2KAki6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2Xb8S6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2Xb8i6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2Xb8y6wEeWN-YWiwVyHLQ" name="getVehicle" specification="_P1AKAC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2Xb9C6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2Xb9S6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+                <language>java</language>
+                <body>return null;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_P1AKAC6wEeWN-YWiwVyHLQ" name="getVehicle" method="_P2Xb8y6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P1AKAS6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2LOsi6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2HkUC6wEeWN-YWiwVyHLQ" name="addVehicle" method="_P2W04C6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2HkUS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2HkUi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2IycC6wEeWN-YWiwVyHLQ" name="removeVehicle" method="_P2W04y6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2IycS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2JZgC6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2KAki6wEeWN-YWiwVyHLQ" name="updateVehicle" method="_P2Xb8C6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2KAky6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2KnoC6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_P1DNUC6wEeWN-YWiwVyHLQ" name="UpdateVehicleManager">
+              <generalization xmi:id="_P10pYC6wEeWN-YWiwVyHLQ" general="_P1LwMC6wEeWN-YWiwVyHLQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2YqEC6wEeWN-YWiwVyHLQ" name="addVehicle" specification="_P2L1wC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2YqES6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2YqEi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2YqEy6wEeWN-YWiwVyHLQ" name="removeVehicle" specification="_P2ND4C6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2YqFC6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2YqFS6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2YqFi6wEeWN-YWiwVyHLQ" name="updateVehicle" specification="_P2OSAC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2YqFy6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2YqGC6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return false;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2ZRIC6wEeWN-YWiwVyHLQ" name="getVehicle" specification="_P1EbcC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2ZRIS6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2ZRIi6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+                <language>java</language>
+                <body>return null;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_P1EbcC6wEeWN-YWiwVyHLQ" name="getVehicle" method="_P2ZRIC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P1EbcS6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2PgIC6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2L1wC6wEeWN-YWiwVyHLQ" name="addVehicle" method="_P2YqEC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2L1wS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2L1wi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2ND4C6wEeWN-YWiwVyHLQ" name="removeVehicle" method="_P2YqEy6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2ND4S6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2ND4i6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2OSAC6wEeWN-YWiwVyHLQ" name="updateVehicle" method="_P2YqFi6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2OSAS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2OSAi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_P1HewC6wEeWN-YWiwVyHLQ" name="VehicleManager">
+              <ownedOperation xmi:id="_P1JT8C6wEeWN-YWiwVyHLQ" name="getVehicle">
+                <ownedParameter xmi:id="_P1J7AC6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2R8YC6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2PgIS6wEeWN-YWiwVyHLQ" name="addVehicle">
+                <ownedParameter xmi:id="_P2QHMC6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2QHMS6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2QuQC6wEeWN-YWiwVyHLQ" name="removeVehicle">
+                <ownedParameter xmi:id="_P2QuQS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2QuQi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2RVUC6wEeWN-YWiwVyHLQ" name="updateVehicle">
+                <ownedParameter xmi:id="_P2RVUS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2RVUi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_P1LwMC6wEeWN-YWiwVyHLQ" name="VehicleManagerAbstruct" isAbstract="true">
+              <interfaceRealization xmi:id="_P1460S6wEeWN-YWiwVyHLQ" client="_P1LwMC6wEeWN-YWiwVyHLQ" supplier="_P1HewC6wEeWN-YWiwVyHLQ" contract="_P1HewC6wEeWN-YWiwVyHLQ"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_P2ZRIy6wEeWN-YWiwVyHLQ" name="getVehicleManager" specification="_P1OzgC6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P2ZRJC6wEeWN-YWiwVyHLQ" name="managerType">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2ZRJS6wEeWN-YWiwVyHLQ" type="_P1HewC6wEeWN-YWiwVyHLQ" direction="return"/>
+                <language>java</language>
+                <body>if(managerType.equals(&quot;ADD&quot;)){
+			return new AddVehicleManager();
+		}
+		else if(managerType.equals(&quot;REMOVE&quot;)){
+			return new RemoveVehicleManager();
+		}
+		else if(managerType.equals(&quot;READ&quot;)){
+			return new GetVehicleManager();
+		}
+		else if(managerType.equals(&quot;UPDATE&quot;)){
+			return new UpdateVehicleManager();
+		} throw new RuntimeErrorException(null, &quot;UNdefined Manager&quot;);
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_P1NlYC6wEeWN-YWiwVyHLQ" name="getVehicle" isAbstract="true">
+                <ownedParameter xmi:id="_P1NlYS6wEeWN-YWiwVyHLQ" name="vehicleId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P2Txki6wEeWN-YWiwVyHLQ" type="_P1stkC6wEeWN-YWiwVyHLQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P1OzgC6wEeWN-YWiwVyHLQ" name="getVehicleManager" method="_P2ZRIy6wEeWN-YWiwVyHLQ">
+                <ownedParameter xmi:id="_P1OzgS6wEeWN-YWiwVyHLQ" name="managerType">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_P16I8C6wEeWN-YWiwVyHLQ" type="_P1HewC6wEeWN-YWiwVyHLQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2R8YS6wEeWN-YWiwVyHLQ" name="addVehicle" isAbstract="true">
+                <ownedParameter xmi:id="_P2SjcC6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2SjcS6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2TKgC6wEeWN-YWiwVyHLQ" name="removeVehicle" isAbstract="true">
+                <ownedParameter xmi:id="_P2TKgS6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2TKgi6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_P2TKgy6wEeWN-YWiwVyHLQ" name="updateVehicle" isAbstract="true">
+                <ownedParameter xmi:id="_P2TxkC6wEeWN-YWiwVyHLQ" name="vehicle" type="_P1stkC6wEeWN-YWiwVyHLQ"/>
+                <ownedParameter xmi:id="_P2TxkS6wEeWN-YWiwVyHLQ" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_P0mhYC6wEeWN-YWiwVyHLQ" name="vehicle">
+          <packagedElement xmi:type="uml:Package" xmi:id="_P0mhYS6wEeWN-YWiwVyHLQ" name="domain">
+            <packagedElement xmi:type="uml:Class" xmi:id="_P1stkC6wEeWN-YWiwVyHLQ" name="Vehicle"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_P0vrUC6wEeWN-YWiwVyHLQ" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_P0vrUS6wEeWN-YWiwVyHLQ" name="management">
+        <packagedElement xmi:type="uml:Class" xmi:id="_P13ssC6wEeWN-YWiwVyHLQ" name="RuntimeErrorException"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_PvjpUC6wEeWN-YWiwVyHLQ">
+      <eAnnotations xmi:id="_PvjpUS6wEeWN-YWiwVyHLQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_PvjpUi6wEeWN-YWiwVyHLQ" base_Package="_PhTx8C6wEeWN-YWiwVyHLQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P05cUC6wEeWN-YWiwVyHLQ" base_Element="_P041QC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P06DYC6wEeWN-YWiwVyHLQ" base_Element="_P041QC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P06DYS6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P09Gsi6wEeWN-YWiwVyHLQ" base_Element="_P09GsC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P09twC6wEeWN-YWiwVyHLQ" base_Element="_P09GsC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P09twS6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P1AKAi6wEeWN-YWiwVyHLQ" base_Element="_P1AKAC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P1AxEC6wEeWN-YWiwVyHLQ" base_Element="_P1AKAC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P1AxES6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P1FCgC6wEeWN-YWiwVyHLQ" base_Element="_P1EbcC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P1FpkC6wEeWN-YWiwVyHLQ" base_Element="_P1EbcC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P1FpkS6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_P1tUoC6wEeWN-YWiwVyHLQ" base_Element="_P1stkC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Reference xmi:id="_P1460C6wEeWN-YWiwVyHLQ" base_Element="_P13ssC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P1_ogC6wEeWN-YWiwVyHLQ" base_Element="_P1-aYC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P1_ogS6wEeWN-YWiwVyHLQ" base_Element="_P1-aYC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P1_ogi6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2A2oC6wEeWN-YWiwVyHLQ" base_Element="_P2APkC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2A2oS6wEeWN-YWiwVyHLQ" base_Element="_P2APkC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2A2oi6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2Bdsy6wEeWN-YWiwVyHLQ" base_Element="_P2BdsC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2CEwC6wEeWN-YWiwVyHLQ" base_Element="_P2BdsC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2CEwS6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2DS4S6wEeWN-YWiwVyHLQ" base_Element="_P2Cr0S6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2D58C6wEeWN-YWiwVyHLQ" base_Element="_P2Cr0S6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2D58S6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2FIEC6wEeWN-YWiwVyHLQ" base_Element="_P2EhAC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2FvIC6wEeWN-YWiwVyHLQ" base_Element="_P2EhAC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2FvIS6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2GWMS6wEeWN-YWiwVyHLQ" base_Element="_P2FvIi6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2G9QC6wEeWN-YWiwVyHLQ" base_Element="_P2FvIi6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2G9QS6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2ILYC6wEeWN-YWiwVyHLQ" base_Element="_P2HkUC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2ILYS6wEeWN-YWiwVyHLQ" base_Element="_P2HkUC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2ILYi6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2JZgS6wEeWN-YWiwVyHLQ" base_Element="_P2IycC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2KAkC6wEeWN-YWiwVyHLQ" base_Element="_P2IycC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2KAkS6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2KnoS6wEeWN-YWiwVyHLQ" base_Element="_P2KAki6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2LOsC6wEeWN-YWiwVyHLQ" base_Element="_P2KAki6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2LOsS6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2Mc0C6wEeWN-YWiwVyHLQ" base_Element="_P2L1wC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2Mc0S6wEeWN-YWiwVyHLQ" base_Element="_P2L1wC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2Mc0i6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2Nq8C6wEeWN-YWiwVyHLQ" base_Element="_P2ND4C6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2Nq8S6wEeWN-YWiwVyHLQ" base_Element="_P2ND4C6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2Nq8i6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_P2O5EC6wEeWN-YWiwVyHLQ" base_Element="_P2OSAC6wEeWN-YWiwVyHLQ"/>
+  <UMLLabProfile:Annotations xmi:id="_P2O5ES6wEeWN-YWiwVyHLQ" base_Element="_P2OSAC6wEeWN-YWiwVyHLQ">
+    <annotations xmi:id="_P2O5Ei6wEeWN-YWiwVyHLQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+</xmi:XMI>
