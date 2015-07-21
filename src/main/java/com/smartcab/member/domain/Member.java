@@ -97,5 +97,10 @@ public class Member {
 	public void setMemberType(MemberType memberType) {
 		this.memberType = memberType;
 	}
+	
+	public void updateMember(){
+		//TODO ...
+		// Need to implement later 
+	}
 
 }

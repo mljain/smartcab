@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_kR6ygC9SEeWFftrnFeVvpQ">
+  <modelElement href="notification.uml#_krfJEC9SEeWFftrnFeVvpQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lHvAMC9SEeWFftrnFeVvpQ" source="_lHvnQC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktn3EC9SEeWFftrnFeVvpQ"/>
+    <stereotypes xmi:id="_lHvAMS9SEeWFftrnFeVvpQ" name="Reference">
+      <modelElement href="notification.uml#_ktpFMC9SEeWFftrnFeVvpQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_lHvAMi9SEeWFftrnFeVvpQ" text=""/>
+    <sourceRole xmi:id="_lHvAMy9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="">
+      <modelElement href="notification.uml#_ktn3ES9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lHvANC9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lHvANS9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_lHvANi9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="members" navigable="true">
+      <modelElement href="notification.uml#_ktX_cS9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lHvANy9SEeWFftrnFeVvpQ" label="-"/>
+      <cardinality xmi:id="_lHvAOC9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_lH1G0C9SEeWFftrnFeVvpQ" sourceAnchor="108.0,0.0" targetAnchor="158.0,129.0" superClass="_lHvnQC9SEeWFftrnFeVvpQ" subClass="_lH4xOS9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ksvtUC9SEeWFftrnFeVvpQ"/>
+    <bendpoints xmi:id="_4QARkC9SEeWFftrnFeVvpQ" sourceY="-30" targetX="-179" targetY="40"/>
+    <bendpoints xmi:id="_4QARkS9SEeWFftrnFeVvpQ" sourceX="179" sourceY="-30" targetY="40"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_lH2U8S9SEeWFftrnFeVvpQ" targetItem="_lH4xUC9SEeWFftrnFeVvpQ" sourceItem="_lH2U8C9SEeWFftrnFeVvpQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lH3jEC9SEeWFftrnFeVvpQ" target="_lH4xOS9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktjloC9SEeWFftrnFeVvpQ"/>
+    <nameVisual xmi:id="_lH3jES9SEeWFftrnFeVvpQ" text=""/>
+    <sourceRole xmi:id="_lH3jEi9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="driver" navigable="true">
+      <modelElement href="notification.uml#_ktabsC9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lH3jEy9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lH3jFC9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_lH3jFS9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="">
+      <modelElement href="notification.uml#_ktjloS9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lH3jFi9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lH3jFy9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lH4xMC9SEeWFftrnFeVvpQ" source="_lH4xOS9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktpFMS9SEeWFftrnFeVvpQ"/>
+    <stereotypes xmi:id="_lH4xMS9SEeWFftrnFeVvpQ" name="Reference">
+      <modelElement href="notification.uml#_ktqTUC9SEeWFftrnFeVvpQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_lH4xMi9SEeWFftrnFeVvpQ" text=""/>
+    <sourceRole xmi:id="_lH4xMy9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="">
+      <modelElement href="notification.uml#_ktpFMi9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lH4xNC9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lH4xNS9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_lH4xNi9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="request" navigable="true">
+      <modelElement href="notification.uml#_ktZ0oC9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lH4xNy9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lH4xOC9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_lH9psC9SEeWFftrnFeVvpQ" sourceAnchor="117.0,0.0" targetAnchor="158.0,129.0" superClass="_lHvnQC9SEeWFftrnFeVvpQ" subClass="_lIAF-S9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ks1z8C9SEeWFftrnFeVvpQ"/>
+    <bendpoints xmi:id="_4QARki9SEeWFftrnFeVvpQ" sourceY="-34" targetX="106" targetY="40"/>
+    <bendpoints xmi:id="_4QA4oC9SEeWFftrnFeVvpQ" sourceX="-106" sourceY="-34" targetY="40"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_lH-30S9SEeWFftrnFeVvpQ" targetItem="_lIAGAC9SEeWFftrnFeVvpQ" sourceItem="_lH-30C9SEeWFftrnFeVvpQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lIAF8C9SEeWFftrnFeVvpQ" source="_lIAF-S9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktq6YC9SEeWFftrnFeVvpQ"/>
+    <stereotypes xmi:id="_lIAF8S9SEeWFftrnFeVvpQ" name="Reference">
+      <modelElement href="notification.uml#_ktsvkC9SEeWFftrnFeVvpQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_lIAF8i9SEeWFftrnFeVvpQ" text=""/>
+    <sourceRole xmi:id="_lIAF8y9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="">
+      <modelElement href="notification.uml#_ktq6YS9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lIAF9C9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lIAF9S9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_lIAF9i9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="invoice" navigable="true">
+      <modelElement href="notification.uml#_ktbp0C9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lIAF9y9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lIAF-C9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_lIDwUC9SEeWFftrnFeVvpQ" sourceAnchor="111.0,0.0" targetAnchor="158.0,129.0" superClass="_lHvnQC9SEeWFftrnFeVvpQ" subClass="_lIHasC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ks43QC9SEeWFftrnFeVvpQ"/>
+    <bendpoints xmi:id="_4QA4oS9SEeWFftrnFeVvpQ" sourceY="-34" targetX="371" targetY="40"/>
+    <bendpoints xmi:id="_4QA4oi9SEeWFftrnFeVvpQ" sourceX="-371" sourceY="-34" targetY="40"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_lIDwUS9SEeWFftrnFeVvpQ" source="_lIHasC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktsvkS9SEeWFftrnFeVvpQ"/>
+    <stereotypes xmi:id="_lIGMkS9SEeWFftrnFeVvpQ" name="Reference">
+      <modelElement href="notification.uml#_ktt9sC9SEeWFftrnFeVvpQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_lIFlgS9SEeWFftrnFeVvpQ" text=""/>
+    <sourceRole xmi:id="_lIFlgi9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="">
+      <modelElement href="notification.uml#_ktsvki9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lIGMky9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lIGMki9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_lIGMkC9SEeWFftrnFeVvpQ" aggregationKind="NONE" name="request" navigable="true">
+      <modelElement href="notification.uml#_ktcQ4C9SEeWFftrnFeVvpQ"/>
+      <visibility xmi:id="_lIGzoS9SEeWFftrnFeVvpQ" label="-"/>
+      <cardinality xmi:id="_lIGzoC9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_lIE-cS9SEeWFftrnFeVvpQ" targetItem="_lIHauC9SEeWFftrnFeVvpQ" sourceItem="_lIE-cC9SEeWFftrnFeVvpQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_lIFlgC9SEeWFftrnFeVvpQ" targetItem="_lIHavS9SEeWFftrnFeVvpQ" sourceItem="_lIE-ci9SEeWFftrnFeVvpQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_3tDVgC9SEeWFftrnFeVvpQ" sourceAnchor="0.0,40.0" targetAnchor="316.0,20.0" targetItem="_lHvnQC9SEeWFftrnFeVvpQ" sourceItem="_3s918C9SEeWFftrnFeVvpQ"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_lH2U8C9SEeWFftrnFeVvpQ" sourceConnectionVisual="_lH2U8S9SEeWFftrnFeVvpQ" text="@param request&#xA;&#x9; *            the request to set" item="_lH4xUC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktkMsC9SEeWFftrnFeVvpQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_lH-30C9SEeWFftrnFeVvpQ" sourceConnectionVisual="_lH-30S9SEeWFftrnFeVvpQ" text="@param invoice&#xA;&#x9; *            the invoice to set" item="_lIAGAC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktkzwC9SEeWFftrnFeVvpQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_lIE-cC9SEeWFftrnFeVvpQ" sourceConnectionVisual="_lIE-cS9SEeWFftrnFeVvpQ" text="@return the request" item="_lIHauC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktkzwS9SEeWFftrnFeVvpQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_lIE-ci9SEeWFftrnFeVvpQ" sourceConnectionVisual="_lIFlgC9SEeWFftrnFeVvpQ" text="@param request the request to set" item="_lIHavS9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ktkzwi9SEeWFftrnFeVvpQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_lHvnQC9SEeWFftrnFeVvpQ" comments="_3s918C9SEeWFftrnFeVvpQ" targetConnectionVisual="_3tDVgC9SEeWFftrnFeVvpQ" name="NotificationManager" abstractClass="true" associationsOut="_lHvAMC9SEeWFftrnFeVvpQ" subclassedBy="_lH1G0C9SEeWFftrnFeVvpQ _lH9psC9SEeWFftrnFeVvpQ _lIDwUC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_kr0gQC9SEeWFftrnFeVvpQ"/>
+    <visualProperties xmi:id="_lHvnQS9SEeWFftrnFeVvpQ" position="122.0,-220.0" size="316.0,129.0"/>
+    <visibility xmi:id="_lHvnQi9SEeWFftrnFeVvpQ" label="+"/>
+    <attributes xmi:id="_lHvnQy9SEeWFftrnFeVvpQ" name="message">
+      <modelElement href="notification.uml#_ktXYYC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_sQQiEC9SEeWFftrnFeVvpQ" visible="false"/>
+      <stereotypes xmi:id="_lHvnRC9SEeWFftrnFeVvpQ" name="LegacyStyledElement">
+        <modelElement href="notification.uml#_ktX_cC9SEeWFftrnFeVvpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_lHvnRS9SEeWFftrnFeVvpQ" label="#"/>
+      <cardinality xmi:id="_lHvnRi9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_lHvnRy9SEeWFftrnFeVvpQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_lHvnSC9SEeWFftrnFeVvpQ" defaultValue="new ArrayList&lt;Member>()" name="members">
+      <modelElement href="notification.uml#_ktX_cS9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_sQRJIC9SEeWFftrnFeVvpQ" visible="false"/>
+      <stereotypes xmi:id="_lHvnSS9SEeWFftrnFeVvpQ" name="Generics">
+        <modelElement href="notification.uml#_ktYmgC9SEeWFftrnFeVvpQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_lHvnSi9SEeWFftrnFeVvpQ" name="LegacyStyledElement">
+        <modelElement href="notification.uml#_ktZNkS9SEeWFftrnFeVvpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_lHvnSy9SEeWFftrnFeVvpQ" label="-"/>
+      <cardinality xmi:id="_lHvnTC9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_lHvnTS9SEeWFftrnFeVvpQ" name="ArrayList">
+        <modelElement href="notification.uml#_ksl8UC9SEeWFftrnFeVvpQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_lHvnTi9SEeWFftrnFeVvpQ" name="NotificationManager">
+      <modelElement href="notification.uml#_kr4KoC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_sfMV8C9SEeWFftrnFeVvpQ" visible="false"/>
+      <keywords xmi:id="_lHvnTy9SEeWFftrnFeVvpQ" keyword="create"/>
+      <stereotypes xmi:id="_lHvnUC9SEeWFftrnFeVvpQ" name="LegacyStyledElement">
+        <modelElement href="notification.uml#_kr5YwC9SEeWFftrnFeVvpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_lHvnUS9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lHvnUi9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_lHvnUy9SEeWFftrnFeVvpQ">
+        <modelElement href="notification.uml#_kr5YwS9SEeWFftrnFeVvpQ"/>
+        <type xmi:id="_lHvnVC9SEeWFftrnFeVvpQ" name="NotificationManager">
+          <modelElement href="notification.uml#_kr0gQC9SEeWFftrnFeVvpQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_lHvnVS9SEeWFftrnFeVvpQ" name="addObserver">
+      <modelElement href="notification.uml#_ktAzEC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_sfMV8S9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lHvnVi9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lHvnVy9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_lHvnWC9SEeWFftrnFeVvpQ" name="menber">
+        <modelElement href="notification.uml#_ktAzES9SEeWFftrnFeVvpQ"/>
+        <cardinality xmi:id="_lHvnWS9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+        <type xmi:id="_lHvnWi9SEeWFftrnFeVvpQ" name="Member">
+          <modelElement href="notification.uml#_ksnxgS9SEeWFftrnFeVvpQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_lHvnWy9SEeWFftrnFeVvpQ" name="deleteObserver">
+      <modelElement href="notification.uml#_ktCBMC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_sfM9AC9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lHvnXC9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lHvnXS9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_lHvnXi9SEeWFftrnFeVvpQ" name="menber">
+        <modelElement href="notification.uml#_ktCBMS9SEeWFftrnFeVvpQ"/>
+        <cardinality xmi:id="_lHvnXy9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+        <type xmi:id="_lHvnYC9SEeWFftrnFeVvpQ" name="Member">
+          <modelElement href="notification.uml#_ksnxgS9SEeWFftrnFeVvpQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_lHvnYS9SEeWFftrnFeVvpQ" name="notifyObserver">
+      <modelElement href="notification.uml#_ktNnYS9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_sfM9AS9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lHvnYi9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lHvnYy9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_lHvnZC9SEeWFftrnFeVvpQ" name="args">
+        <modelElement href="notification.uml#_ktOOcC9SEeWFftrnFeVvpQ"/>
+        <cardinality xmi:id="_lHvnZS9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+        <type xmi:id="_lHvnZi9SEeWFftrnFeVvpQ" name="Object">
+          <modelElement href="notification.uml#_ktMZQS9SEeWFftrnFeVvpQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_lH4xOS9SEeWFftrnFeVvpQ" name="NotifyDispatch" associationsIn="_lH3jEC9SEeWFftrnFeVvpQ" associationsOut="_lH4xMC9SEeWFftrnFeVvpQ" generalizations="_lH1G0C9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_kr-4UC9SEeWFftrnFeVvpQ"/>
+    <visualProperties xmi:id="_lH4xOi9SEeWFftrnFeVvpQ" position="-7.0,-21.0" size="216.0,134.0"/>
+    <visibility xmi:id="_lH4xOy9SEeWFftrnFeVvpQ" label="+"/>
+    <attributes xmi:id="_lH4xPC9SEeWFftrnFeVvpQ" name="request">
+      <modelElement href="notification.uml#_ktZ0oC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_s6ZrQC9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lH4xPS9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lH4xPi9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_lH4xPy9SEeWFftrnFeVvpQ" name="Request">
+        <modelElement href="notification.uml#_kssC8C9SEeWFftrnFeVvpQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_lH4xQC9SEeWFftrnFeVvpQ" name="driver">
+      <modelElement href="notification.uml#_ktabsC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_s6aSUC9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lH4xQS9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lH4xQi9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_lH4xQy9SEeWFftrnFeVvpQ" name="Driver">
+        <modelElement href="notification.uml#_kstRES9SEeWFftrnFeVvpQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_lH4xRC9SEeWFftrnFeVvpQ" name="NotifyDispatch">
+      <modelElement href="notification.uml#_ktRRwC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_tFNNEC9SEeWFftrnFeVvpQ" visible="false"/>
+      <keywords xmi:id="_lH4xRS9SEeWFftrnFeVvpQ" keyword="create"/>
+      <visibility xmi:id="_lH4xRi9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lH4xRy9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_lH4xSC9SEeWFftrnFeVvpQ">
+        <modelElement href="notification.uml#_ktR40S9SEeWFftrnFeVvpQ"/>
+        <type xmi:id="_lH4xSS9SEeWFftrnFeVvpQ" name="NotifyDispatch">
+          <modelElement href="notification.uml#_kr-4UC9SEeWFftrnFeVvpQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_lH4xSi9SEeWFftrnFeVvpQ" name="request">
+        <modelElement href="notification.uml#_ktRRwS9SEeWFftrnFeVvpQ"/>
+        <cardinality xmi:id="_lH4xSy9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+        <type xmi:id="_lH4xTC9SEeWFftrnFeVvpQ" name="Request">
+          <modelElement href="notification.uml#_kssC8C9SEeWFftrnFeVvpQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_lH4xTS9SEeWFftrnFeVvpQ" name="driver">
+        <modelElement href="notification.uml#_ktRRwi9SEeWFftrnFeVvpQ"/>
+        <cardinality xmi:id="_lH4xTi9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+        <type xmi:id="_lH4xTy9SEeWFftrnFeVvpQ" name="Driver">
+          <modelElement href="notification.uml#_kstRES9SEeWFftrnFeVvpQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_lH4xUC9SEeWFftrnFeVvpQ" comments="_lH2U8C9SEeWFftrnFeVvpQ" targetConnectionVisual="_lH2U8S9SEeWFftrnFeVvpQ" name="setRequest">
+      <modelElement href="notification.uml#_ktSf4C9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_tFN0IC9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lH4xUS9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lH4xUi9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_lH4xUy9SEeWFftrnFeVvpQ" name="request">
+        <modelElement href="notification.uml#_ktSf4S9SEeWFftrnFeVvpQ"/>
+        <cardinality xmi:id="_lH4xVC9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+        <type xmi:id="_lH4xVS9SEeWFftrnFeVvpQ" name="Request">
+          <modelElement href="notification.uml#_kssC8C9SEeWFftrnFeVvpQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_lIAF-S9SEeWFftrnFeVvpQ" name="PaymentNotify" associationsOut="_lIAF8C9SEeWFftrnFeVvpQ" generalizations="_lH9psC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ksG0IC9SEeWFftrnFeVvpQ"/>
+    <visualProperties xmi:id="_lIAF-i9SEeWFftrnFeVvpQ" position="269.0,-17.0" size="234.0,134.0"/>
+    <visibility xmi:id="_lIAF-y9SEeWFftrnFeVvpQ" label="+"/>
+    <attributes xmi:id="_lIAF_C9SEeWFftrnFeVvpQ" name="invoice">
+      <modelElement href="notification.uml#_ktbp0C9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_tVtuQC9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lIAF_S9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lIAF_i9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_lIAF_y9SEeWFftrnFeVvpQ" name="Invoice">
+        <modelElement href="notification.uml#_kszXsC9SEeWFftrnFeVvpQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_lIAGAC9SEeWFftrnFeVvpQ" comments="_lH-30C9SEeWFftrnFeVvpQ" targetConnectionVisual="_lH-30S9SEeWFftrnFeVvpQ" name="setInvoice">
+      <modelElement href="notification.uml#_ktUVEC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_tiBr8C9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lIAGAS9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lIAGAi9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_lIAGAy9SEeWFftrnFeVvpQ" name="invoice">
+        <modelElement href="notification.uml#_ktUVES9SEeWFftrnFeVvpQ"/>
+        <cardinality xmi:id="_lIAGBC9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+        <type xmi:id="_lIAGBS9SEeWFftrnFeVvpQ" name="Invoice">
+          <modelElement href="notification.uml#_kszXsC9SEeWFftrnFeVvpQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_lIHasC9SEeWFftrnFeVvpQ" name="RequestNotify" associationsOut="_lIDwUS9SEeWFftrnFeVvpQ" generalizations="_lIDwUC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_ksKegC9SEeWFftrnFeVvpQ"/>
+    <visualProperties xmi:id="_lIHasS9SEeWFftrnFeVvpQ" position="540.0,-17.0" size="222.0,134.0"/>
+    <visibility xmi:id="_lIHasi9SEeWFftrnFeVvpQ" label="+"/>
+    <attributes xmi:id="_lIHasy9SEeWFftrnFeVvpQ" name="request">
+      <modelElement href="notification.uml#_ktcQ4C9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_t08n8C9SEeWFftrnFeVvpQ" visible="false"/>
+      <stereotypes xmi:id="_lIHatC9SEeWFftrnFeVvpQ" name="LegacyStyledElement">
+        <modelElement href="notification.uml#_ktc38C9SEeWFftrnFeVvpQ"/>
+      </stereotypes>
+      <visibility xmi:id="_lIHatS9SEeWFftrnFeVvpQ" label="-"/>
+      <cardinality xmi:id="_lIHati9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <type xmi:id="_lIHaty9SEeWFftrnFeVvpQ" name="Request">
+        <modelElement href="notification.uml#_kssC8C9SEeWFftrnFeVvpQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_lIHauC9SEeWFftrnFeVvpQ" comments="_lIE-cC9SEeWFftrnFeVvpQ" targetConnectionVisual="_lIE-cS9SEeWFftrnFeVvpQ" name="getRequest">
+      <modelElement href="notification.uml#_ksLFkC9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_t_pcEC9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lIHauS9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lIHaui9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_lIHauy9SEeWFftrnFeVvpQ">
+        <modelElement href="notification.uml#_ktVjMC9SEeWFftrnFeVvpQ"/>
+        <type xmi:id="_lIHavC9SEeWFftrnFeVvpQ" name="Request">
+          <modelElement href="notification.uml#_kssC8C9SEeWFftrnFeVvpQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_lIHavS9SEeWFftrnFeVvpQ" comments="_lIE-ci9SEeWFftrnFeVvpQ" targetConnectionVisual="_lIFlgC9SEeWFftrnFeVvpQ" name="setRequest">
+      <modelElement href="notification.uml#_ktVjMS9SEeWFftrnFeVvpQ"/>
+      <visualProperties xmi:id="_t_pcES9SEeWFftrnFeVvpQ" visible="false"/>
+      <visibility xmi:id="_lIHavi9SEeWFftrnFeVvpQ" label="+"/>
+      <cardinality xmi:id="_lIHavy9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_lIHawC9SEeWFftrnFeVvpQ" name="request">
+        <modelElement href="notification.uml#_ktVjMi9SEeWFftrnFeVvpQ"/>
+        <cardinality xmi:id="_lIHawS9SEeWFftrnFeVvpQ" label="1" max="1" min="1"/>
+        <type xmi:id="_lIHawi9SEeWFftrnFeVvpQ" name="Request">
+          <modelElement href="notification.uml#_kssC8C9SEeWFftrnFeVvpQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_3s918C9SEeWFftrnFeVvpQ" sourceConnectionVisual="_3tDVgC9SEeWFftrnFeVvpQ" text="Observer Design Pattern" item="_lHvnQC9SEeWFftrnFeVvpQ">
+    <modelElement href="notification.uml#_3tCHYC9SEeWFftrnFeVvpQ"/>
+    <visualProperties xmi:id="_3s918S9SEeWFftrnFeVvpQ" position="518.0,-240.0" size="150.0,80.0"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
