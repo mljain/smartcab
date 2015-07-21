@@ -17,5 +17,10 @@ public class CustomerManager {
 		//to be added
 		return  customers.get(id);
 	}
+	
+	public void updateCustomer(String newInfo)
+	{
+		
+	}
 
 }
