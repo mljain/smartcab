@@ -1,5 +1,6 @@
 package com.smartcab.design.request;
 
+import com.smartcab.design.dispatcher.Dispatcher;
 import com.smartcab.request.domain.Customer;
 import com.smartcab.request.domain.Request;
 
