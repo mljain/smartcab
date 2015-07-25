@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_2Cy0sDInEeWZqOhA7gVXlg">
+  <modelElement href="payment.uml#_2bRmIDInEeWZqOhA7gVXlg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_2-njwDInEeWZqOhA7gVXlg" sourceAnchor="74.0,0.0" targetAnchor="101.0,66.0" superClass="_2-2NQDInEeWZqOhA7gVXlg" subClass="_2-pY8DInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2c26gDInEeWZqOhA7gVXlg"/>
+    <bendpoints xmi:id="_IIiAIDIqEeW7AvgGQG-jGA" sourceY="-27" targetX="86" targetY="27"/>
+    <bendpoints xmi:id="_IIiAITIqEeW7AvgGQG-jGA" sourceX="-86" sourceY="-27" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_2-x70DInEeWZqOhA7gVXlg" sourceAnchor="74.0,0.0" targetAnchor="101.0,66.0" superClass="_2-2NQDInEeWZqOhA7gVXlg" subClass="_2-zJ8DInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2c7L8DInEeWZqOhA7gVXlg"/>
+    <bendpoints xmi:id="_IIgyADIqEeW7AvgGQG-jGA" sourceY="-29" targetX="-84" targetY="27"/>
+    <bendpoints xmi:id="_IIhZEDIqEeW7AvgGQG-jGA" sourceX="84" sourceY="-29" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_2-8T4DInEeWZqOhA7gVXlg" sourceAnchor="78.0,0.0" targetAnchor="82.0,70.0" superClass="_2-_XMDInEeWZqOhA7gVXlg" subClass="_2-eZ0DInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2cwz4DInEeWZqOhA7gVXlg"/>
+    <bendpoints xmi:id="_IIlqgDIqEeW7AvgGQG-jGA" sourceY="-29" targetX="-127" targetY="29"/>
+    <bendpoints xmi:id="_IIlqgTIqEeW7AvgGQG-jGA" sourceX="127" sourceY="-29" targetY="29"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_2-8T4TInEeWZqOhA7gVXlg" sourceAnchor="71.0,0.0" targetAnchor="82.0,70.0" superClass="_2-_XMDInEeWZqOhA7gVXlg" subClass="_2-hdIDInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2cyCADInEeWZqOhA7gVXlg"/>
+    <bendpoints xmi:id="_IIkcYDIqEeW7AvgGQG-jGA" sourceY="-29" targetX="32" targetY="29"/>
+    <bendpoints xmi:id="_IIkcYTIqEeW7AvgGQG-jGA" sourceX="-32" sourceY="-29" targetY="29"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_2-8T4jInEeWZqOhA7gVXlg" sourceAnchor="64.0,0.0" targetAnchor="82.0,70.0" superClass="_2-_XMDInEeWZqOhA7gVXlg" subClass="_2-r1MDInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2c590jInEeWZqOhA7gVXlg"/>
+    <bendpoints xmi:id="_IIlDcDIqEeW7AvgGQG-jGA" sourceY="-28" targetX="185" targetY="29"/>
+    <bendpoints xmi:id="_IIlDcTIqEeW7AvgGQG-jGA" sourceX="-185" sourceY="-28" targetY="29"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_2_Gr8DInEeWZqOhA7gVXlg" sourceAnchor="73.0,0.0" targetAnchor="101.0,66.0" superClass="_2-2NQDInEeWZqOhA7gVXlg" subClass="_2_JIMDInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2dDHwDInEeWZqOhA7gVXlg"/>
+    <bendpoints xmi:id="_IIjOQDIqEeW7AvgGQG-jGA" sourceY="-28" targetX="275" targetY="27"/>
+    <bendpoints xmi:id="_IIjOQTIqEeW7AvgGQG-jGA" sourceX="-275" sourceY="-28" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="__gJOADIpEeW7AvgGQG-jGA" sourceAnchor="163.0,41.0" targetAnchor="0.0,33.0" target="_2-2NQDInEeWZqOhA7gVXlg" source="_2-_XMDInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#__gFjoDIpEeW7AvgGQG-jGA"/>
+    <visualProperties xmi:id="__gJ1EDIpEeW7AvgGQG-jGA"/>
+    <nameVisual xmi:id="__gJ1ETIpEeW7AvgGQG-jGA" text="">
+      <visualProperties xmi:id="__j33cDIpEeW7AvgGQG-jGA" position="-21.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="__gJ1EjIpEeW7AvgGQG-jGA" aggregationKind="NONE" name="payment" navigable="true">
+      <modelElement href="payment.uml#__gGKsDIpEeW7AvgGQG-jGA"/>
+      <visualProperties xmi:id="__j2pUDIpEeW7AvgGQG-jGA" position="46.0,-43.0"/>
+      <visibility xmi:id="__gJ1EzIpEeW7AvgGQG-jGA" label="+"/>
+      <cardinality xmi:id="__gJ1FDIpEeW7AvgGQG-jGA" label="0..1" max="1"/>
+    </sourceRole>
+    <targetRole xmi:id="__gJ1FTIpEeW7AvgGQG-jGA" aggregationKind="SHARED" name="paymenProcessor" navigable="true">
+      <modelElement href="payment.uml#__gGKszIpEeW7AvgGQG-jGA"/>
+      <visualProperties xmi:id="__j4egDIpEeW7AvgGQG-jGA" position="-171.0,-43.0"/>
+      <visibility xmi:id="__gJ1FjIpEeW7AvgGQG-jGA" label="+"/>
+      <cardinality xmi:id="__gJ1FzIpEeW7AvgGQG-jGA" label="*" max="-1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2-2NQDInEeWZqOhA7gVXlg" name="PaymenProcessor" abstractClass="true" associationsIn="__gJOADIpEeW7AvgGQG-jGA" subclassedBy="_2-njwDInEeWZqOhA7gVXlg _2-x70DInEeWZqOhA7gVXlg _2_Gr8DInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2b5RMDInEeWZqOhA7gVXlg"/>
+    <visualProperties xmi:id="_2-2NQTInEeWZqOhA7gVXlg" position="-316.0,-292.0" size="202.0,66.0"/>
+    <visibility xmi:id="_2-2NQjInEeWZqOhA7gVXlg" label="+"/>
+    <attributes xmi:id="__gLqQDIpEeW7AvgGQG-jGA" name="payment">
+      <modelElement href="payment.uml#__gGKsDIpEeW7AvgGQG-jGA"/>
+      <visibility xmi:id="__gLqQTIpEeW7AvgGQG-jGA" label="+"/>
+      <cardinality xmi:id="__gLqQjIpEeW7AvgGQG-jGA" label="0..1" max="1"/>
+      <type xmi:id="__gLqQzIpEeW7AvgGQG-jGA" name="Payment">
+        <modelElement href="payment.uml#_2b7tcDInEeWZqOhA7gVXlg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_2-2NQzInEeWZqOhA7gVXlg" abstractOperation="true" name="updateTransaction">
+      <modelElement href="payment.uml#_2b7GYDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_hRZz8DIoEeWZqOhA7gVXlg" visible="false"/>
+      <visibility xmi:id="_2-2NRDInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-2NRTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-2NRjInEeWZqOhA7gVXlg" abstractOperation="true" name="processPayment">
+      <modelElement href="payment.uml#_2dOt8DInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_hRabADIoEeWZqOhA7gVXlg" visible="false"/>
+      <visibility xmi:id="_2-2NRzInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-2NSDInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_2-2NSTInEeWZqOhA7gVXlg" name="amount">
+        <modelElement href="payment.uml#_2dOt8TInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-2NSjInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-2NSzInEeWZqOhA7gVXlg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_2-2NTDInEeWZqOhA7gVXlg" name="invoice">
+        <modelElement href="payment.uml#_2dOt8jInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-2NTTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-2NTjInEeWZqOhA7gVXlg" name="Invoice">
+          <modelElement href="payment.uml#_2c1FUDInEeWZqOhA7gVXlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2-zJ8DInEeWZqOhA7gVXlg" name="MobilePaymentGateway" generalizations="_2-x70DInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2byjgDInEeWZqOhA7gVXlg"/>
+    <visualProperties xmi:id="_2-zJ8TInEeWZqOhA7gVXlg" position="-373.0,-170.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_2-zJ8jInEeWZqOhA7gVXlg" label="+"/>
+    <operations xmi:id="_2-zJ8zInEeWZqOhA7gVXlg" name="updateTransaction">
+      <modelElement href="payment.uml#_2bzKkDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_jA1xQDIoEeWZqOhA7gVXlg" visible="false"/>
+      <stereotypes xmi:id="_2-zJ9DInEeWZqOhA7gVXlg" name="LegacyStyledElement">
+        <modelElement href="payment.uml#_2bzKkTInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_2-zJ9TInEeWZqOhA7gVXlg" name="Annotations">
+        <modelElement href="payment.uml#_2bzxoDInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <visibility xmi:id="_2-zJ9jInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-zJ9zInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-zJ-DInEeWZqOhA7gVXlg" name="processPayment">
+      <modelElement href="payment.uml#_2dInUDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_jA2YUDIoEeWZqOhA7gVXlg" visible="false"/>
+      <stereotypes xmi:id="_2-zJ-TInEeWZqOhA7gVXlg" name="LegacyStyledElement">
+        <modelElement href="payment.uml#_2dNf0DInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_2-zJ-jInEeWZqOhA7gVXlg" name="Annotations">
+        <modelElement href="payment.uml#_2dOG4DInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <visibility xmi:id="_2-zJ-zInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-zJ_DInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_2-zJ_TInEeWZqOhA7gVXlg" name="amount">
+        <modelElement href="payment.uml#_2dJOYDInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-zJ_jInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-zJ_zInEeWZqOhA7gVXlg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_2-zKADInEeWZqOhA7gVXlg" name="invoice">
+        <modelElement href="payment.uml#_2dKcgDInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-zKATInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-zKAjInEeWZqOhA7gVXlg" name="Invoice">
+          <modelElement href="payment.uml#_2c1FUDInEeWZqOhA7gVXlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2-pY8DInEeWZqOhA7gVXlg" name="GenericPaymentGateway" generalizations="_2-njwDInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2bpZkDInEeWZqOhA7gVXlg"/>
+    <visualProperties xmi:id="_2-pY8TInEeWZqOhA7gVXlg" position="-203.0,-172.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_2-pY8jInEeWZqOhA7gVXlg" label="+"/>
+    <operations xmi:id="_2-pY8zInEeWZqOhA7gVXlg" name="updateTransaction">
+      <modelElement href="payment.uml#_2brOwDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_jzdhADIoEeWZqOhA7gVXlg" visible="false"/>
+      <stereotypes xmi:id="_2-pY9DInEeWZqOhA7gVXlg" name="LegacyStyledElement">
+        <modelElement href="payment.uml#_2bsc4DInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_2-pY9TInEeWZqOhA7gVXlg" name="Annotations">
+        <modelElement href="payment.uml#_2btD8DInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <visibility xmi:id="_2-pY9jInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-pY9zInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-pY-DInEeWZqOhA7gVXlg" name="processPayment">
+      <modelElement href="payment.uml#_2dGLEDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_jzfWMDIoEeWZqOhA7gVXlg" visible="false"/>
+      <stereotypes xmi:id="_2-pY-TInEeWZqOhA7gVXlg" name="LegacyStyledElement">
+        <modelElement href="payment.uml#_2dGyIDInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_2-pY-jInEeWZqOhA7gVXlg" name="Annotations">
+        <modelElement href="payment.uml#_2dHZMDInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <visibility xmi:id="_2-pY-zInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-pY_DInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_2-pY_TInEeWZqOhA7gVXlg" name="amount">
+        <modelElement href="payment.uml#_2dGLETInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-pY_jInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-pY_zInEeWZqOhA7gVXlg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_2-pZADInEeWZqOhA7gVXlg" name="invoice">
+        <modelElement href="payment.uml#_2dGLEjInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-pZATInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-pZAjInEeWZqOhA7gVXlg" name="Invoice">
+          <modelElement href="payment.uml#_2c1FUDInEeWZqOhA7gVXlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2_JIMDInEeWZqOhA7gVXlg" name="PaypalPaymentGateway" generalizations="_2_Gr8DInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2cGFgDInEeWZqOhA7gVXlg"/>
+    <visualProperties xmi:id="_2_JIMTInEeWZqOhA7gVXlg" position="-13.0,-171.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_2_JIMjInEeWZqOhA7gVXlg" label="+"/>
+    <operations xmi:id="_2_JIMzInEeWZqOhA7gVXlg" name="updateTransaction">
+      <modelElement href="payment.uml#_2cGskDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_k-a4QDIoEeWZqOhA7gVXlg" visible="false"/>
+      <stereotypes xmi:id="_2_JINDInEeWZqOhA7gVXlg" name="LegacyStyledElement">
+        <modelElement href="payment.uml#_2cGskTInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_2_JINTInEeWZqOhA7gVXlg" name="Annotations">
+        <modelElement href="payment.uml#_2cHToDInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <visibility xmi:id="_2_JINjInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2_JINzInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2_JIODInEeWZqOhA7gVXlg" name="processPayment">
+      <modelElement href="payment.uml#_2dP8EDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_k-cGYDIoEeWZqOhA7gVXlg" visible="false"/>
+      <stereotypes xmi:id="_2_JIOTInEeWZqOhA7gVXlg" name="LegacyStyledElement">
+        <modelElement href="payment.uml#_2dQjIDInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_2_JIOjInEeWZqOhA7gVXlg" name="Annotations">
+        <modelElement href="payment.uml#_2dRKMDInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <visibility xmi:id="_2_JIOzInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2_JIPDInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_2_JIPTInEeWZqOhA7gVXlg" name="amount">
+        <modelElement href="payment.uml#_2dP8ETInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2_JIPjInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2_JIPzInEeWZqOhA7gVXlg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_2_JIQDInEeWZqOhA7gVXlg" name="invoice">
+        <modelElement href="payment.uml#_2dP8EjInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2_JIQTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2_JIQjInEeWZqOhA7gVXlg" name="Invoice">
+          <modelElement href="payment.uml#_2c1FUDInEeWZqOhA7gVXlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2-hdIDInEeWZqOhA7gVXlg" name="CreditCardPayment" generalizations="_2-8T4TInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2bm9UDInEeWZqOhA7gVXlg"/>
+    <visualProperties xmi:id="_2-hdITInEeWZqOhA7gVXlg" position="-727.0,-172.0" size="142.0,55.0"/>
+    <visibility xmi:id="_2-hdIjInEeWZqOhA7gVXlg" label="+"/>
+    <operations xmi:id="_2-hdIzInEeWZqOhA7gVXlg" name="process">
+      <modelElement href="payment.uml#_2boLcDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_XzLmADIoEeWZqOhA7gVXlg" visible="false"/>
+      <stereotypes xmi:id="_2-hdJDInEeWZqOhA7gVXlg" name="LegacyStyledElement">
+        <modelElement href="payment.uml#_2boLcTInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_2-hdJTInEeWZqOhA7gVXlg" name="Annotations">
+        <modelElement href="payment.uml#_2boygDInEeWZqOhA7gVXlg"/>
+      </stereotypes>
+      <visibility xmi:id="_2-hdJjInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-hdJzInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-hdKDInEeWZqOhA7gVXlg" name="CreditCardPayment">
+      <modelElement href="payment.uml#_2cwz4TInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_XzM0IDIoEeWZqOhA7gVXlg" visible="false"/>
+      <keywords xmi:id="_2-hdKTInEeWZqOhA7gVXlg" keyword="create"/>
+      <visibility xmi:id="_2-hdKjInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-hdKzInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_2-hdLDInEeWZqOhA7gVXlg">
+        <modelElement href="payment.uml#_2cxa8jInEeWZqOhA7gVXlg"/>
+        <type xmi:id="_2-hdLTInEeWZqOhA7gVXlg" name="CreditCardPayment">
+          <modelElement href="payment.uml#_2bm9UDInEeWZqOhA7gVXlg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_2-hdLjInEeWZqOhA7gVXlg" name="pp">
+        <modelElement href="payment.uml#_2cwz4jInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-hdLzInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-hdMDInEeWZqOhA7gVXlg" name="PaymenProcessor">
+          <modelElement href="payment.uml#_2b5RMDInEeWZqOhA7gVXlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2-r1MDInEeWZqOhA7gVXlg" name="MobilePayment" generalizations="_2-8T4jInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2bwHQDInEeWZqOhA7gVXlg"/>
+    <visualProperties xmi:id="_2-r1MTInEeWZqOhA7gVXlg" position="-567.0,-173.0" size="128.0,57.0"/>
+    <visibility xmi:id="_2-r1MjInEeWZqOhA7gVXlg" label="+"/>
+    <operations xmi:id="_2-r1MzInEeWZqOhA7gVXlg" name="process">
+      <modelElement href="payment.uml#_2bxVYDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_YHBIADIoEeWZqOhA7gVXlg" visible="false"/>
+      <visibility xmi:id="_2-r1NDInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-r1NTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-r1NjInEeWZqOhA7gVXlg" name="MobilePayment">
+      <modelElement href="payment.uml#_2c5WwDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_YHBIATIoEeWZqOhA7gVXlg" visible="false"/>
+      <keywords xmi:id="_2-r1NzInEeWZqOhA7gVXlg" keyword="create"/>
+      <visibility xmi:id="_2-r1ODInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-r1OTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_2-r1OjInEeWZqOhA7gVXlg">
+        <modelElement href="payment.uml#_2c590TInEeWZqOhA7gVXlg"/>
+        <type xmi:id="_2-r1OzInEeWZqOhA7gVXlg" name="MobilePayment">
+          <modelElement href="payment.uml#_2bwHQDInEeWZqOhA7gVXlg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_2-r1PDInEeWZqOhA7gVXlg" name="pp">
+        <modelElement href="payment.uml#_2c5WwTInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-r1PTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-r1PjInEeWZqOhA7gVXlg" name="PaymenProcessor">
+          <modelElement href="payment.uml#_2b5RMDInEeWZqOhA7gVXlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2-eZ0DInEeWZqOhA7gVXlg" name="CashPayment" generalizations="_2-8T4DInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2bhdwDInEeWZqOhA7gVXlg"/>
+    <visualProperties xmi:id="_2-eZ0TInEeWZqOhA7gVXlg" position="-893.0,-172.0" size="155.0,53.0"/>
+    <visibility xmi:id="_2-eZ0jInEeWZqOhA7gVXlg" label="+"/>
+    <operations xmi:id="_2-eZ0zInEeWZqOhA7gVXlg" name="process">
+      <modelElement href="payment.uml#_2blvMDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_XcFUoDIoEeWZqOhA7gVXlg" visible="false"/>
+      <visibility xmi:id="_2-eZ1DInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-eZ1TInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-eZ1jInEeWZqOhA7gVXlg" name="CashPayment">
+      <modelElement href="payment.uml#_2cwM0DInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_XcF7sDIoEeWZqOhA7gVXlg" visible="false"/>
+      <keywords xmi:id="_2-eZ1zInEeWZqOhA7gVXlg" keyword="create"/>
+      <visibility xmi:id="_2-eZ2DInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-eZ2TInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_2-eZ2jInEeWZqOhA7gVXlg">
+        <modelElement href="payment.uml#_2cwM1DInEeWZqOhA7gVXlg"/>
+        <type xmi:id="_2-eZ2zInEeWZqOhA7gVXlg" name="CashPayment">
+          <modelElement href="payment.uml#_2bhdwDInEeWZqOhA7gVXlg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_2-eZ3DInEeWZqOhA7gVXlg" name="pp">
+        <modelElement href="payment.uml#_2cwM0TInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-eZ3TInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-eZ3jInEeWZqOhA7gVXlg" name="PaymenProcessor">
+          <modelElement href="payment.uml#_2b5RMDInEeWZqOhA7gVXlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2-_XMDInEeWZqOhA7gVXlg" name="Payment" abstractClass="true" associationsOut="__gJOADIpEeW7AvgGQG-jGA" subclassedBy="_2-8T4DInEeWZqOhA7gVXlg _2-8T4TInEeWZqOhA7gVXlg _2-8T4jInEeWZqOhA7gVXlg">
+    <modelElement href="payment.uml#_2b7tcDInEeWZqOhA7gVXlg"/>
+    <visualProperties xmi:id="_2-_XMTInEeWZqOhA7gVXlg" position="-770.0,-300.0" size="163.0,70.0"/>
+    <visibility xmi:id="_2-_XMjInEeWZqOhA7gVXlg" label="+"/>
+    <attributes xmi:id="__gNfcDIpEeW7AvgGQG-jGA" name="paymenProcessor">
+      <modelElement href="payment.uml#__gGKszIpEeW7AvgGQG-jGA"/>
+      <visibility xmi:id="__gNfcTIpEeW7AvgGQG-jGA" label="+"/>
+      <cardinality xmi:id="__gNfcjIpEeW7AvgGQG-jGA" label="*" max="-1"/>
+      <type xmi:id="__gNfczIpEeW7AvgGQG-jGA" name="PaymenProcessor">
+        <modelElement href="payment.uml#_2b5RMDInEeWZqOhA7gVXlg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_2-_XPTInEeWZqOhA7gVXlg" abstractOperation="true" name="process">
+      <modelElement href="payment.uml#_2b87kDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_YpUj0DIoEeWZqOhA7gVXlg" visible="false"/>
+      <visibility xmi:id="_2-_XPjInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-_XPzInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-_XQDInEeWZqOhA7gVXlg" name="processPayment">
+      <modelElement href="payment.uml#_2b9ioDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_YpVx8DIoEeWZqOhA7gVXlg" visible="false"/>
+      <visibility xmi:id="_2-_XQTInEeWZqOhA7gVXlg" label="#"/>
+      <cardinality xmi:id="_2-_XQjInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-_XQzInEeWZqOhA7gVXlg" name="updateTransaction">
+      <modelElement href="payment.uml#_2b9ioTInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_YpVx8TIoEeWZqOhA7gVXlg" visible="false"/>
+      <visibility xmi:id="_2-_XRDInEeWZqOhA7gVXlg" label="#"/>
+      <cardinality xmi:id="_2-_XRTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_2-_XRjInEeWZqOhA7gVXlg" name="Payment">
+      <modelElement href="payment.uml#_2dBSkDInEeWZqOhA7gVXlg"/>
+      <visualProperties xmi:id="_YpVx8jIoEeWZqOhA7gVXlg" visible="false"/>
+      <keywords xmi:id="_2-_XRzInEeWZqOhA7gVXlg" keyword="create"/>
+      <visibility xmi:id="_2-_XSDInEeWZqOhA7gVXlg" label="+"/>
+      <cardinality xmi:id="_2-_XSTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_2-_XSjInEeWZqOhA7gVXlg">
+        <modelElement href="payment.uml#_2dB5ojInEeWZqOhA7gVXlg"/>
+        <type xmi:id="_2-_XSzInEeWZqOhA7gVXlg" name="Payment">
+          <modelElement href="payment.uml#_2b7tcDInEeWZqOhA7gVXlg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_2-_XTDInEeWZqOhA7gVXlg" name="pp">
+        <modelElement href="payment.uml#_2dBSkTInEeWZqOhA7gVXlg"/>
+        <cardinality xmi:id="_2-_XTTInEeWZqOhA7gVXlg" label="1" max="1" min="1"/>
+        <type xmi:id="_2-_XTjInEeWZqOhA7gVXlg" name="PaymenProcessor">
+          <modelElement href="payment.uml#_2b5RMDInEeWZqOhA7gVXlg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

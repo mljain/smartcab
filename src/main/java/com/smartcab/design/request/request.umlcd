@@ -73,6 +73,9 @@
       <stereotypes xmi:id="_oLb-wDHkEeWyGPiwuzc68Q" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_oLebADHkEeWyGPiwuzc68Q" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_oLnk8DHkEeWyGPiwuzc68Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_0XY4QDImEeWZqOhA7gVXlg" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_0XZfUDImEeWZqOhA7gVXlg" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_0Xfl8DImEeWZqOhA7gVXlg" name="LegacyStyledElement"/>
       <visibility xmi:id="_R8Wh9C65EeWUGulxEaPKfw" label="+"/>
       <cardinality xmi:id="_R8Wh9S65EeWUGulxEaPKfw" label="1" max="1" min="1"/>
       <type xmi:id="_oLQ_oDHkEeWyGPiwuzc68Q" name="Dispatcher">

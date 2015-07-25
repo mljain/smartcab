@@ -74,35 +74,6 @@
       <cardinality xmi:id="_5kLYyDHPEeWyGPiwuzc68Q" label="*" max="-1"/>
     </targetRole>
   </edges>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_nhvdIDHGEeWyGPiwuzc68Q" name="Budget" associationsOut="_niIesDHGEeWyGPiwuzc68Q">
-    <modelElement href="smartcab2.uml#_nKoksDHGEeWyGPiwuzc68Q"/>
-    <visualProperties xmi:id="_nhvdITHGEeWyGPiwuzc68Q" position="34.0,-186.0" size="128.0,143.0"/>
-    <stereotypes xmi:id="_nhwEMDHGEeWyGPiwuzc68Q" name="LegacyStyledElement">
-      <modelElement href="smartcab2.uml#_nKpy0DHGEeWyGPiwuzc68Q"/>
-    </stereotypes>
-    <visibility xmi:id="_nhwEMTHGEeWyGPiwuzc68Q" label="+"/>
-    <literals xmi:id="_nhwEMjHGEeWyGPiwuzc68Q" name="ECONOMICAL">
-      <modelElement href="smartcab2.uml#_nKpy0THGEeWyGPiwuzc68Q"/>
-    </literals>
-    <literals xmi:id="_nhwEMzHGEeWyGPiwuzc68Q" name="LUXUARY">
-      <modelElement href="smartcab2.uml#_nKpy0jHGEeWyGPiwuzc68Q"/>
-    </literals>
-    <literals xmi:id="_nhwENDHGEeWyGPiwuzc68Q" name="SPORTS">
-      <modelElement href="smartcab2.uml#_nKpy0zHGEeWyGPiwuzc68Q"/>
-    </literals>
-    <literals xmi:id="_nhwENTHGEeWyGPiwuzc68Q" name="SUV">
-      <modelElement href="smartcab2.uml#_nKqZ4DHGEeWyGPiwuzc68Q"/>
-    </literals>
-    <literals xmi:id="_nhwENjHGEeWyGPiwuzc68Q" name="PREMIUM">
-      <modelElement href="smartcab2.uml#_nKqZ4THGEeWyGPiwuzc68Q"/>
-    </literals>
-    <literals xmi:id="_nhwENzHGEeWyGPiwuzc68Q" name="TRUCK">
-      <modelElement href="smartcab2.uml#_nKqZ4jHGEeWyGPiwuzc68Q"/>
-    </literals>
-    <literals xmi:id="_nhwEODHGEeWyGPiwuzc68Q" name="BUS">
-      <modelElement href="smartcab2.uml#_nKqZ4zHGEeWyGPiwuzc68Q"/>
-    </literals>
-  </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_niMJEDHGEeWyGPiwuzc68Q" name="Luxury" generalizations="_niHQkDHGEeWyGPiwuzc68Q">
     <modelElement href="smartcab2.uml#_nK2AEDHGEeWyGPiwuzc68Q"/>
     <visualProperties xmi:id="_niMJETHGEeWyGPiwuzc68Q" position="203.0,58.0" size="-1.0,-1.0"/>
@@ -133,48 +104,6 @@
       </stereotypes>
       <visibility xmi:id="_niSPtjHGEeWyGPiwuzc68Q" label="+"/>
       <cardinality xmi:id="_niSPtzHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
-    </operations>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_niV6EDHGEeWyGPiwuzc68Q" name="VehicleBuilder" abstractClass="true" associationsIn="_niIesDHGEeWyGPiwuzc68Q _niVTADHGEeWyGPiwuzc68Q _5kLYwDHPEeWyGPiwuzc68Q" subclassedBy="_niHQkDHGEeWyGPiwuzc68Q _niJs0DHGEeWyGPiwuzc68Q _niQagDHGEeWyGPiwuzc68Q _niec8DHGEeWyGPiwuzc68Q">
-    <modelElement href="smartcab2.uml#_nK-i8DHGEeWyGPiwuzc68Q"/>
-    <visualProperties xmi:id="_niV6ETHGEeWyGPiwuzc68Q" position="219.0,-131.0" size="-1.0,-1.0"/>
-    <visibility xmi:id="_niV6EjHGEeWyGPiwuzc68Q" label="+"/>
-    <attributes xmi:id="_niV6EzHGEeWyGPiwuzc68Q" name="numPassenger">
-      <modelElement href="smartcab2.uml#_nLuw4THGEeWyGPiwuzc68Q"/>
-      <visibility xmi:id="_niV6FDHGEeWyGPiwuzc68Q" label="+"/>
-      <cardinality xmi:id="_niV6FTHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
-      <type xmi:id="_niV6FjHGEeWyGPiwuzc68Q" name="int">
-        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_niV6FzHGEeWyGPiwuzc68Q" name="type">
-      <modelElement href="smartcab2.uml#_nLvX8DHGEeWyGPiwuzc68Q"/>
-      <visibility xmi:id="_niV6GDHGEeWyGPiwuzc68Q" label="+"/>
-      <cardinality xmi:id="_niV6GTHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
-      <type xmi:id="_niV6GjHGEeWyGPiwuzc68Q" name="VehicleType">
-        <modelElement href="smartcab2.uml#_nLoDMDHGEeWyGPiwuzc68Q"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_niV6GzHGEeWyGPiwuzc68Q" name="budget">
-      <modelElement href="smartcab2.uml#_nLvX8THGEeWyGPiwuzc68Q"/>
-      <visibility xmi:id="_niV6HDHGEeWyGPiwuzc68Q" label="+"/>
-      <cardinality xmi:id="_niV6HTHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
-      <type xmi:id="_niV6HjHGEeWyGPiwuzc68Q" name="Budget">
-        <modelElement href="smartcab2.uml#_nKoksDHGEeWyGPiwuzc68Q"/>
-      </type>
-    </attributes>
-    <attributes xmi:id="_HwH6EDHQEeWyGPiwuzc68Q" name="vehicleBuilder">
-      <modelElement href="smartcab2.uml#_5kI8gDHPEeWyGPiwuzc68Q"/>
-      <visibility xmi:id="_HwH6ETHQEeWyGPiwuzc68Q" label="+"/>
-      <cardinality xmi:id="_HwH6EjHQEeWyGPiwuzc68Q" label="0..1" max="1"/>
-      <type xmi:id="_HwH6EzHQEeWyGPiwuzc68Q" name="VehicleDecorator">
-        <modelElement href="smartcab2.uml#_nLBmQDHGEeWyGPiwuzc68Q"/>
-      </type>
-    </attributes>
-    <operations xmi:id="_niV6HzHGEeWyGPiwuzc68Q" abstractOperation="true" name="buildVehicle">
-      <modelElement href="smartcab2.uml#_nK_KADHGEeWyGPiwuzc68Q"/>
-      <visibility xmi:id="_niV6IDHGEeWyGPiwuzc68Q" label="+"/>
-      <cardinality xmi:id="_niV6ITHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
     </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nh_UwDHGEeWyGPiwuzc68Q" name="EconomyDecorator" generalizations="_niec8THGEeWyGPiwuzc68Q">
@@ -289,6 +218,77 @@
           <modelElement href="smartcab2.uml#_nK-i8DHGEeWyGPiwuzc68Q"/>
         </type>
       </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_nhvdIDHGEeWyGPiwuzc68Q" name="Budget" associationsOut="_niIesDHGEeWyGPiwuzc68Q">
+    <modelElement href="smartcab2.uml#_nKoksDHGEeWyGPiwuzc68Q"/>
+    <visualProperties xmi:id="_nhvdITHGEeWyGPiwuzc68Q" position="34.0,-186.0" size="128.0,143.0"/>
+    <stereotypes xmi:id="_nhwEMDHGEeWyGPiwuzc68Q" name="LegacyStyledElement">
+      <modelElement href="smartcab2.uml#_nKpy0DHGEeWyGPiwuzc68Q"/>
+    </stereotypes>
+    <visibility xmi:id="_nhwEMTHGEeWyGPiwuzc68Q" label="+"/>
+    <literals xmi:id="_nhwEMjHGEeWyGPiwuzc68Q" name="ECONOMICAL">
+      <modelElement href="smartcab2.uml#_nKpy0THGEeWyGPiwuzc68Q"/>
+    </literals>
+    <literals xmi:id="_nhwEMzHGEeWyGPiwuzc68Q" name="LUXUARY">
+      <modelElement href="smartcab2.uml#_nKpy0jHGEeWyGPiwuzc68Q"/>
+    </literals>
+    <literals xmi:id="_nhwENDHGEeWyGPiwuzc68Q" name="SPORTS">
+      <modelElement href="smartcab2.uml#_nKpy0zHGEeWyGPiwuzc68Q"/>
+    </literals>
+    <literals xmi:id="_nhwENTHGEeWyGPiwuzc68Q" name="SUV">
+      <modelElement href="smartcab2.uml#_nKqZ4DHGEeWyGPiwuzc68Q"/>
+    </literals>
+    <literals xmi:id="_nhwENjHGEeWyGPiwuzc68Q" name="PREMIUM">
+      <modelElement href="smartcab2.uml#_nKqZ4THGEeWyGPiwuzc68Q"/>
+    </literals>
+    <literals xmi:id="_nhwENzHGEeWyGPiwuzc68Q" name="TRUCK">
+      <modelElement href="smartcab2.uml#_nKqZ4jHGEeWyGPiwuzc68Q"/>
+    </literals>
+    <literals xmi:id="_nhwEODHGEeWyGPiwuzc68Q" name="BUS">
+      <modelElement href="smartcab2.uml#_nKqZ4zHGEeWyGPiwuzc68Q"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_niV6EDHGEeWyGPiwuzc68Q" name="VehicleBuilder" abstractClass="true" associationsIn="_niIesDHGEeWyGPiwuzc68Q _niVTADHGEeWyGPiwuzc68Q _5kLYwDHPEeWyGPiwuzc68Q" subclassedBy="_niHQkDHGEeWyGPiwuzc68Q _niJs0DHGEeWyGPiwuzc68Q _niQagDHGEeWyGPiwuzc68Q _niec8DHGEeWyGPiwuzc68Q">
+    <modelElement href="smartcab2.uml#_nK-i8DHGEeWyGPiwuzc68Q"/>
+    <visualProperties xmi:id="_niV6ETHGEeWyGPiwuzc68Q" position="219.0,-131.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_niV6EjHGEeWyGPiwuzc68Q" label="+"/>
+    <attributes xmi:id="_niV6EzHGEeWyGPiwuzc68Q" name="numPassenger">
+      <modelElement href="smartcab2.uml#_nLuw4THGEeWyGPiwuzc68Q"/>
+      <visibility xmi:id="_niV6FDHGEeWyGPiwuzc68Q" label="+"/>
+      <cardinality xmi:id="_niV6FTHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
+      <type xmi:id="_niV6FjHGEeWyGPiwuzc68Q" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_niV6FzHGEeWyGPiwuzc68Q" name="type">
+      <modelElement href="smartcab2.uml#_nLvX8DHGEeWyGPiwuzc68Q"/>
+      <visibility xmi:id="_niV6GDHGEeWyGPiwuzc68Q" label="+"/>
+      <cardinality xmi:id="_niV6GTHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
+      <type xmi:id="_niV6GjHGEeWyGPiwuzc68Q" name="VehicleType">
+        <modelElement href="smartcab2.uml#_nLoDMDHGEeWyGPiwuzc68Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_niV6GzHGEeWyGPiwuzc68Q" name="budget">
+      <modelElement href="smartcab2.uml#_nLvX8THGEeWyGPiwuzc68Q"/>
+      <visibility xmi:id="_niV6HDHGEeWyGPiwuzc68Q" label="+"/>
+      <cardinality xmi:id="_niV6HTHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
+      <type xmi:id="_niV6HjHGEeWyGPiwuzc68Q" name="Budget">
+        <modelElement href="smartcab2.uml#_nKoksDHGEeWyGPiwuzc68Q"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HwH6EDHQEeWyGPiwuzc68Q" name="vehicleBuilder">
+      <modelElement href="smartcab2.uml#_5kI8gDHPEeWyGPiwuzc68Q"/>
+      <visibility xmi:id="_HwH6ETHQEeWyGPiwuzc68Q" label="+"/>
+      <cardinality xmi:id="_HwH6EjHQEeWyGPiwuzc68Q" label="0..1" max="1"/>
+      <type xmi:id="_HwH6EzHQEeWyGPiwuzc68Q" name="VehicleDecorator">
+        <modelElement href="smartcab2.uml#_nLBmQDHGEeWyGPiwuzc68Q"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_niV6HzHGEeWyGPiwuzc68Q" abstractOperation="true" name="buildVehicle">
+      <modelElement href="smartcab2.uml#_nK_KADHGEeWyGPiwuzc68Q"/>
+      <visibility xmi:id="_niV6IDHGEeWyGPiwuzc68Q" label="+"/>
+      <cardinality xmi:id="_niV6ITHGEeWyGPiwuzc68Q" label="1" max="1" min="1"/>
     </operations>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

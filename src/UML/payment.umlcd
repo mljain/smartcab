@@ -19,6 +19,9 @@
     <targetRole xmi:id="_g7NDsS61EeWUGulxEaPKfw" aggregationKind="NONE" name="_pp" navigable="true">
       <modelElement href="payment.uml#_gmZRUC61EeWUGulxEaPKfw"/>
       <visualProperties xmi:id="_hJJZES61EeWUGulxEaPKfw" position="-39.0,28.0"/>
+      <stereotypes xmi:id="_BoRfgDInEeWZqOhA7gVXlg" name="LegacyStyledElement">
+        <modelElement href="payment.uml#_gmZ4YC61EeWUGulxEaPKfw"/>
+      </stereotypes>
       <visibility xmi:id="_g7SjQS61EeWUGulxEaPKfw" label="#"/>
       <cardinality xmi:id="_g7SjQC61EeWUGulxEaPKfw" label="1" max="1" min="1"/>
     </targetRole>
@@ -58,9 +61,9 @@
     <visibility xmi:id="_g7VmkS61EeWUGulxEaPKfw" label="+"/>
     <attributes xmi:id="_g7Vmki61EeWUGulxEaPKfw" name="_pp">
       <modelElement href="payment.uml#_gmZRUC61EeWUGulxEaPKfw"/>
-      <stereotypes xmi:id="_g7Vmky61EeWUGulxEaPKfw" name="LegacyStyledElement">
-        <modelElement href="payment.uml#_gmZ4YC61EeWUGulxEaPKfw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_BoWYADInEeWZqOhA7gVXlg" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_BoW_EDInEeWZqOhA7gVXlg" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_BoXmIDInEeWZqOhA7gVXlg" name="LegacyStyledElement"/>
       <visibility xmi:id="_g7VmlC61EeWUGulxEaPKfw" label="#"/>
       <cardinality xmi:id="_g7VmlS61EeWUGulxEaPKfw" label="1" max="1" min="1"/>
       <type xmi:id="_g7Vmli61EeWUGulxEaPKfw" name="PaymenProcessor">
@@ -149,7 +152,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_g73yEC61EeWUGulxEaPKfw" name="PaymentGateway" generalizations="_g70uwC61EeWUGulxEaPKfw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_g73yEC61EeWUGulxEaPKfw" name="GenericPaymentGateway" generalizations="_g70uwC61EeWUGulxEaPKfw">
     <modelElement href="payment.uml#_gkwSkC61EeWUGulxEaPKfw"/>
     <visualProperties xmi:id="_g73yES61EeWUGulxEaPKfw" position="86.0,-136.0" size="319.0,79.0"/>
     <visibility xmi:id="_g73yEi61EeWUGulxEaPKfw" label="+"/>

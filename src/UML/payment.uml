@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_gMSIMC61EeWUGulxEaPKfw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_gMSIMS61EeWUGulxEaPKfw" source="codegen">
         <details xmi:id="_gMSvQC61EeWUGulxEaPKfw" key="codegenDirectory" value="/smartcab/src/main/java"/>
-        <details xmi:id="_g3H08C61EeWUGulxEaPKfw" key="AssociatedSourceCode" value="/smartcab/src/main/java/com/smartcab/design/payment/CashPayment.java;3141858141/1;/smartcab/src/main/java/com/smartcab/design/payment/CreditCardPayment.java;407818479/1;/smartcab/src/main/java/com/smartcab/design/payment/MobilePayment.java;1783694668/1;/smartcab/src/main/java/com/smartcab/design/payment/PaymenProcessor.java;734830134/1;/smartcab/src/main/java/com/smartcab/design/payment/Payment.java;3975870553/1;/smartcab/src/main/java/com/smartcab/design/payment/PaymentGateway.java;2336477954/1;"/>
+        <details xmi:id="_g3H08C61EeWUGulxEaPKfw" key="AssociatedSourceCode" value="/smartcab/src/main/java/com/smartcab/design/payment/CashPayment.java;3141858141/1;/smartcab/src/main/java/com/smartcab/design/payment/CreditCardPayment.java;407818479/1;/smartcab/src/main/java/com/smartcab/design/payment/MobilePayment.java;1783694668/1;/smartcab/src/main/java/com/smartcab/design/payment/PaymenProcessor.java;734830134/1;/smartcab/src/main/java/com/smartcab/design/payment/Payment.java;3975870553/1;/smartcab/src/main/java/com/smartcab/design/payment/GenericPaymentGateway.java;882171631/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_gkGyUC61EeWUGulxEaPKfw">
@@ -162,7 +162,7 @@
                 <ownedParameter xmi:id="_gmEhMC61EeWUGulxEaPKfw" type="_gki3MC61EeWUGulxEaPKfw" direction="return"/>
               </ownedOperation>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_gkwSkC61EeWUGulxEaPKfw" name="PaymentGateway">
+            <packagedElement xmi:type="uml:Class" xmi:id="_gkwSkC61EeWUGulxEaPKfw" name="GenericPaymentGateway">
               <generalization xmi:id="_gmILkC61EeWUGulxEaPKfw" general="_gkd-sC61EeWUGulxEaPKfw"/>
               <ownedOperation xmi:id="_gkxgsC61EeWUGulxEaPKfw" name="updateTransaction"/>
               <ownedOperation xmi:id="_gmR8kC61EeWUGulxEaPKfw" name="processPayment">

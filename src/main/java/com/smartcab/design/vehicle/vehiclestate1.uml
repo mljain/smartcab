@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_-eaMkDIbEeWZqOhA7gVXlg" name="vehiclestate1">
+    <eAnnotations xmi:id="_CdB-QDIcEeWZqOhA7gVXlg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_CdB-QTIcEeWZqOhA7gVXlg" source="codegen">
+        <details xmi:id="_CdClUDIcEeWZqOhA7gVXlg" key="codegenDirectory" value="/smartcab/src/main/java"/>
+        <details xmi:id="_D9RB8DIcEeWZqOhA7gVXlg" key="AssociatedSourceCode" value="/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleCancelStateState.java;3438846209/1;/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleQualifyState.java;1301692958/1;/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleRequestState.java;912519564/1;/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleServiceInterface.java;1614318618/1;/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleServiceInterfaceImpl.java;3513702108/1;/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleServiceState.java;1427584383/1;/smartcab/src/main/java/com/smartcab/design/vehicle/VehicleState.java;2253538116/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_DXYtsDIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_DXYtsTIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_DXYtsjIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_DXYtszIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_DXZUwDIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_DXZUwTIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_DXZUwjIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_DXZUwzIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_DXai4DIcEeWZqOhA7gVXlg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_DU6ogDIcEeWZqOhA7gVXlg" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DU7PkDIcEeWZqOhA7gVXlg" name="smartcab">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DU7PkTIcEeWZqOhA7gVXlg" name="design">
+          <packagedElement xmi:type="uml:Package" xmi:id="_DVGOsDIcEeWZqOhA7gVXlg" name="vehicle">
+            <packagedElement xmi:type="uml:Class" xmi:id="_DXSAADIcEeWZqOhA7gVXlg" name="VehicleCancelStateState">
+              <interfaceRealization xmi:id="_DafsEDIcEeWZqOhA7gVXlg" client="_DXSAADIcEeWZqOhA7gVXlg" supplier="_DY5JkDIcEeWZqOhA7gVXlg" contract="_DY5JkDIcEeWZqOhA7gVXlg"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbaSEDIcEeWZqOhA7gVXlg" name="requestState" specification="_DXc_IDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbcuUDIcEeWZqOhA7gVXlg" name="qualifyVehicle" specification="_DXgpgDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbdVYDIcEeWZqOhA7gVXlg" name="serviceVehicle" specification="_DXh3oDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dbd8cDIcEeWZqOhA7gVXlg" name="completeVehicle" specification="_DXiesDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbejgDIcEeWZqOhA7gVXlg" name="cancelvehicle" specification="_DXjFwDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DXc_IDIcEeWZqOhA7gVXlg" name="requestState" method="_DbaSEDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DXgpgDIcEeWZqOhA7gVXlg" name="qualifyVehicle" method="_DbcuUDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DXh3oDIcEeWZqOhA7gVXlg" name="serviceVehicle" method="_DbdVYDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DXiesDIcEeWZqOhA7gVXlg" name="completeVehicle" method="_Dbd8cDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DXjFwDIcEeWZqOhA7gVXlg" name="cancelvehicle" method="_DbejgDIcEeWZqOhA7gVXlg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_DXn-QDIcEeWZqOhA7gVXlg" name="VehicleQualifyState">
+              <interfaceRealization xmi:id="_DajWcDIcEeWZqOhA7gVXlg" client="_DXn-QDIcEeWZqOhA7gVXlg" supplier="_DY5JkDIcEeWZqOhA7gVXlg" contract="_DY5JkDIcEeWZqOhA7gVXlg"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbfxoDIcEeWZqOhA7gVXlg" name="requestState" specification="_DXpzcDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbfxoTIcEeWZqOhA7gVXlg" name="qualifyVehicle" specification="_DXrBkDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbgYsDIcEeWZqOhA7gVXlg" name="serviceVehicle" specification="_DXrooDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbiN4DIcEeWZqOhA7gVXlg" name="completeVehicle" specification="_DXsPsDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dbi08DIcEeWZqOhA7gVXlg" name="cancelvehicle" specification="_DXs2wDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DXpzcDIcEeWZqOhA7gVXlg" name="requestState" method="_DbfxoDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DXrBkDIcEeWZqOhA7gVXlg" name="qualifyVehicle" method="_DbfxoTIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DXrooDIcEeWZqOhA7gVXlg" name="serviceVehicle" method="_DbgYsDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DXsPsDIcEeWZqOhA7gVXlg" name="completeVehicle" method="_DbiN4DIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DXs2wDIcEeWZqOhA7gVXlg" name="cancelvehicle" method="_Dbi08DIcEeWZqOhA7gVXlg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_DXv6EDIcEeWZqOhA7gVXlg" name="VehicleRequestState">
+              <interfaceRealization xmi:id="_DalLoDIcEeWZqOhA7gVXlg" client="_DXv6EDIcEeWZqOhA7gVXlg" supplier="_DY5JkDIcEeWZqOhA7gVXlg" contract="_DY5JkDIcEeWZqOhA7gVXlg"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbjcADIcEeWZqOhA7gVXlg" name="requestState" specification="_DX0ykDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbkDEDIcEeWZqOhA7gVXlg" name="qualifyVehicle" specification="_DX2AsDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbkqIDIcEeWZqOhA7gVXlg" name="serviceVehicle" specification="_DX2nwDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbkqITIcEeWZqOhA7gVXlg" name="completeVehicle" specification="_DX2nwTIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DblRMDIcEeWZqOhA7gVXlg" name="cancelvehicle" specification="_DX314DIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DX0ykDIcEeWZqOhA7gVXlg" name="requestState" method="_DbjcADIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DX2AsDIcEeWZqOhA7gVXlg" name="qualifyVehicle" method="_DbkDEDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DX2nwDIcEeWZqOhA7gVXlg" name="serviceVehicle" method="_DbkqIDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DX2nwTIcEeWZqOhA7gVXlg" name="completeVehicle" method="_DbkqITIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DX314DIcEeWZqOhA7gVXlg" name="cancelvehicle" method="_DblRMDIcEeWZqOhA7gVXlg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_DX9VcDIcEeWZqOhA7gVXlg" name="VehicleServiceInterface">
+              <ownedOperation xmi:id="_DX_KoDIcEeWZqOhA7gVXlg" name="requestState"/>
+              <ownedOperation xmi:id="_DYAYwDIcEeWZqOhA7gVXlg" name="qualifyVehicle"/>
+              <ownedOperation xmi:id="_DYA_0DIcEeWZqOhA7gVXlg" name="serviceVehicle"/>
+              <ownedOperation xmi:id="_DYBm4DIcEeWZqOhA7gVXlg" name="completeVehicle"/>
+              <ownedOperation xmi:id="_DYC1ADIcEeWZqOhA7gVXlg" name="cancelvehicle"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_DYQQYDIcEeWZqOhA7gVXlg" name="VehicleServiceInterfaceImpl">
+              <ownedAttribute xmi:id="_HbK2wTIdEeWZqOhA7gVXlg" name="vehicleState" type="_DY5JkDIcEeWZqOhA7gVXlg" aggregation="shared" association="_HbF-QDIdEeWZqOhA7gVXlg">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HbK2wjIdEeWZqOhA7gVXlg"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HbLd0DIdEeWZqOhA7gVXlg" value="*"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_DarSQDIcEeWZqOhA7gVXlg" client="_DYQQYDIcEeWZqOhA7gVXlg" supplier="_DX9VcDIcEeWZqOhA7gVXlg" contract="_DX9VcDIcEeWZqOhA7gVXlg"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbntcDIcEeWZqOhA7gVXlg" name="VehicleServiceInterfaceImpl" specification="_DatHcDIcEeWZqOhA7gVXlg">
+                <ownedParameter xmi:id="_DbntcTIcEeWZqOhA7gVXlg" name="state" type="_DY5JkDIcEeWZqOhA7gVXlg"/>
+                <ownedParameter xmi:id="_DbntcjIcEeWZqOhA7gVXlg" type="_DYQQYDIcEeWZqOhA7gVXlg" direction="return"/>
+                <language>java</language>
+                <body>this.state=state;
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DboUgDIcEeWZqOhA7gVXlg" name="requestState" specification="_DYUh0DIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>state.requestState();
+		// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dbo7kDIcEeWZqOhA7gVXlg" name="qualifyVehicle" specification="_DYVv8DIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>state.qualifyVehicle();
+		// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dbo7kTIcEeWZqOhA7gVXlg" name="serviceVehicle" specification="_DYWXADIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		state.serviceVehicle();
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbpioDIcEeWZqOhA7gVXlg" name="completeVehicle" specification="_DYaBYDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		state.completeVehicle();
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbpioTIcEeWZqOhA7gVXlg" name="cancelvehicle" specification="_DYbPgDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		state.cancelvehicle();
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbqJsDIcEeWZqOhA7gVXlg" name="getState" specification="_DYcdoDIcEeWZqOhA7gVXlg">
+                <ownedParameter xmi:id="_DbqJsTIcEeWZqOhA7gVXlg" type="_DY5JkDIcEeWZqOhA7gVXlg" direction="return"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		return state;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbrX0DIcEeWZqOhA7gVXlg" name="setState" specification="_DaynADIcEeWZqOhA7gVXlg">
+                <ownedParameter xmi:id="_DbrX0TIcEeWZqOhA7gVXlg" name="s" type="_DY5JkDIcEeWZqOhA7gVXlg"/>
+                <language>java</language>
+                <body>this.state=s;
+		
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DYUh0DIcEeWZqOhA7gVXlg" name="requestState" method="_DboUgDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DYVv8DIcEeWZqOhA7gVXlg" name="qualifyVehicle" method="_Dbo7kDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DYWXADIcEeWZqOhA7gVXlg" name="serviceVehicle" method="_Dbo7kTIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DYaBYDIcEeWZqOhA7gVXlg" name="completeVehicle" method="_DbpioDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DYbPgDIcEeWZqOhA7gVXlg" name="cancelvehicle" method="_DbpioTIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DYcdoDIcEeWZqOhA7gVXlg" name="getState" method="_DbqJsDIcEeWZqOhA7gVXlg">
+                <ownedParameter xmi:id="_DawKwDIcEeWZqOhA7gVXlg" type="_DY5JkDIcEeWZqOhA7gVXlg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DatHcDIcEeWZqOhA7gVXlg" name="VehicleServiceInterfaceImpl" method="_DbntcDIcEeWZqOhA7gVXlg">
+                <eAnnotations xmi:id="_DauVkDIcEeWZqOhA7gVXlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_DauVkTIcEeWZqOhA7gVXlg" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_DatugDIcEeWZqOhA7gVXlg" name="state" type="_DY5JkDIcEeWZqOhA7gVXlg"/>
+                <ownedParameter xmi:id="_Dau8oDIcEeWZqOhA7gVXlg" type="_DYQQYDIcEeWZqOhA7gVXlg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DaynADIcEeWZqOhA7gVXlg" name="setState" method="_DbrX0DIcEeWZqOhA7gVXlg">
+                <ownedParameter xmi:id="_Daz1IDIcEeWZqOhA7gVXlg" name="s" type="_DY5JkDIcEeWZqOhA7gVXlg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_DYxNwDIcEeWZqOhA7gVXlg" name="VehicleServiceState">
+              <interfaceRealization xmi:id="_Da4GkDIcEeWZqOhA7gVXlg" client="_DYxNwDIcEeWZqOhA7gVXlg" supplier="_DY5JkDIcEeWZqOhA7gVXlg" contract="_DY5JkDIcEeWZqOhA7gVXlg"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbtNADIcEeWZqOhA7gVXlg" name="requestState" specification="_DYzC8DIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbubIDIcEeWZqOhA7gVXlg" name="qualifyVehicle" specification="_DY0REDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbwQUDIcEeWZqOhA7gVXlg" name="serviceVehicle" specification="_DY04IDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DbwQUTIcEeWZqOhA7gVXlg" name="completeVehicle" specification="_DY1fMDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Dbw3YDIcEeWZqOhA7gVXlg" name="cancelvehicle" specification="_DY2GQDIcEeWZqOhA7gVXlg">
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_DYzC8DIcEeWZqOhA7gVXlg" name="requestState" method="_DbtNADIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DY0REDIcEeWZqOhA7gVXlg" name="qualifyVehicle" method="_DbubIDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DY04IDIcEeWZqOhA7gVXlg" name="serviceVehicle" method="_DbwQUDIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DY1fMDIcEeWZqOhA7gVXlg" name="completeVehicle" method="_DbwQUTIcEeWZqOhA7gVXlg"/>
+              <ownedOperation xmi:id="_DY2GQDIcEeWZqOhA7gVXlg" name="cancelvehicle" method="_Dbw3YDIcEeWZqOhA7gVXlg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_DY5JkDIcEeWZqOhA7gVXlg" name="VehicleState">
+              <ownedAttribute xmi:id="_HbGlUDIdEeWZqOhA7gVXlg" name="vehicleServiceInterfaceImpl" type="_DYQQYDIcEeWZqOhA7gVXlg" association="_HbF-QDIdEeWZqOhA7gVXlg">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HbKPsDIdEeWZqOhA7gVXlg"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HbK2wDIdEeWZqOhA7gVXlg" value="1"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_DY6-wDIcEeWZqOhA7gVXlg" name="requestState"/>
+              <ownedOperation xmi:id="_DY7l0DIcEeWZqOhA7gVXlg" name="qualifyVehicle"/>
+              <ownedOperation xmi:id="_DY8M4DIcEeWZqOhA7gVXlg" name="serviceVehicle"/>
+              <ownedOperation xmi:id="_DY9bADIcEeWZqOhA7gVXlg" name="completeVehicle"/>
+              <ownedOperation xmi:id="_DY_QMDIcEeWZqOhA7gVXlg" name="cancelvehicle"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_HbF-QDIdEeWZqOhA7gVXlg" name="" memberEnd="_HbGlUDIdEeWZqOhA7gVXlg _HbK2wTIdEeWZqOhA7gVXlg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_CdFooDIcEeWZqOhA7gVXlg">
+      <eAnnotations xmi:id="_CdJ6EDIcEeWZqOhA7gVXlg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_CdOykDIcEeWZqOhA7gVXlg" base_Package="_-eaMkDIbEeWZqOhA7gVXlg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+</xmi:XMI>

@@ -2,7 +2,7 @@ package com.smartcab.design.payment;
 
 import com.smartcab.design.invoice.Invoice;
 
-public class PaymentGateway extends PaymenProcessor {
+public class MobilePaymentGateway extends PaymenProcessor {
 
 
 
