@@ -6,6 +6,17 @@ import com.smartcab.vehicle.domain.Vehicle;
 
 public abstract class VehicleManagerAbstruct implements VehicleManager {
 
+	static VehicleManager pm;
+
+	public static VehicleManager getInstance(){
+//		if(pm==null) {
+//			pm = new VehicleManager();
+//		}
+		return pm;
+	}
+
+	
+	
 	public abstract boolean addVehicle(Vehicle vehicle);
 
 	public abstract boolean removeVehicle(Vehicle vehicle);
@@ -26,7 +37,7 @@ public abstract class VehicleManagerAbstruct implements VehicleManager {
 		}
 		else if(managerType.equals("UPDATE")){
 			return new UpdateVehicleManager();
-		} throw new RuntimeErrorException(null, "UNdefined Manager");
+		} throw new RuntimeErrorException(null, "Undefined Manager");
 	}
 
 }

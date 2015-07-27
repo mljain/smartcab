@@ -2,12 +2,20 @@ package com.smartcab.customer.template;
 
 import java.util.ArrayList;
 
-public class CustomerManager {
+import com.smartcab.main.RequestStrategy;
+
+public class CustomerManager implements RequestStrategy{
 	private ArrayList<Customer> customers;
 	
-	public CustomerManager(){
-		
+	static CustomerManager pm;
+
+	public static CustomerManager getInstance(){
+		if(pm==null) {
+			pm = new CustomerManager();
+		}
+		return pm;
 	}
+	
 	
 	public void addNewCustomer(Customer c){
 		customers.add(c);

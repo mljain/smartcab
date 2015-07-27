@@ -1,5 +1,7 @@
 package com.smartcab.design.request;
 
+import java.util.Scanner;
+
 import com.smartcab.request.domain.Customer;
 import com.smartcab.request.domain.Request;
 
@@ -18,10 +20,7 @@ public class ServiceRequestImpl implements ServiceRequest {
 		return state;
 	}
 
-	public void receiveRequest() {
-		// TODO Auto-generated method stub
-
-	}
+	public void receiveRequest() {}
 
 	public void qualifyCustomer(Customer c) {
 		// TODO Auto-generated method stub
