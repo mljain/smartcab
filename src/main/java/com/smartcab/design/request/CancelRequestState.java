@@ -4,36 +4,33 @@ import com.smartcab.request.domain.Customer;
 import com.smartcab.request.domain.Request;
 
 public class CancelRequestState implements State{
-	private ServiceRequest sericeRequest =null;
+	private Request sericeRequest =null;
 	
-	public CancelRequestState(ServiceRequest request) {
+	public CancelRequestState(Request request) {
 		sericeRequest = request;
 	}
 
-
 	public void receiveRequest() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Request is already cancelled.\n");		
 	}
 
 	public void qualifyCustomer(Customer c) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Request is already cancelled.\n");		
 	}
 
-	public void processRequest(Request request) {
-		// TODO Auto-generated method stub
-		
+
+	public void processRequest() {
+		System.out.println("Request is already cancelled.\n");		
 	}
 
-	public void completeRequest(Request request) {
-		// TODO Auto-generated method stub
-		
+
+	public void completeRequest() {
+		System.out.println("Request is already cancelled.\n");		
 	}
 
-	public void cancelRequest(Request request) {
-		// TODO Auto-generated method stub
-		
+
+	public void cancelRequest() {
+		System.out.println("Request is already cancelled.\n");		
 	}
 
 }

@@ -4,30 +4,31 @@ import com.smartcab.request.domain.Customer;
 import com.smartcab.request.domain.Request;
 
 public class CompleteRequestState implements State{
+	private Request serviceRequest =null;
+	
+	public CompleteRequestState(Request serviceRequest){
+		this.serviceRequest = serviceRequest;
+	}
 
 	public void receiveRequest() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Request already completed\n");		
 	}
 
 	public void qualifyCustomer(Customer c) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Request already completed\n");		
 	}
 
-	public void processRequest(Request request) {
-		// TODO Auto-generated method stub
-		
+	public void processRequest() {
+		System.out.println("Request already completed\n");		
 	}
 
-	public void completeRequest(Request request) {
-		// TODO Auto-generated method stub
-		
+	public void completeRequest() {
+		System.out.println("Request already completed\n");		
 	}
 
-	public void cancelRequest(Request request) {
-		// TODO Auto-generated method stub
-		
+	public void cancelRequest() {
+		System.out.println("Request already completed\n");		
 	}
+
 
 }

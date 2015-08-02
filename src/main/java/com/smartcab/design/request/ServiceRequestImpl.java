@@ -5,9 +5,9 @@ import java.util.Scanner;
 import com.smartcab.request.domain.Customer;
 import com.smartcab.request.domain.Request;
 
-public class ServiceRequestImpl implements ServiceRequest {
+public class ServiceRequestImpl{// implements ServiceRequest {
 	State state;
-
+/*
 	public ServiceRequestImpl() {
 		state = new ReceiveRequestState(new ServiceRequestImpl());
 	}
@@ -23,23 +23,24 @@ public class ServiceRequestImpl implements ServiceRequest {
 	public void receiveRequest() {}
 
 	public void qualifyCustomer(Customer c) {
-		// TODO Auto-generated method stub
+		state.qualifyCustomer(c);
 
 	}
 
 	public void processRequest(Request request) {
-		// TODO Auto-generated method stub
+		state.processRequest(request);
 
 	}
 
 	public void completeRequest(Request request) {
-		// TODO Auto-generated method stub
+		state.completeRequest(request);
 
 	}
 
 	public void cancelRequest(Request request) {
-		// TODO Auto-generated method stub
+		state.cancelRequest(request);
 		
 	}
+	*/
 
 }

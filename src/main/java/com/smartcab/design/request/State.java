@@ -8,9 +8,9 @@ public interface State {
 
 	public void qualifyCustomer(Customer c);
 
-	public void processRequest(Request request);
+	public void processRequest();
 
-	public void completeRequest(Request request);
+	public void completeRequest();
 	
-	public void cancelRequest(Request request);
+	public void cancelRequest();
 }
