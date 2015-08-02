@@ -17,10 +17,10 @@ public class VehicleFacade {
 	  public void maintainCar(String operation,Vehicle vehicle){
 		  car.maintainVehicle(operation,vehicle);
 	   }
-	   public void drawRectangle(String operation,Vehicle vehicle){
+	   public void maintainBus(String operation,Vehicle vehicle){
 		   bus.maintainVehicle(operation,vehicle);
 	   }
-	   public void drawSquare(String operation,Vehicle vehicle){
+	   public void maintainSuv(String operation,Vehicle vehicle){
 	      suv.maintainVehicle(operation,vehicle);
 	   }
 }

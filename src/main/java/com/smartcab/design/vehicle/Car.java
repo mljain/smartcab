@@ -26,6 +26,11 @@ public class Car extends VehicleManagerAbstruct {
 
 	public void maintainVehicle(String operation, Vehicle vehicle) {
 		// TODO Auto-generated method stub
+		if(operation.equals("add")){
+			addVehicle(vehicle);
+		}else if(operation.equals("delete")){
+			removeVehicle(vehicle);
+		}
 		
 	}
 
