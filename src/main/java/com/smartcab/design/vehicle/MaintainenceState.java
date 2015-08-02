@@ -22,4 +22,7 @@ public class MaintainenceState implements VehicleState{
 		vehicle.setState(new VehicleWaitingState(vehicle));		
 	}
 
+	public String getCurrentState() {
+		return VehicleState.IN_MAINTAINENCE;
+	}
 }

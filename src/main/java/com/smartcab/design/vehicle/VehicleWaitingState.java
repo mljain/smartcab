@@ -23,4 +23,8 @@ public class VehicleWaitingState implements VehicleState{
 	public void completeProcess() {
 		System.out.println("Vehicle is already waiting\n");		
 	}
+
+	public String getCurrentState() {
+		return VehicleState.WAITING;
+	}
 }

@@ -37,5 +37,9 @@ public class ReceiveRequestState implements State {
 		
 	}
 
+	public String getCurrentState() {
+		return State.RECIEVED;
+	}
+
 	
 }

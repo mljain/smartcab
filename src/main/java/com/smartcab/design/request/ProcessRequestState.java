@@ -48,4 +48,8 @@ public class ProcessRequestState implements State{
 		
 	}
 
+	public String getCurrentState() {
+		return State.PROCESSING;
+	}
+
 }
