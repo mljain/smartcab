@@ -38,14 +38,14 @@ public class PaymentManager implements RequestStrategy {
 			System.out.println("Processing Payment Using Card and CashPaymentGateway");
 			pp = new CashPaymentGateway();
 			paymentType = new CashPayment(pp);
-			paymentType.processPayment(payment);
+			paymentType.process(payment);
 
 		}
 		else if (payment.getPaymentType().equals(PaymentType.CHECK)) {
 			System.out.println("Processing Payment Using Card and CheckPaymentGateway");
 			pp = new CheckPaymentGateway();
 			paymentType = new CheckPayment(pp);
-			paymentType.processPayment(payment);
+			paymentType.process(payment);
 
 		}
 		
@@ -53,7 +53,7 @@ public class PaymentManager implements RequestStrategy {
 			System.out.println("Processing Payment Using Card and MobilePaymentGateway");
 			pp = new MobilePaymentGateway();
 			paymentType = new CheckPayment(pp);
-			paymentType.processPayment(payment);
+			paymentType.process(payment);
 
 		}
 	}

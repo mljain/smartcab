@@ -8,6 +8,7 @@ public class MobilePayment extends Payment {
 	}
 
 	public void process(com.smartcab.payment.domain.Payment payment) {
+		System.out.println("Processing Payment using MobilePayment");
 		processPayment(payment);
 		updateTransaction();
 
