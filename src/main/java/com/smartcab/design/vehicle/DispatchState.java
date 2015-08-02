@@ -22,7 +22,8 @@ public class DispatchState implements VehicleState{
 		System.out.println("Vehicle finished ride\n");
 		vehicle.setState(new VehicleWaitingState(vehicle));		
 	}
-	
-	
 
+	public String getCurrentState() {
+		return VehicleState.DISPATCHED;
+	}
 }

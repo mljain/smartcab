@@ -30,5 +30,9 @@ public class CompleteRequestState implements State{
 		System.out.println("Request already completed\n");		
 	}
 
+	public String getCurrentState() {
+		return State.COMPLETED;
+	}
+
 
 }

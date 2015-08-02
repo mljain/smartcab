@@ -33,4 +33,8 @@ public class CancelRequestState implements State{
 		System.out.println("Request is already cancelled.\n");		
 	}
 
+	public String getCurrentState() {
+		return State.CANCELLED;
+	}
+
 }
