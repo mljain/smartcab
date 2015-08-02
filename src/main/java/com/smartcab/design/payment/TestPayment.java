@@ -34,6 +34,7 @@ public class TestPayment {
         		payment1.setInvoiceId(12);
         		payment1.setPaymentType(PaymentType.CREDITCARD);
         		PaymentManager.getInstance().submitPayment(payment1);
+        		break;
             case 2: 
             	Payment payment2 = new Payment();
             	//System.out.println("Enter The amount");
@@ -43,6 +44,7 @@ public class TestPayment {
         		payment2.setInvoiceId(12);
         		payment2.setPaymentType(PaymentType.CASH);
         		PaymentManager.getInstance().submitPayment(payment2);
+        		break;
             case 3: 
             	Payment payment3 = new Payment();
             	//System.out.println("Enter The amount");
@@ -52,6 +54,7 @@ public class TestPayment {
         		payment3.setInvoiceId(12);
         		payment3.setPaymentType(PaymentType.CHECK);
         		PaymentManager.getInstance().submitPayment(payment3);
+        		break;
             case 4: 
             	Payment payment4 = new Payment();
             	//System.out.println("Enter The amount");
@@ -61,6 +64,7 @@ public class TestPayment {
             	payment4.setInvoiceId(12);
             	payment4.setPaymentType(PaymentType.MOBILEPAY);
         		PaymentManager.getInstance().submitPayment(payment4);
+        		break;
            default : System.out.println("Thank You for using Smart Cab Application.");
                     System.exit(0);
 

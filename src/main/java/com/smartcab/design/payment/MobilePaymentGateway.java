@@ -12,7 +12,7 @@ public class MobilePaymentGateway extends PaymenProcessor {
 
 	@Override
 	public void processPayment(Payment payment) {
-		System.out.println("Processing Payment using MobilePaymentGateway");
+		System.out.println("Initiating Payment using MobilePaymentGateway");
 		// System.out.println("1.Manage Service Request");
 		// System.out.println("2.Manage Vehicle Inventory");
 		// System.out.println("3.Manage Member");

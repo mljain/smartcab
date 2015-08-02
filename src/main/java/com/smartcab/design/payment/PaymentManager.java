@@ -27,7 +27,7 @@ public class PaymentManager implements RequestStrategy {
 		if (payment.getPaymentType().equals(PaymentType.CREDITCARD)
 				|| payment.getPaymentType().equals(PaymentType.DEBITCARD)) {
 			//
-			System.out.println("Processing Payment Using Card and GenericPaymentGateway");
+			System.out.println("Processing Payment Using Card"+payment.getPaymentType());
 			pp = new GenericPaymentGateway();
 			paymentType = new CardPayment(pp);
 			paymentType.process(payment);
@@ -35,14 +35,14 @@ public class PaymentManager implements RequestStrategy {
 		}
 
 		else if (payment.getPaymentType().equals(PaymentType.CASH)) {
-			System.out.println("Processing Payment Using Card and CashPaymentGateway");
+			System.out.println("Processing Payment Using Cash Payment");
 			pp = new CashPaymentGateway();
 			paymentType = new CashPayment(pp);
 			paymentType.process(payment);
 
 		}
 		else if (payment.getPaymentType().equals(PaymentType.CHECK)) {
-			System.out.println("Processing Payment Using Card and CheckPaymentGateway");
+			System.out.println("Processing Payment Using Check payment");
 			pp = new CheckPaymentGateway();
 			paymentType = new CheckPayment(pp);
 			paymentType.process(payment);
@@ -50,9 +50,9 @@ public class PaymentManager implements RequestStrategy {
 		}
 		
 		else if (payment.getPaymentType().equals(PaymentType.MOBILEPAY)) {
-			System.out.println("Processing Payment Using Card and MobilePaymentGateway");
+			System.out.println("Processing Payment Using Mobile Payment");
 			pp = new MobilePaymentGateway();
-			paymentType = new CheckPayment(pp);
+			paymentType = new MobilePayment(pp);
 			paymentType.process(payment);
 
 		}
