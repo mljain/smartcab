@@ -7,8 +7,8 @@ public class CardPayment extends Payment {
 	}
 
 	@Override
-	public void process() {
-		processPayment(null);
+	public void process(com.smartcab.payment.domain.Payment payment) {
+		processPayment(payment);
 		updateTransaction();
 
 	}

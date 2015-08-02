@@ -30,7 +30,7 @@ public class PaymentManager implements RequestStrategy {
 			System.out.println("Processing Payment Using Card and GenericPaymentGateway");
 			pp = new GenericPaymentGateway();
 			paymentType = new CardPayment(pp);
-			paymentType.processPayment(payment);
+			paymentType.process(payment);
 
 		}
 

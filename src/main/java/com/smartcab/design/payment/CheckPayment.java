@@ -7,8 +7,8 @@ public class CheckPayment extends Payment {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void process() {
-		processPayment(null);
+	public void process(com.smartcab.payment.domain.Payment payment) {
+		processPayment(payment);
 		updateTransaction();
 
 	}

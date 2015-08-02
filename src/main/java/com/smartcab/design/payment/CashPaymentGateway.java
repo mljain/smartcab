@@ -14,7 +14,7 @@ public class CashPaymentGateway extends PaymenProcessor {
 
 	@Override
 	public void processPayment(Payment payment) {
-		// TODO Auto-generated method stub
+		System.out.println("Processing Payment using CashPaymentGateway");
 		
 	}
 
