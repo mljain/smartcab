@@ -1,5 +1,7 @@
 package com.smartcab.design.vehicle;
 
+import java.util.Map.Entry;
+
 import com.smartcab.vehicle.domain.Vehicle;
 
 public class Bus extends VehicleManagerAbstruct {
