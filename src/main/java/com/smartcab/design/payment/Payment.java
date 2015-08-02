@@ -12,8 +12,8 @@ public abstract class Payment {
 	}
 public abstract void process();
 
-protected void processPayment(){
-	_pp.processPayment(amount, new Invoice());
+protected void processPayment(com.smartcab.payment.domain.Payment payment){
+	_pp.processPayment(payment);
 }
 
 protected void updateTransaction(){

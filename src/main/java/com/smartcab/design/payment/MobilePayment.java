@@ -8,7 +8,7 @@ public class MobilePayment extends Payment {
 	}
 
 	public void process() {
-		processPayment();
+		processPayment(null);
 		updateTransaction();
 
 	}

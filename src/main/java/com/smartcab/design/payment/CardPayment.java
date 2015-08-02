@@ -1,12 +1,12 @@
 package com.smartcab.design.payment;
 
-public class CashPayment extends Payment {
+public class CardPayment extends Payment {
 
-	public CashPayment(PaymenProcessor pp) {
+	public CardPayment(PaymenProcessor pp) {
 		super(pp);
-		// TODO Auto-generated constructor stub
 	}
 
+	@Override
 	public void process() {
 		processPayment(null);
 		updateTransaction();

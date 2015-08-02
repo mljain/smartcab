@@ -1,6 +1,6 @@
 package com.smartcab.design.payment;
 
-import com.smartcab.design.invoice.Invoice;
+import com.smartcab.payment.domain.Payment;
 
 public class PaypalPaymentGateway extends PaymenProcessor {
 
@@ -13,7 +13,7 @@ public class PaypalPaymentGateway extends PaymenProcessor {
 	}
 
 	@Override
-	public void processPayment(double amount, Invoice invoice) {
+	public void processPayment(Payment payment) {
 		// TODO Auto-generated method stub
 		
 	}
