@@ -28,7 +28,7 @@ public class PaymentManager implements RequestStrategy {
 				|| payment.getPaymentType().equals(PaymentType.DEBITCARD)) {
 			//
 			System.out.println("Processing Payment Using Card"+payment.getPaymentType());
-			pp = new GenericPaymentGateway();
+			pp = new GenericCardPaymentGateway();
 			paymentType = new CardPayment(pp);
 			paymentType.process(payment);
 

@@ -2,7 +2,7 @@ package com.smartcab.design.payment;
 
 import com.smartcab.payment.domain.Payment;
 
-public class GenericPaymentGateway extends PaymenProcessor {
+public class GenericCardPaymentGateway extends PaymenProcessor {
 
 
 
@@ -14,7 +14,7 @@ public class GenericPaymentGateway extends PaymenProcessor {
 
 	@Override
 	public void processPayment(Payment payment) {
-		System.out.println("Processing Payment using GenericPaymentGateway");
+		System.out.println("Processing Payment using GenericCardPaymentGateway");
 		
 	}
 
