@@ -1,5 +1,6 @@
 package com.smartcab.vehicle.domain;
 
+import com.smartcab.design.vehicle.VehicleState;
 import com.smartcab.request.domain.GeoLocation;
 
 public class Vehicle {
@@ -11,6 +12,8 @@ private String driverId;
 private VehicleType vehicleType;
 private GeoLocation geolocation;
 private String licencePlate;
+private VehicleState state;
+
 /**
  * @return the licencePlate
  */
@@ -106,6 +109,12 @@ public void setVehicleType(VehicleType vehicleType) {
  */
 public void setGeolocation(GeoLocation geolocation) {
 	this.geolocation = geolocation;
+}
+public VehicleState getState() {
+	return state;
+}
+public void setState(VehicleState state) {
+	this.state = state;
 }
 
 	
