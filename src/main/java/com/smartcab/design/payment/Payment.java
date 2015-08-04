@@ -1,7 +1,9 @@
 package com.smartcab.design.payment;
 
 
+
 public abstract class Payment {
+	
 	protected PaymenProcessor _pp;
 	public double amount;
 	
@@ -17,6 +19,7 @@ protected void processPayment(com.smartcab.payment.domain.Payment payment){
 
 protected void updateTransaction(){
 	_pp.updateTransaction();
+
 }
 
 

@@ -1,25 +1,17 @@
 package com.smartcab.design.notification;
 
-import com.smartcab.design.invoice.Invoice;
-import com.smartcab.member.domain.Member;
 
-public class PaymentNotify extends NotificationManager {
-	private Invoice invoice;
-
-	/**
-	 * @return the invoice
-	 */
-	public Invoice getInvoice() {
-		return invoice;
+public class PaymentNotify extends Observer {
+	public PaymentNotify(NotificationManager manager){
+		  this.manager = manager;
+	      this.manager.attach( this);
 	}
 
-	/**
-	 * @param invoice
-	 *            the invoice to set
-	 */
-	public void setInvoice(Invoice invoice) {
-		this.invoice = invoice;
-		notifyObserver(new Member());
+	@Override
+	public void update() {
+		System.out.println("******************************");
+		System.out.println("PaymentNotify Observer Is called");
+		System.out.println("******************************");
+		
 	}
-
 }

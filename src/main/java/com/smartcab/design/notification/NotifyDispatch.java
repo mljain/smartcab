@@ -1,49 +1,21 @@
 package com.smartcab.design.notification;
 
-import com.smartcab.member.domain.Member;
-import com.smartcab.request.domain.Request;
-import com.smartcab.vehicle.domain.Driver;
 
-public class NotifyDispatch extends NotificationManager {
-
-	private Request request;
-	private Driver driver;
-
-	public NotifyDispatch(Request request, Driver driver) {
-		this.request = request;
-		this.driver = driver;
-
+public class NotifyDispatch extends Observer {
+	
+	public NotifyDispatch(NotificationManager manager){
+		  this.manager = manager;
+	      this.manager.attach( this);
 	}
 
-	/**
-	 * @return the request
-	 */
-	public Request getRequest() {
-		return request;
+	@Override
+	public void update() {
+		System.out.println("******************************");
+		System.out.println("Dispatch Observer Is called");
+		System.out.println("******************************");
+		
 	}
 
-	/**
-	 * @return the driver
-	 */
-	public Driver getDriver() {
-		return driver;
-	}
 
-	/**
-	 * @param request
-	 *            the request to set
-	 */
-	public void setRequest(Request request) {
-		this.request = request;
-		notifyObserver(new Member());
-	}
-
-	/**
-	 * @param driver
-	 *            the driver to set
-	 */
-	public void setDriver(Driver driver) {
-		this.driver = driver;
-	}
 
 }
