@@ -1,6 +1,7 @@
 package com.smartcab.vehicle.domain;
 
 import com.smartcab.design.vehicle.VehicleState;
+import com.smartcab.design.vehicle.VehicleWaitingState;
 import com.smartcab.request.domain.GeoLocation;
 
 public class Vehicle {
@@ -14,6 +15,10 @@ private GeoLocation geolocation;
 private String licencePlate;
 private VehicleState state;
 
+
+public Vehicle(){
+	state = new VehicleWaitingState(this);
+}
 /**
  * @return the licencePlate
  */

@@ -2,6 +2,7 @@ package com.smartcab.request.domain;
 
 import java.util.Date;
 
+import com.smartcab.design.request.ReceiveRequestState;
 import com.smartcab.design.request.ServiceRequest;
 import com.smartcab.design.request.State;
 import com.smartcab.member.domain.Member;
@@ -18,6 +19,10 @@ public class Request implements ServiceRequest{
 	private State state;
 
 	private Notification notification;
+	
+	public Request(){
+		state = new ReceiveRequestState(this);
+	}
 
 	/**
 	 * @return the notification
