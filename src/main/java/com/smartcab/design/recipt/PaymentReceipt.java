@@ -8,8 +8,8 @@ public abstract class PaymentReceipt {
 	public  void generateReceipt(Payment payment){
 		getInvoice(payment);
 		getServiceTax(payment);
-		generateReceiptimpl(payment);
-		processReceipt(finalamount);
+		//generateReceiptimpl(payment);
+		//processReceipt(finalamount);
 		
 	}
 
