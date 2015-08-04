@@ -16,6 +16,9 @@ public class GenericCardPaymentGateway extends PaymenProcessor {
 	public void processPayment(Payment payment) {
 		System.out.println("Processing Payment using GenericCardPaymentGateway");
 		
+		// once payment is received print the invoice
+		
+		
 	}
 
 }

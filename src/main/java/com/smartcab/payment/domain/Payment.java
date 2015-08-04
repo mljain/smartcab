@@ -6,6 +6,7 @@ import com.smartcab.request.domain.Request;
 public class Payment {
 	private int invoiceId;
 	private double amount;
+	private double serviceTax;
 	private PaymentType paymentType;
 	private int customerId;
 	private int requestId;
@@ -113,6 +114,20 @@ public class Payment {
 	 */
 	public void setDriverId(int driverId) {
 		this.driverId = driverId;
+	}
+
+	/**
+	 * @return the serviceTax
+	 */
+	public double getServiceTax() {
+		return serviceTax;
+	}
+
+	/**
+	 * @param serviceTax the serviceTax to set
+	 */
+	public void setServiceTax(double serviceTax) {
+		this.serviceTax = serviceTax;
 	}
 
 }
