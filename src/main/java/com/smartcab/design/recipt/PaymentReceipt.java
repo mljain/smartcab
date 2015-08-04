@@ -3,26 +3,29 @@ package com.smartcab.design.recipt;
 import com.smartcab.payment.domain.Payment;
 
 public abstract class PaymentReceipt {
-	private double finalamount=0.00;
+	public double finalamount=0.00;
 	
 	public  void generateReceipt(Payment payment){
 		getInvoice(payment);
 		getServiceTax(payment);
-		//generateReceipt();
+		generateReceiptimpl(payment);
+		processReceipt(finalamount);
 		
 	}
 
-	//public  abstract generateReceipt();
+	public   abstract void generateReceiptimpl(Payment payment);
+	public   abstract void processReceipt(double finalamount);
 
 	private void getServiceTax(Payment payment) {
 		System.out.println("****Getting the Service Tax****");
-		finalamount=payment.getServiceTax();
+		System.out.println("Service Tax Amount"+payment.getServiceTax());
 		
 	}
 
 	private void getInvoice(Payment payment) {
 		System.out.println("****Getting the Invoice****");
-		finalamount=payment.getAmount();
+		System.out.println("Get Invoice"+payment.getServiceTax());
+		//finalamount=payment.getAmount();
 	}
 
 	/**
