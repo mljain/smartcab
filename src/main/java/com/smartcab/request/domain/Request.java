@@ -13,13 +13,30 @@ public class Request implements ServiceRequest{
 	private Date deparatureTime;
 	private Address address;
 	private RequestStatus requestStatus; 
+	private String requestType;
 	private GeoLocation geoLocation;
 	private Zone zone;
-	private Member client;
+	private Member client;	
 	private State state;
 
 	private Notification notification;
 	
+	
+	
+	/**
+	 * @return the requestType
+	 */
+	public String getRequestType() {
+		return requestType;
+	}
+
+	/**
+	 * @param requestType the requestType to set
+	 */
+	public void setRequestType(String requestType) {
+		this.requestType = requestType;
+	}
+
 	public Request(){
 		state = new ReceiveRequestState(this);
 	}
