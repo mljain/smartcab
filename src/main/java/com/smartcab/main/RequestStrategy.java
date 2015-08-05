@@ -8,5 +8,5 @@ package com.smartcab.main;
  *
  */
 public interface RequestStrategy {
-   // public void processRequest();
+   public void processRequest();
 }

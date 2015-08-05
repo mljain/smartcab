@@ -137,5 +137,10 @@ public class RequestManager implements RequestStrategy {
 		//            Logger.getLogger(RequestManager.class.getName()).log(Level.SEVERE, null, ex);
 		//        }
 //	}
+	
+	public void processRequest() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

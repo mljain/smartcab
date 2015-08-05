@@ -20,6 +20,10 @@ public class DispatcherManager implements RequestStrategy{
 		}
 		return pm;
 	}
-
+	
+	public void processRequest() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

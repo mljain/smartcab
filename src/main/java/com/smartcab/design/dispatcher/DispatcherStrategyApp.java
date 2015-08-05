@@ -11,7 +11,7 @@ public class DispatcherStrategyApp {
 		Scanner s = new Scanner(System.in);
 		boolean continueFlag = true;
 		while (continueFlag) {
-			System.out.println("select a type of request::");
+			 
 			System.out.println("1.Taxi");
 			System.out.println("2.ShareARide");
 			System.out.println("3.RentACar");

@@ -57,5 +57,10 @@ public class PaymentManager implements RequestStrategy {
 
 		}
 	}
+	
+	public void processRequest() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

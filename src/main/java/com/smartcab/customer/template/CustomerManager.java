@@ -17,6 +17,8 @@ public class CustomerManager implements RequestStrategy{
 	}
 	
 	
+	
+	
 	public void addNewCustomer(Customer c){
 		customers.add(c);
 	}
@@ -28,6 +30,14 @@ public class CustomerManager implements RequestStrategy{
 	
 	public void updateCustomer(String newInfo)
 	{
+		
+	}
+
+
+
+
+	public void processRequest() {
+		// TODO Auto-generated method stub
 		
 	}
 
