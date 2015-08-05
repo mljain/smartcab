@@ -1,6 +1,5 @@
 package com.smartcab.design.dispatcher;
 
-import java.io.Console;
 import java.util.Scanner;
 
 import com.smartcab.request.domain.Request;
@@ -9,7 +8,6 @@ public class DispatcherStrategyApp {
 
 	public static void main(String[] args) {
 		Request r = new Request();
-		Console c = System.console();
 		Scanner s = new Scanner(System.in);
 		boolean continueFlag = true;
 		while (continueFlag) {
@@ -22,7 +20,6 @@ public class DispatcherStrategyApp {
 			String requestType = "";
 			int i = 0;
 
-			String input = c.readLine();
 			try {
 				i = s.nextInt();
 				// i = new Integer(input )
