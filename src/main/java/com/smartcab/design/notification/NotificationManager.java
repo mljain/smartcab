@@ -1,35 +1,29 @@
 package com.smartcab.design.notification;
-
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.List;
 
-import com.smartcab.member.domain.Member;
 
-public abstract class NotificationManager {
-	protected String message;
-	private ArrayList<Member> members = new ArrayList<Member>();
+public class NotificationManager {
 	
-	public NotificationManager(){
+   private List<Observer> observers = new ArrayList<Observer>();
+   private int state;
 
-	}
-	public void addObserver(Member menber){
-		members.add(menber);
-		
-	}
-	
-	public void deleteObserver(Member menber){
-		members.remove(menber);
-		
-	}
-	
-	public void notifyObserver(Object args){
-		Iterator it = members.iterator();
-		
-		while(it.hasNext()){
-			Member member = (Member) it.next();
-			member.updateMember();
-		}
-		
-	}
+   public int getState() {
+      return state;
+   }
 
+   public void setState(int state) {
+      this.state = state;
+      notifyAllObservers();
+   }
+
+   public void attach(Observer observer){
+      observers.add(observer);		
+   }
+
+   public void notifyAllObservers(){
+      for (Observer observer : observers) {
+         observer.update();
+      }
+   } 	
 }
