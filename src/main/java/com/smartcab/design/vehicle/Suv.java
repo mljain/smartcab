@@ -47,8 +47,14 @@ public class Suv extends VehicleManagerAbstruct {
 		// TODO Auto-generated method stub
 		if (operation.equals("add")) {
 			addVehicle(vehicle);
+			System.out.println("Suv added");
 		} else if (operation.equals("delete")) {
 			removeVehicle(vehicle);
+			System.out.println("Suv removed");
+		}
+		else {
+			updateVehicle(vehicle);
+			System.out.println("Suv updated");
 		}
 
 	}

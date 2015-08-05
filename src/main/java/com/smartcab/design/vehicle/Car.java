@@ -47,10 +47,15 @@ public class Car extends VehicleManagerAbstruct {
 		// TODO Auto-generated method stub
 		if (operation.equals("add")) {
 			addVehicle(vehicle);
+			System.out.println("Car added");
 		} else if (operation.equals("delete")) {
 			removeVehicle(vehicle);
+			System.out.println("Car removed");
 		}
-
+		else  {
+			updateVehicle(vehicle);
+			System.out.println("Car updated");
+		}
 	}
 
 }

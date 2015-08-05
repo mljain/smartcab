@@ -46,8 +46,15 @@ public class Bus extends VehicleManagerAbstruct {
 		// TODO Auto-generated method stub
 		if (operation.equals("add")) {
 			addVehicle(vehicle);
+			System.out.println("Bus added");
 		} else if (operation.equals("delete")) {
 			removeVehicle(vehicle);
+			System.out.println("Bus removed");
+		  }
+		else
+		{
+			updateVehicle(vehicle);
+			System.out.println("Bus updated");
 		}
 
 	}
