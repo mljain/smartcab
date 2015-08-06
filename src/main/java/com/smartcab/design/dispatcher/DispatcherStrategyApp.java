@@ -65,7 +65,7 @@ public class DispatcherStrategyApp {
 
 			r.setRequestType(requestType);
 			System.out.println("DispacherStrategy: "
-					+ dc.dispatch(r.getRequestType()));
+					+ dc.dispatch(r));
 		}
 		// Close s
 		if (s != null) {
