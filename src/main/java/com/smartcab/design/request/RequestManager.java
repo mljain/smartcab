@@ -25,24 +25,26 @@ public class RequestManager implements RequestStrategy {
 		}
 		return pm;
 	}
-
-
-
 	
 	public void processRequest(SmartCabData data) {
+		requestQueue = data.requestQ;
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
 		REQUESTOP requestOperation = REQUESTOP.NO_OP;
 
 		StringBuilder strBuilder = new StringBuilder();
-		strBuilder.append("\n\t  Request Manager Manu")
+		strBuilder.append("\nRequest Manager Manu")
 				.append("\n1. Create New Request")
-				.append("\n2. Cancel Request").append("\n3. Update Request")
-				.append("\n4. Retrieve Request").append("\n5. Exit System");
+				.append("\n2. Cancel Request")
+				.append("\n3. Update Request")
+				.append("\n4. Retrieve Request")
+				.append("\n5. Exit System");
 
 		StringBuilder requestOptionBuilder = new StringBuilder();
-		requestOptionBuilder.append("\n\t VehicleType").append("\n1. TAXI")
-				.append("\n2. Share Ride").append("\n3. Exit");
+		requestOptionBuilder.append("\n\t VehicleType")
+				.append("\n1. TAXI")
+				.append("\n2. Share Ride")
+				.append("\n3. Exit");
 
 		do {
 			System.out.println(strBuilder.toString());
@@ -65,7 +67,6 @@ public class RequestManager implements RequestStrategy {
 				switch (requestOperation) {
 				case ADD_REQUEST:
 					addRequest(requestKind);
-
 					break;
 
 				case REMOVE_REQUEST:

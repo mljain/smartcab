@@ -3,7 +3,11 @@
  */
 package com.smartcab.design.dispatcher;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.Map.Entry;
 
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
@@ -28,6 +32,7 @@ public class DispatcherManager implements RequestStrategy{
 	public void processRequest(SmartCabData data) {
 
 		Scanner s = new Scanner(System.in);
+		BufferedReader bufferedReader = null;
 		boolean continueFlag = true;
 		while (continueFlag) {
 
@@ -60,12 +65,27 @@ public class DispatcherManager implements RequestStrategy{
 				break;
 			case 3:				
 				System.out.println("Dispatching the vehicle.");
+				
 				if(data.requestQ.size() > 0){
-					Request request = data.requestQ.get(data.requestQ.keySet().iterator().next());
-					System.out.println("Next Request in Q: " + request.toString());
-					DispatcherStrategyApp.getInstance().dispatch(request);
+					System.out.println("\nEnter the Request id to Dispatch: ");
+					bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+					String option = null;
+					try {
+						option = bufferedReader.readLine();
+						Integer requestId = Integer.parseInt(option);
+						Request request = data.requestQ.get(requestId);
+						if(request != null){
+							System.out.println("Request to be dispatched: " + request.toString());
+							DispatcherStrategyApp.getInstance().dispatch(request);
+						}else{
+							System.out.println("Request NOT found. Please enter valid request id.");
+						}
+					} catch (IOException e) {						
+						e.printStackTrace();
+					}
+					
 				}else{
-					System.out.println("Enter the request first.");
+					System.out.println("No Request to be processed. Enter a new request.");
 				}
 				break;
 			case 4:
