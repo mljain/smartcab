@@ -61,7 +61,8 @@ public class DispatcherManager implements RequestStrategy{
 			case 3:				
 				System.out.println("Dispatching the vehicle.");
 				if(data.requestQ.size() > 0){
-					Request request = data.requestQ.get(0);
+					Request request = data.requestQ.get(data.requestQ.keySet().iterator().next());
+					System.out.println("Next Request in Q: " + request.toString());
 					DispatcherStrategyApp.getInstance().dispatch(request);
 				}else{
 					System.out.println("Enter the request first.");
