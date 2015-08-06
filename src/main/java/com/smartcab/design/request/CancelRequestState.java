@@ -15,12 +15,12 @@ public class CancelRequestState implements State{
 	}
 
 
-	public void processRequest() {
+	public void processRequest()) {
 		System.out.println("Request is already cancelled.\n");		
 	}
 
 
-	public void completeRequest() {
+	public void completeRequest(String request) {
 		System.out.println("Request is already cancelled.\n");		
 	}
 

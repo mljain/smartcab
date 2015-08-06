@@ -23,7 +23,7 @@ public class ReceiveRequestState implements State {
 		
 	}
 
-	public void completeRequest() {
+	public void completeRequest(String request) {
 		System.out.println("Cannot compelete request. Have not recieved a Request.\n");
 		
 	}

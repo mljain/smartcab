@@ -19,7 +19,7 @@ public class CompleteRequestState implements State{
 		System.out.println("Request already completed\n");		
 	}
 
-	public void completeRequest() {
+	public void completeRequest(String request) {
 		System.out.println("Request already completed\n");		
 	}
 

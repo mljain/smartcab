@@ -13,7 +13,7 @@ public interface State {
 
 	public void processRequest();
 
-	public void completeRequest();
+	public void completeRequest(String request);
 	
 	public void cancelRequest();
 	
