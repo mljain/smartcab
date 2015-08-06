@@ -17,17 +17,16 @@ public class ProcessRequestState implements State{
 	}
 
 	public void processRequest() {
-		if(serviceRequest.getClient().getMemberType().equals("Something")){
+		System.out.println("Currently Processing request\n.");		
+	}
+
+	public void completeRequest(String request) {
+		if(request.equals(State.COMPLETE)){
 			serviceRequest.setState(new CompleteRequestState(serviceRequest));
 		}
 		else{
-			System.out.println("unable to prcess request\n");
-			serviceRequest.setState(new CancelRequestState(serviceRequest));
-		}		
-	}
-
-	public void completeRequest() {
-		System.out.println("Currently Processing request\n.");
+			System.out.println("Currently Processing request\n.");
+		}
 		
 	}
 
