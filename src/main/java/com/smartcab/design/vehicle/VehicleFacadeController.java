@@ -3,10 +3,12 @@ package com.smartcab.design.vehicle;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.UUID;
 
 import com.smartcab.main.RequestStrategy;
+import com.smartcab.model.SmartCabData;
 import com.smartcab.vehicle.domain.Vehicle;
 
 public class VehicleFacadeController implements RequestStrategy{
@@ -21,7 +23,7 @@ public class VehicleFacadeController implements RequestStrategy{
 	}
 
 	
-	public void processRequest() {
+	public void processRequest(SmartCabData data) {
 		// TODO Auto-generated method stub
 		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -41,38 +43,49 @@ public class VehicleFacadeController implements RequestStrategy{
 			.append("\n2. CAR")
 			.append("\n3. SUV");
 
-		VehicleFacade facade = new VehicleFacade();
+		VehicleFacade facade = new VehicleFacade(data);
 		
 		do {
 			System.out.println(strBuilder.toString());
 			try {
 				String option = bufferedReader.readLine();
-				Integer numericOption = Integer.parseInt(option);
-				facadeOperation = FacadeOperation.values()[numericOption];
-				
-				if (facadeOperation == FacadeOperation.EXIT){
+				if(option.isEmpty()){
+					System.out.println("Enter Valid Choice");
 					break;
 				}
-				
-				System.out.println(vehicleOptionBuilder.toString());
-				option = bufferedReader.readLine();
-				numericOption = Integer.parseInt(option);
-				
-				VehicleKind vehicleKind = VehicleKind.values()[numericOption - 1];
-				switch(facadeOperation) {
-					case ADD_VEHICLE : addVehicle(facade, vehicleKind);
-						break;
-						
-					case DELETE_VEHICLE : deleteVehicle(facade, vehicleKind);
-						break;
+				else{
+					Integer numericOption = Integer.parseInt(option);
+					facadeOperation = FacadeOperation.values()[numericOption];
 					
-					case UPDATE_VEHICLE : updateVehicle(facade, vehicleKind);
+					if (facadeOperation == FacadeOperation.EXIT){
 						break;
+					}
+					
+					System.out.println(vehicleOptionBuilder.toString());
+					option = bufferedReader.readLine();
+					numericOption = Integer.parseInt(option);
+					
+					VehicleKind vehicleKind = VehicleKind.values()[numericOption - 1];
+					switch(facadeOperation) {
+						case ADD_VEHICLE : addVehicle(facade, vehicleKind);
+							break;
+							
+						case DELETE_VEHICLE : deleteVehicle(facade, vehicleKind);
+							break;
 						
-					case GET_VEHICLE : getVehicle(facade, vehicleKind);
-						break;
+						case UPDATE_VEHICLE : updateVehicle(facade, vehicleKind);
+							break;
+							
+						case GET_VEHICLE : getVehicle(facade, vehicleKind);
+							break;
+					}
 				}
-			} catch (IOException e) {
+				
+			} catch (InputMismatchException e){
+				System.out.println("Enter Valid Choice");
+			}catch(NumberFormatException e){
+				System.out.println("Enter Valid Choice");
+			}catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}

@@ -6,6 +6,7 @@ package com.smartcab.design.dispatcher;
 import java.util.Scanner;
 
 import com.smartcab.main.RequestStrategy;
+import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Request;
 
 
@@ -23,13 +24,13 @@ public class DispatcherManager implements RequestStrategy{
 		}
 		return pm;
 	}
-	
-	public void processRequest() {
-	
+
+	public void processRequest(SmartCabData data) {
+
 		Scanner s = new Scanner(System.in);
 		boolean continueFlag = true;
 		while (continueFlag) {
-			 
+
 			System.out.println("1.Fetch Request Queue");
 			System.out.println("2.Fetch Vehicle Inventory");
 			System.out.println("3.Dispatch");
@@ -50,15 +51,21 @@ public class DispatcherManager implements RequestStrategy{
 
 			switch (i) {
 			case 1:
-				System.out.println("Fetching all the requests in the Queue.");
+				System.out.println("Fetching all the requests in the Queue:");
+				System.out.println(data.requestQ.toString());
 				break;
 			case 2:
 				System.out.println("Fetch Vehicle available in the Queue.");
+				System.out.println(data.vehicleInventory.toString());
 				break;
 			case 3:				
 				System.out.println("Dispatching the vehicle.");
-				Request request = new Request();
-				DispatcherStrategyApp.getInstance().dispatch(request);
+				if(data.requestQ.size() > 0){
+					Request request = data.requestQ.get(0);
+					DispatcherStrategyApp.getInstance().dispatch(request);
+				}else{
+					System.out.println("Enter the request first.");
+				}
 				break;
 			case 4:
 				continueFlag = false;
@@ -74,9 +81,9 @@ public class DispatcherManager implements RequestStrategy{
 		if (s != null) {
 			s.close();
 		}
-	
-		
-		
+
+
+
 	}
-	
+
 }

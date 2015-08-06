@@ -4,6 +4,7 @@
 package com.smartcab.design.request;
 
 import com.smartcab.main.RequestStrategy;
+import com.smartcab.model.SmartCabData;
 
 
 /**
@@ -138,7 +139,7 @@ public class RequestManager implements RequestStrategy {
 		//        }
 //	}
 	
-	public void processRequest() {
+	public void processRequest(SmartCabData data) {
 		// TODO Auto-generated method stub
 		
 	}

@@ -10,6 +10,7 @@ import com.smartcab.design.dispatcher.DispatcherManager;
 import com.smartcab.design.payment.PaymentManager;
 import com.smartcab.design.request.RequestManager;
 import com.smartcab.design.vehicle.VehicleFacadeController;
+import com.smartcab.model.SmartCabData;
 
 
 
@@ -39,7 +40,7 @@ public class RequestController {
 	     return requestStrategy;
 	   }
 
-	   public void processRequest(){
+	   public void processRequest(SmartCabData data){
 		   
 	        while(true){
 	        System.out.println("\nMain menu::::");
@@ -73,7 +74,7 @@ public class RequestController {
 	        }
 
 	        requestStrategy = setProcessRequestStrategy(requestType);
-	        requestStrategy.processRequest();
+	        requestStrategy.processRequest(data);
 	    }
 
 	   }

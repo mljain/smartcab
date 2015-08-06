@@ -1,5 +1,6 @@
 package com.smartcab.design.vehicle;
 
+import com.smartcab.model.SmartCabData;
 import com.smartcab.vehicle.domain.Vehicle;
 
 public class VehicleFacade {
@@ -8,10 +9,15 @@ public class VehicleFacade {
 	private Bus bus = null;
 	private Suv suv = null;
 	
-	  public VehicleFacade() {
+	  public VehicleFacade(SmartCabData data) {
 		  car = new Car();
 		  bus = new Bus();
 		  suv = new Suv();
+		  
+		  car.vehicleInventory = data.vehicleInventory;
+		  bus.vehicleInventory = data.vehicleInventory;
+		  suv.vehicleInventory = data.vehicleInventory;
+		  
 	   }
 
 	  public void updateVehicle(VehicleKind kind, Vehicle vehicle){

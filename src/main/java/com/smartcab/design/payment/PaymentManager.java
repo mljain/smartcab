@@ -4,6 +4,7 @@
 package com.smartcab.design.payment;
 
 import com.smartcab.main.RequestStrategy;
+import com.smartcab.model.SmartCabData;
 import com.smartcab.payment.domain.Payment;
 import com.smartcab.payment.domain.PaymentType;
 
@@ -58,7 +59,7 @@ public class PaymentManager implements RequestStrategy {
 		}
 	}
 	
-	public void processRequest() {
+	public void processRequest(SmartCabData data) {
 		// TODO Auto-generated method stub
 		
 	}
