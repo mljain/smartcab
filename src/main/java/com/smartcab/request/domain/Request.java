@@ -2,6 +2,7 @@ package com.smartcab.request.domain;
 
 import java.util.Date;
 
+import com.google.gson.Gson;
 import com.smartcab.design.request.ReceiveRequestState;
 import com.smartcab.design.request.ServiceRequest;
 import com.smartcab.design.request.State;
@@ -184,12 +185,31 @@ public class Request implements ServiceRequest{
 	 */
 	@Override
 	public String toString() {
-		return "Request [requestId=" + requestId + ", deparatureTime="
-				+ deparatureTime + ", address=" + address + ", requestStatus="
-				+ requestStatus + ", requestType=" + requestType
-				+ ", geoLocation=" + geoLocation + ", zone=" + zone
-				+ ", client=" + client + ", state=" + state + ", type=" + type
-				+ ", notification=" + notification + "]";
+		StringBuilder builder = new StringBuilder();
+		builder.append("Request [requestId=").append(requestId).append(", ");
+		if (deparatureTime != null)
+			builder.append("deparatureTime=").append(deparatureTime)
+					.append(", ");
+		if (address != null)
+			builder.append("address=").append(address).append(", ");
+		if (requestStatus != null)
+			builder.append("requestStatus=").append(requestStatus).append(", ");
+		if (requestType != null)
+			builder.append("requestType=").append(requestType).append(", ");
+		if (geoLocation != null)
+			builder.append("geoLocation=").append(geoLocation).append(", ");
+		if (zone != null)
+			builder.append("zone=").append(zone).append(", ");
+		if (client != null)
+			builder.append("client=").append(client).append(", ");
+		if (state != null)
+			builder.append("state=").append(state).append(", ");
+		if (type != null)
+			builder.append("type=").append(type).append(", ");
+		if (notification != null)
+			builder.append("notification=").append(notification);
+		builder.append("]");
+		return builder.toString();
 	}
 
 
