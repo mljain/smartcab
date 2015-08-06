@@ -5,9 +5,22 @@ import java.util.Scanner;
 import com.smartcab.request.domain.Request;
 
 public class DispatcherStrategyApp {
+	
+	static DispatcherStrategyApp dsa;
 
-	public static void main(String[] args) {
+	public static DispatcherStrategyApp getInstance(){
+		if(dsa==null) {
+			dsa = new DispatcherStrategyApp();
+		}
+		return dsa;
+	}
+	
+	public static void main(String[] args){
 		Request r = new Request();
+	}
+	
+	
+	public static void dispatch(Request r) {
 		Scanner s = new Scanner(System.in);
 		boolean continueFlag = true;
 		while (continueFlag) {

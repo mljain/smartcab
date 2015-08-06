@@ -6,12 +6,22 @@ import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.UUID;
 
+import com.smartcab.main.RequestStrategy;
 import com.smartcab.vehicle.domain.Vehicle;
 
-public class TestClient {
+public class TestClient implements RequestStrategy{
 	
+	static TestClient pm;
+
+	public static TestClient getInstance(){
+		if(pm==null) {
+			pm = new TestClient();
+		}
+		return pm;
+	}
+
 	
-	public static void main(String[] args) {
+	public void processRequest() {
 		// TODO Auto-generated method stub
 		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

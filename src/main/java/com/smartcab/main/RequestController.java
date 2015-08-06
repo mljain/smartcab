@@ -9,6 +9,7 @@ import com.smartcab.customer.template.CustomerManager;
 import com.smartcab.design.dispatcher.DispatcherManager;
 import com.smartcab.design.payment.PaymentManager;
 import com.smartcab.design.request.RequestManager;
+import com.smartcab.design.vehicle.TestClient;
 
 
 
@@ -26,6 +27,8 @@ public class RequestController {
 	    	 requestStrategy = RequestManager.getInstance();
 	     else if("Dispatcher".equalsIgnoreCase(requestType))
 	    	 requestStrategy = DispatcherManager.getInstance();
+	     else if("Vehicle".equalsIgnoreCase(requestType))
+	    	 requestStrategy = TestClient.getInstance();
 	     else if("Member".equalsIgnoreCase(requestType))
 	    	 requestStrategy = CustomerManager.getInstance();
 	     else if("Payment".equalsIgnoreCase(requestType))
@@ -70,7 +73,7 @@ public class RequestController {
 	        }
 
 	        requestStrategy = setProcessRequestStrategy(requestType);
-	        //requestStrategy.processRequest();
+	        requestStrategy.processRequest();
 	    }
 
 	   }
