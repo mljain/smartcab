@@ -1,6 +1,16 @@
 package com.smartcab.request.domain;
 
 public class Address {
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Address [sourceAddrsss=" + sourceAddrsss
+				+ ", destinationAddrsss=" + destinationAddrsss
+				+ ", addressType=" + addressType + "]";
+	}
+
 	private String sourceAddrsss;
 	private String destinationAddrsss;
 	private String addressType;
