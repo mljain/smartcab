@@ -35,7 +35,7 @@ public interface ServiceRequest {
 	 *
 	 * @param request the request
 	 */
-	public void completeRequest();
+	public void completeRequest(String status);
 	
 	/**
 	 * Cancel request.

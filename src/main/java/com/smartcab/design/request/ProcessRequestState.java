@@ -21,7 +21,7 @@ public class ProcessRequestState implements State{
 	}
 
 	public void completeRequest(String request) {
-		if(request.equals(State.COMPLETE)){
+		if(request.equals(State.COMPLETED)){
 			serviceRequest.setState(new CompleteRequestState(serviceRequest));
 		}
 		else{

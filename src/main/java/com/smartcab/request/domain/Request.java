@@ -149,8 +149,8 @@ public class Request implements ServiceRequest{
 		state.processRequest();
 		
 	}
-	public void completeRequest() {
-		state.completeRequest();
+	public void completeRequest(String status) {
+		state.completeRequest(status);
 		
 	}
 	public void cancelRequest() {
