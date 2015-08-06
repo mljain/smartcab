@@ -1,147 +1,188 @@
-/**
- * 
- */
 package com.smartcab.design.request;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Random;
 
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
+import com.smartcab.request.domain.Address;
+import com.smartcab.request.domain.Request;
+import com.smartcab.request.domain.ServiceType;
 
 
-/**
- * @author mahesh
- *
- */
 public class RequestManager implements RequestStrategy {
-	static RequestManager rm;
 
-	public static RequestManager getInstance(){
-		if(rm==null) {
-			rm = new RequestManager();
+	static RequestManager pm;
+	public HashMap<Integer, Request> requestQueue = new HashMap<Integer, Request>();
+
+	public static RequestManager getInstance() {
+		if (pm == null) {
+			pm = new RequestManager();
 		}
-		return rm;
+		return pm;
 	}
 
-//	public int processRequest{
 
-		//        try {
-		//            Scanner scanner = new Scanner(System.in);
-		//            int selection = 0;
-		//            int selection1 = 0;
-		//            System.out.println("Please Make a selection for Service Request:");
-		//            System.out.println("Selection: ");
-		//            System.out.println("[1] Create Property");
-		//            System.out.println("[2] Delete Property");
-		//            System.out.println("[3] Update Property ");
-		//            System.out.println("[4] Search property");
-		//            System.out.println("[0]Enter 0 for Exit");
-		//            selection = scanner.nextInt();
-		//            switch (selection) {
-		//                case 1:
-		//                    System.out.println("Choose a type of property");
-		//                    System.out.println("[1] TownHome");
-		//                    System.out.println("[2] Single Family");
-		//                    System.out.println("Selection: ");
-		//                    selection1 = scanner.nextInt();
-		//                    switch (selection1) {
-		//                        case 1:
-		//                            TownHome t = new TownHome(4,500);
-		//                            System.out.println("Choose type of deal");
-		//                            System.out.println("[1] Rent");
-		//                            System.out.println("[2]Sale");
-		//                            int selection2 = scanner.nextInt();
-		//                            switch (selection2) {
-		//                                case 1:
-		//                                    Rentable townhome = new Rentable(t);
-		//                                    townhome.rentProperty();
-		//                                    createProperty(t);
-		//                                    break;
-		//                                case 2:
-		//                                    Saleable townhome1 = new Saleable(t);
-		//                                    townhome1.saleProperty();
-		//                                    createProperty(t);
-		//                                    break;
-		//                                default:
-		//                                    System.out.println("Invalid");
-		//                                    break;
-		//                            }
-		//                            break;
-		//                        case 2:
-		//                            SingleFamily sf = new SingleFamily(3000,5000);
-		//                            System.out.println("Choose type of deal");
-		//                            System.out.println("[1] Rent");
-		//                            System.out.println("[2] Sale");
-		//                            int selection4 = scanner.nextInt();
-		//                            switch (selection4) {
-		//                                case 1:
-		//                                    Rentable SingleFamily = new Rentable(sf);
-		//                                    SingleFamily.rentProperty();
-		//                                    createProperty(sf);
-		//                                    break;
-		//                                case 2:
-		//                                    Saleable SingleFamily1 = new Saleable(sf);
-		//                                    SingleFamily1.saleProperty();
-		//                                    createProperty(sf);
-		//                                    break;
-		//                                default:
-		//                                    System.out.println("Invalid");
-		//                                    break;
-		//                            }
-		//                        default:
-		//                            System.out.println("Thanks");
-		//                            break;
-		//                    } //shikha
-		//                    break;
-		//                case 2:
-		//                    System.out.println("Selection: Delete Property");
-		//                    System.out.println("Enter the Property Id that you want to delete");
-		//                    int val = scanner.nextInt();
-		//                    deleteProperty(val);
-		//                    break;
-		//                case 3:
-		//                    System.out.println("Selection: Update Property");
-		//                    System.out.println("Enter the Property Id that you want to update");
-		//                    int val1 = scanner.nextInt();
-		//                    updateProperty(val1);
-		//                    break;
-		//                    /* System.out.println("What do you want to update");
-		//                    System.out.println("[1]Initial Price");
-		//                    System.out.println("[2]Start Time");
-		//                    System.out.println("[3]End Time");
-		//                    System.out.println("[4]Buy Now price");
-		//                    System.out.println("[5]Status");
-		//                    System.out.println("[6]Owner-contact");*/
-		//               case 4:
-		//                    System.out.println("Selection: Display property");
-		//                    System.out.println("Enter the Property Id that you want to display");
-		//                    int val2 = scanner.nextInt();
-		//                    Property p2=SearchProperty(val2);
-		//                    String PropName=p2.getClass().getName();
-		//                     System.out.println("*********************");
-		//                     System.out.println("This Property is type of: "+PropName.substring(12,PropName.length()));
-		//
-		//
-		//                    if(PropName.substring(12,PropName.length()).equalsIgnoreCase("TownHome"))
-		//                    {
-		//                      System.out.println("The TownHome Property has the following attributes: "+PropName);
-		//                      p2.displayProperty();
-		//                      p2.showProperty(p2);
-		//                    }
-		//                    if(PropName.substring(12,PropName.length()).equalsIgnoreCase("SingleFamily"))
-		//                    {
-		//                    // System.out.println("The SingleFamily Property has the following attributes: "+PropName);
-		//                     p2.displayProperty();
-		//                     // p2.showProperty(p2);
-		//                    }
-		//                    break;
-		//            }
-		//        } catch (IOException ex) {
-		//            Logger.getLogger(RequestManager.class.getName()).log(Level.SEVERE, null, ex);
-		//        }
-//	}
+
 	
 	public void processRequest(SmartCabData data) {
-		// TODO Auto-generated method stub
-		
+		BufferedReader bufferedReader = new BufferedReader(
+				new InputStreamReader(System.in));
+		REQUESTOP requestOperation = REQUESTOP.NO_OP;
+
+		StringBuilder strBuilder = new StringBuilder();
+		strBuilder.append("\n\t  Request Manager Manu")
+				.append("\n1. Create New Request")
+				.append("\n2. Cancel Request").append("\n3. Update Request")
+				.append("\n4. Retrieve Request").append("\n5. Exit System");
+
+		StringBuilder requestOptionBuilder = new StringBuilder();
+		requestOptionBuilder.append("\n\t VehicleType").append("\n1. TAXI")
+				.append("\n2. Share Ride").append("\n3. Exit");
+
+		do {
+			System.out.println(strBuilder.toString());
+			try {
+
+				String option = bufferedReader.readLine();
+				System.out.println("Request Received:"
+						+ requestOperation.values()[Integer.parseInt(option)]);
+				Integer numericOption = Integer.parseInt(option);
+				requestOperation = requestOperation.values()[numericOption];
+				if (requestOperation == requestOperation.EXIT) {
+					break;
+				}
+
+				System.out.println(requestOptionBuilder.toString());
+				option = bufferedReader.readLine();
+				numericOption = Integer.parseInt(option);
+
+				REQUESTKind requestKind = REQUESTKind.values()[numericOption];
+				switch (requestOperation) {
+				case ADD_REQUEST:
+					addRequest(requestKind);
+
+					break;
+
+				case REMOVE_REQUEST:
+					cancelRequest(requestKind);
+					break;
+
+				case UPDATE_REQUEST:
+					updateRequest(requestKind);
+					break;
+
+				case RETRIEVE_REQUEST:
+					retrieveRequest(requestKind);
+					break;
+
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} while (requestOperation != requestOperation.EXIT);
+
+	}
+	
+
+	public Entry<Integer, Request> updateRequest(REQUESTKind kind)
+			throws IOException {
+		System.out.println("\nEnter the Request id to update : ");
+		BufferedReader bufferedReader = new BufferedReader(
+				new InputStreamReader(System.in));
+		String option = bufferedReader.readLine();
+		Integer requestId = Integer.parseInt(option);
+		for (Entry<Integer, Request> request : requestQueue.entrySet()) {
+			if (request.getKey() == requestId) {
+				addRequest(kind);
+			}
+
+		}
+		return null;
+	}
+
+	public Entry<Integer, Request> retrieveRequest(REQUESTKind kind)
+			throws IOException {
+		System.out.println("\nEnter the Request id to Delete : ");
+		BufferedReader bufferedReader = new BufferedReader(
+				new InputStreamReader(System.in));
+		String option = bufferedReader.readLine();
+		Integer requestId = Integer.parseInt(option);
+		for (Entry<Integer, Request> request : requestQueue.entrySet()) {
+			if (request.getKey() == requestId) {
+				return request;
+			}
+
+		}
+		return null;
+	}
+
+	public Entry<Integer, Request> cancelRequest(REQUESTKind kind)
+			throws IOException {
+		System.out.println("\nEnter the Request id to Delete : ");
+		BufferedReader bufferedReader = new BufferedReader(
+				new InputStreamReader(System.in));
+		String option = bufferedReader.readLine();
+		Integer requestId = Integer.parseInt(option);
+		for (Entry<Integer, Request> request : requestQueue.entrySet()) {
+			if (request.getKey() == requestId) {			
+				//Set State to the Cancel state
+				request.getValue().cancelRequest();;
+				//requestQueue.remove(requestId);
+				
+				return request;
+			}
+
+		}
+		return null;
+	}
+
+	public void addRequest(REQUESTKind kind) {
+		Random random = new Random();
+		Request request = new Request();
+		request.setRequestId(random.nextInt());
+		System.out.println("\n Enter The pick up location:");
+		BufferedReader bufferedReader = new BufferedReader(
+				new InputStreamReader(System.in));
+		try {
+			String sourceLocation = bufferedReader.readLine();
+			System.out.println("Source Location:" + sourceLocation);
+			System.out.println("\n Enter The Destination:");
+			BufferedReader bufferedReader1 = new BufferedReader(
+					new InputStreamReader(System.in));
+			String destination = bufferedReader1.readLine();
+			System.out.println("Destination Location:" + destination);
+			Address address = new Address();
+			request.setAddress(address);
+			request.setType(ServiceType.TAXI);
+			request.receiveRequest();
+			requestQueue.put(new Integer(request.getRequestId()), request);
+			System.out.println("Request is in Processing State:::"
+					+ request.toString());
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	private enum REQUESTOP {
+		NO_OP, ADD_REQUEST, REMOVE_REQUEST, UPDATE_REQUEST, RETRIEVE_REQUEST, EXIT
+	}
+
+	private enum REQUESTKind {
+		NO_OP, TAXI, SHARE_RIDE, RENTCAR, EXIT
+	}
+
+	public static void main(String args[]) {
+		SmartCabData data = new SmartCabData();
+		RequestManager.getInstance().processRequest(data);
 	}
 
 }
