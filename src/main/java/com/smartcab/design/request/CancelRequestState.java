@@ -14,10 +14,6 @@ public class CancelRequestState implements State{
 		System.out.println("Request is already cancelled.\n");		
 	}
 
-	public void qualifyCustomer(Customer c) {
-		System.out.println("Request is already cancelled.\n");		
-	}
-
 
 	public void processRequest() {
 		System.out.println("Request is already cancelled.\n");		

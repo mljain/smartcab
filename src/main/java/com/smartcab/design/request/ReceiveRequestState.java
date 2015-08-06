@@ -17,10 +17,6 @@ public class ReceiveRequestState implements State {
 		
 	}
 
-	public void qualifyCustomer(Customer c) {
-		System.out.println("Cannot Qualify Customer. Have not recieved a Request.\n");
-		
-	}
 
 	public void processRequest() {
 		System.out.println("Cannot process request.Have not recieved a Request.\n");

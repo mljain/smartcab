@@ -122,6 +122,22 @@ public void setState(VehicleState state) {
 	this.state = state;
 }
 
+public void maintainVehicle(){
+	state.maintainVehicle();
+}
+
+public void dispatchVehicle(){
+	state.dispatchVehicle();
+}
+
+public void completeProcess(){
+	state.completeProcess();
+}
+
+public String getCurrentState(){
+	return state.getCurrentState();
+}
+
 	
 
 

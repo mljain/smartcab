@@ -24,32 +24,25 @@ public interface ServiceRequest {
 	public void receiveRequest();
 
 	/**
-	 * Qualify customer.
-	 *
-	 * @param c the c
-	 */
-	public void qualifyCustomer(Customer c);
-
-	/**
 	 * Process request.
 	 *
 	 * @param request the request
 	 */
-	public void processRequest(Request request);
+	public void processRequest();
 
 	/**
 	 * Complete request.
 	 *
 	 * @param request the request
 	 */
-	public void completeRequest(Request request);
+	public void completeRequest();
 	
 	/**
 	 * Cancel request.
 	 *
 	 * @param request the request
 	 */
-	public void cancelRequest(Request request);
+	public void cancelRequest();
 
 	/**
 	 * Gets the state.

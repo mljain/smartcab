@@ -16,17 +16,6 @@ public class ProcessRequestState implements State{
 		System.out.println("Currently processing request.\n");		
 	}
 
-	public void qualifyCustomer(Customer c) {
-		if(serviceRequest.getClient().getMemberType().equals("Something")){
-			processRequest();
-		}
-		else{
-			System.out.println("Not Valid Member\n");
-			serviceRequest.setState(new CancelRequestState(serviceRequest));
-		}
-		
-	}
-
 	public void processRequest() {
 		if(serviceRequest.getClient().getMemberType().equals("Something")){
 			serviceRequest.setState(new CompleteRequestState(serviceRequest));

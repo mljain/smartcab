@@ -144,20 +144,22 @@ public class Request implements ServiceRequest{
 		state.receiveRequest();
 		
 	}
-	public void qualifyCustomer(Customer c) {
-		state.qualifyCustomer(c);
-		
-	}
-	public void processRequest(Request request) {
+	
+	public void processRequest() {
 		state.processRequest();
 		
 	}
-	public void completeRequest(Request request) {
+	public void completeRequest() {
 		state.completeRequest();
 		
 	}
-	public void cancelRequest(Request request) {
+	public void cancelRequest() {
 		state.cancelRequest();
+		
+	}
+
+	public void qualifyCustomer(Customer c) {
+		// TODO Auto-generated method stub
 		
 	}
 

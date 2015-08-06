@@ -11,8 +11,6 @@ public interface State {
 	
 	public void receiveRequest();
 
-	public void qualifyCustomer(Customer c);
-
 	public void processRequest();
 
 	public void completeRequest();
