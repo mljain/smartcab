@@ -9,13 +9,13 @@ import java.util.UUID;
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.vehicle.domain.Vehicle;
 
-public class TestClient implements RequestStrategy{
+public class VehicleFacadeController implements RequestStrategy{
 	
-	static TestClient pm;
+	static VehicleFacadeController pm;
 
-	public static TestClient getInstance(){
+	public static VehicleFacadeController getInstance(){
 		if(pm==null) {
-			pm = new TestClient();
+			pm = new VehicleFacadeController();
 		}
 		return pm;
 	}

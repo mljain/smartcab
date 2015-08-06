@@ -4,7 +4,7 @@ import java.util.Map.Entry;
 
 import com.smartcab.vehicle.domain.Vehicle;
 
-public class Bus extends VehicleManagerAbstruct {
+public class Bus extends VehicleManagerAbstract {
 
 	public boolean addVehicle(Vehicle vehicle) {
 		try {
