@@ -1,25 +1,34 @@
 package com.smartcab.design.dispatcher;
 
 import com.smartcab.request.domain.Request;
+import com.smartcab.request.domain.ServiceType;
 
 public class DispatcherContext {
 		
 		private DispatcherStrategy ds;
 		
 		public String dispatch(Request request ) { 
-			ds = setDispatcherStrategy(request.getRequestType()); 
+			ds = setDispatcherStrategy(request); 
 			return ds.dispatch(request);
 		}
 	
-		public DispatcherStrategy setDispatcherStrategy (String requestType) { 
+		public DispatcherStrategy setDispatcherStrategy (Request request) { 
 			
-			if( requestType.equalsIgnoreCase("Taxi") ){
+//			if( requestType.equalsIgnoreCase("Taxi") ){
+//				ds =  new Taxi();
+//			}else if ( requestType.equalsIgnoreCase("ShareARide") ){
+//				ds = new ShareRide();
+//			}else if ( requestType.equalsIgnoreCase("RentACar") ){
+//				ds = new RentACar();
+//			}
+			if( request.getType() == ServiceType.TAXI){
 				ds =  new Taxi();
-			}else if ( requestType.equalsIgnoreCase("ShareARide") ){
+			}else if ( request.getType() == ServiceType.SHARE_RIDE ){
 				ds = new ShareRide();
-			}else if ( requestType.equalsIgnoreCase("RentACar") ){
+			}else if (request.getType() == ServiceType.RENTCAR) {
 				ds = new RentACar();
 			}
+
 			return ds;
 		}
 }

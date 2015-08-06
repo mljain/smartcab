@@ -9,18 +9,6 @@ import com.smartcab.member.domain.Member;
 import com.smartcab.notification.domain.Notification;
 
 public class Request implements ServiceRequest{	
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "Request [requestId=" + requestId + ", deparatureTime="
-				+ deparatureTime + ", address=" + address + ", requestStatus="
-				+ requestStatus + ", requestType=" + requestType
-				+ ", geoLocation=" + geoLocation + ", zone=" + zone
-				+ ", client=" + client + ", state=" + state + ", type=" + type
-				+ ", notification=" + notification + "]";
-	}
 
 	private int requestId;
 	private Date deparatureTime;
@@ -191,6 +179,18 @@ public class Request implements ServiceRequest{
 		
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Request [requestId=" + requestId + ", deparatureTime="
+				+ deparatureTime + ", address=" + address + ", requestStatus="
+				+ requestStatus + ", requestType=" + requestType
+				+ ", geoLocation=" + geoLocation + ", zone=" + zone
+				+ ", client=" + client + ", state=" + state + ", type=" + type
+				+ ", notification=" + notification + "]";
+	}
 
 
 }
