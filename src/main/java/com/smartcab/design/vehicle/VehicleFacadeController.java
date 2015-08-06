@@ -3,6 +3,7 @@ package com.smartcab.design.vehicle;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.UUID;
 
@@ -47,32 +48,43 @@ public class VehicleFacadeController implements RequestStrategy{
 			System.out.println(strBuilder.toString());
 			try {
 				String option = bufferedReader.readLine();
-				Integer numericOption = Integer.parseInt(option);
-				facadeOperation = FacadeOperation.values()[numericOption];
-				
-				if (facadeOperation == FacadeOperation.EXIT){
+				if(option.isEmpty()){
+					System.out.println("Enter Valid Choice");
 					break;
 				}
-				
-				System.out.println(vehicleOptionBuilder.toString());
-				option = bufferedReader.readLine();
-				numericOption = Integer.parseInt(option);
-				
-				VehicleKind vehicleKind = VehicleKind.values()[numericOption - 1];
-				switch(facadeOperation) {
-					case ADD_VEHICLE : addVehicle(facade, vehicleKind);
-						break;
-						
-					case DELETE_VEHICLE : deleteVehicle(facade, vehicleKind);
-						break;
+				else{
+					Integer numericOption = Integer.parseInt(option);
+					facadeOperation = FacadeOperation.values()[numericOption];
 					
-					case UPDATE_VEHICLE : updateVehicle(facade, vehicleKind);
+					if (facadeOperation == FacadeOperation.EXIT){
 						break;
+					}
+					
+					System.out.println(vehicleOptionBuilder.toString());
+					option = bufferedReader.readLine();
+					numericOption = Integer.parseInt(option);
+					
+					VehicleKind vehicleKind = VehicleKind.values()[numericOption - 1];
+					switch(facadeOperation) {
+						case ADD_VEHICLE : addVehicle(facade, vehicleKind);
+							break;
+							
+						case DELETE_VEHICLE : deleteVehicle(facade, vehicleKind);
+							break;
 						
-					case GET_VEHICLE : getVehicle(facade, vehicleKind);
-						break;
+						case UPDATE_VEHICLE : updateVehicle(facade, vehicleKind);
+							break;
+							
+						case GET_VEHICLE : getVehicle(facade, vehicleKind);
+							break;
+					}
 				}
-			} catch (IOException e) {
+				
+			} catch (InputMismatchException e){
+				System.out.println("Enter Valid Choice");
+			}catch(NumberFormatException e){
+				System.out.println("Enter Valid Choice");
+			}catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
