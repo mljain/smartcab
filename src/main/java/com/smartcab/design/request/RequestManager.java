@@ -135,7 +135,8 @@ public class RequestManager implements RequestStrategy {
 				//Set State to the Cancel state
 				request.getValue().cancelRequest();;
 				//requestQueue.remove(requestId);
-				
+				System.out.println("Cancelled Below Request"
+						+ request.toString());
 				return request;
 			}
 
@@ -159,6 +160,8 @@ public class RequestManager implements RequestStrategy {
 			String destination = bufferedReader1.readLine();
 			System.out.println("Destination Location:" + destination);
 			Address address = new Address();
+			address.setDestinationAddrsss(sourceLocation);
+			address.setDestinationAddrsss(destination);
 			request.setAddress(address);
 			request.setType(ServiceType.TAXI);
 			request.receiveRequest();
