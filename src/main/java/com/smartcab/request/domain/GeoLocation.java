@@ -4,28 +4,36 @@ public class GeoLocation {
 	/**
 	 * @return the latitude
 	 */
-	private int latitude;
-	private int longitude;
-	public int getLatitude() {
+	private double latitude;
+	private double longitude;
+	public double getLatitude() {
 		return latitude;
 	}
 	/**
 	 * @return the longitude
 	 */
-	public int getLongitude() {
+	public double getLongitude() {
 		return longitude;
 	}
 	/**
-	 * @param latitude the latitude to set
+	 * @param d the latitude to set
 	 */
-	public void setLatitude(int latitude) {
-		this.latitude = latitude;
+	public void setLatitude(double d) {
+		this.latitude = d;
 	}
 	/**
 	 * @param longitude the longitude to set
 	 */
-	public void setLongitude(int longitude) {
+	public void setLongitude(double longitude) {
 		this.longitude = longitude;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "GeoLocation [latitude=" + latitude + ", longitude=" + longitude
+				+ "]";
 	}
 
 	

@@ -10,9 +10,9 @@ import java.util.Random;
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Address;
+import com.smartcab.request.domain.GeoLocation;
 import com.smartcab.request.domain.Request;
 import com.smartcab.request.domain.ServiceType;
-
 
 public class RequestManager implements RequestStrategy {
 
@@ -25,7 +25,7 @@ public class RequestManager implements RequestStrategy {
 		}
 		return pm;
 	}
-	
+
 	public void processRequest(SmartCabData data) {
 		requestQueue = data.requestQ;
 		BufferedReader bufferedReader = new BufferedReader(
@@ -35,16 +35,12 @@ public class RequestManager implements RequestStrategy {
 		StringBuilder strBuilder = new StringBuilder();
 		strBuilder.append("\nRequest Manager Manu")
 				.append("\n1. Create New Request")
-				.append("\n2. Cancel Request")
-				.append("\n3. Update Request")
-				.append("\n4. Retrieve Request")
-				.append("\n5. Exit System");
+				.append("\n2. Cancel Request").append("\n3. Update Request")
+				.append("\n4. Retrieve Request").append("\n5. Exit System");
 
 		StringBuilder requestOptionBuilder = new StringBuilder();
-		requestOptionBuilder.append("\n\t VehicleType")
-				.append("\n1. TAXI")
-				.append("\n2. Share Ride")
-				.append("\n3. Exit");
+		requestOptionBuilder.append("\n\t VehicleType").append("\n1. TAXI")
+				.append("\n2. Share Ride").append("\n3. Exit");
 
 		do {
 			System.out.println(strBuilder.toString());
@@ -89,7 +85,6 @@ public class RequestManager implements RequestStrategy {
 		} while (requestOperation != requestOperation.EXIT);
 
 	}
-	
 
 	public Entry<Integer, Request> updateRequest(REQUESTKind kind)
 			throws IOException {
@@ -131,10 +126,11 @@ public class RequestManager implements RequestStrategy {
 		String option = bufferedReader.readLine();
 		Integer requestId = Integer.parseInt(option);
 		for (Entry<Integer, Request> request : requestQueue.entrySet()) {
-			if (request.getKey() == requestId) {			
-				//Set State to the Cancel state
-				request.getValue().cancelRequest();;
-				//requestQueue.remove(requestId);
+			if (request.getKey() == requestId) {
+				// Set State to the Cancel state
+				request.getValue().cancelRequest();
+				;
+				// requestQueue.remove(requestId);
 				System.out.println("Cancelled Below Request"
 						+ request.toString());
 				return request;
@@ -154,6 +150,10 @@ public class RequestManager implements RequestStrategy {
 		try {
 			String sourceLocation = bufferedReader.readLine();
 			System.out.println("Source Location:" + sourceLocation);
+			SmartCabData data = new SmartCabData();
+			GeoLocation geo1 =data.getGpsByLocation(sourceLocation);
+			System.out.println("Getting geolocation from the gps:"+geo1);
+			
 			System.out.println("\n Enter The Destination:");
 			BufferedReader bufferedReader1 = new BufferedReader(
 					new InputStreamReader(System.in));
@@ -165,15 +165,26 @@ public class RequestManager implements RequestStrategy {
 			request.setAddress(address);
 			request.setType(ServiceType.TAXI);
 			request.receiveRequest();
+			request.setGeoLocation(geo1);
 			requestQueue.put(new Integer(request.getRequestId()), request);
 			System.out.println("Request is in Processing State:::"
 					+ request.toString());
+			System.out.println(":::Current Request Queue:::");
+			printQueue();
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
+	}
+
+	public void printQueue() {
+		for (Entry<Integer, Request> request : requestQueue.entrySet()) {
+			System.out.println("Request Id:"+request.getKey());
+			System.out.println("Request Response:"+request.getValue().toString());
+
+		}
 	}
 
 	private enum REQUESTOP {
