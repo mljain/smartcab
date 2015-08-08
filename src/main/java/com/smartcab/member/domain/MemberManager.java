@@ -13,7 +13,7 @@ import com.smartcab.request.domain.Request;
 public class MemberManager implements RequestStrategy{
 
 	private static MemberManager mm;
-	public HashMap<Integer, Member> memberList = new HashMap<Integer, Member>();
+	public static HashMap<Integer, Member> memberList = new HashMap<Integer, Member>();
 	public String[] requests = {"Add Member", " View Member", " Delete Member", " Update Member", "Exit System"};
 	public final int ADD = 0;
 	public final int VIEW = 1;
@@ -101,7 +101,7 @@ public class MemberManager implements RequestStrategy{
 		
 	}
 
-	public void addMember(){
+	public static Member addMember(){
 		Random r= new Random();
 		Member m =new Member();
 		String input ="";
@@ -126,6 +126,7 @@ public class MemberManager implements RequestStrategy{
 		}
 		
 		memberList.put(m.getMemberId(), m);
+		return m;
 		
 	}
 	
