@@ -162,10 +162,31 @@ public class RequestManager implements RequestStrategy {
 		BufferedReader bufferedReader2 = new BufferedReader(
 				new InputStreamReader(System.in));
 		String memberId = bufferedReader2.readLine();
-		Member member = new Member();
-		member.setMemberId(Integer.parseInt(memberId));
+		int id =Integer.parseInt(memberId);
+
+		
+		Member member = null;
+		
+		for (Integer key : data.memberList.keySet()){
+			if(id == data.memberList.get(key).getMemberId())
+			{
+				member = data.memberList.get(key);
+				System.out.println("Member found: " + member.toString());
+			}
+				
+		}
+		
+		if(member == null)
+		{
+			System.out.println("Member Id not found. Add a new account\n");
+			member =  MemberManager.addMember();
+
+			System.out.println(member.toString());
+			
+		}
+		
 		request.setClient(member);
-		MemberManager.getInstance().processRequest(data, request);
+		//MemberManager.getInstance().processRequest(data, request);
 		
 		System.out.println("\n Enter The pick up location:");
 		BufferedReader bufferedReader = new BufferedReader(

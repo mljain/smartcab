@@ -6,6 +6,7 @@ package com.smartcab.model;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 import java.util.Map.Entry;
 
 import com.smartcab.design.vehicle.Economy;
@@ -154,6 +155,14 @@ public class SmartCabData {
 		driver4.setLastname("Jain");
 		driver4.setLicenceId("1234567");
 		driverData.put(driver4.getDriverId(), driver4);
+		
+		Member m = new Member();
+		m.setFirstName("Parnit");
+		m.setLastName("Sainion");
+		Random r = new Random();
+		m.setMemberId(1212);
+		
+		memberList.put(m.getMemberId(), m);
 
 	}
 
