@@ -81,9 +81,9 @@ public class DispatcherManager implements RequestStrategy{
 						//option = bufferedReader.readLine();
 						//Integer requestId = Integer.parseInt(option);
 						Request request = data.requestQ.get(request1.getRequestId());
-						if(request1 != null){
-							System.out.println("Request to be dispatched: " + request1.toString());
-							DispatcherStrategyApp.getInstance().dispatch(request1);
+						if(request != null){
+							System.out.println("Request to be dispatched: " + request.toString());
+							DispatcherStrategyApp.getInstance().dispatch(data,request);
 						}else{
 							System.out.println("Request NOT found. Please enter valid request id.");
 						}

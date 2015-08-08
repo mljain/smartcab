@@ -1,5 +1,6 @@
 package com.smartcab.design.dispatcher;
 
+import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Request;
 
 public class DispatcherStrategyApp {
@@ -13,10 +14,10 @@ public class DispatcherStrategyApp {
 		return dsa;
 	}	
 	
-	public static void dispatch(Request r) {
+	public static void dispatch(SmartCabData data,Request r) {
 		DispatcherContext dc = new DispatcherContext();
 		System.out.println("DispacherStrategy: "
-				+ dc.dispatch(r));
+				+ dc.dispatch(data,r));
 	}
 
 }

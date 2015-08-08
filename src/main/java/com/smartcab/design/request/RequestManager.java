@@ -27,7 +27,7 @@ public class RequestManager implements RequestStrategy {
 		return pm;
 	}
 
-	public void processRequest(SmartCabData data,Request request) {
+	public void processRequest(SmartCabData data, Request request) {
 		requestQueue = data.requestQ;
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
@@ -152,19 +152,25 @@ public class RequestManager implements RequestStrategy {
 			String sourceLocation = bufferedReader.readLine();
 			System.out.println("Source Location:" + sourceLocation);
 			SmartCabData data = new SmartCabData();
-			GeoLocation geo1 =data.getGpsByLocation(sourceLocation);
-			System.out.println("Getting geolocation from the gps:"+geo1);
-			
+			GeoLocation geo1 = data.getGpsByLocation(sourceLocation);
+			System.out.println("Getting geolocation from the gps:" + geo1);
+
 			System.out.println("\n Enter The Destination:");
 			BufferedReader bufferedReader1 = new BufferedReader(
 					new InputStreamReader(System.in));
 			String destination = bufferedReader1.readLine();
 			System.out.println("Destination Location:" + destination);
 			Address address = new Address();
-			address.setDestinationAddrsss(sourceLocation);
+			address.setSourceAddrsss(sourceLocation);
 			address.setDestinationAddrsss(destination);
 			request.setAddress(address);
-			request.setType(ServiceType.TAXI);
+			if (kind.name().equals("TAXI")) {
+				request.setType(ServiceType.TAXI);
+			} else if (kind.name().equals("SHARE_RIDE")) {
+				request.setType(ServiceType.SHARE_RIDE);
+			} else if (kind.name().equals("RENTCAR")) {
+				request.setType(ServiceType.RENTCAR);
+			}
 			request.receiveRequest();
 			request.setGeoLocation(geo1);
 			requestQueue.put(new Integer(request.getRequestId()), request);
@@ -172,7 +178,7 @@ public class RequestManager implements RequestStrategy {
 					+ request.toString());
 			System.out.println(":::Current Request Queue:::");
 			printQueue();
-			
+
 			DispatcherManager.getInstance().ProcessRequest(data, request);
 
 		} catch (IOException e) {
@@ -184,8 +190,9 @@ public class RequestManager implements RequestStrategy {
 
 	public void printQueue() {
 		for (Entry<Integer, Request> request : requestQueue.entrySet()) {
-			System.out.println("Request Id:"+request.getKey());
-			System.out.println("Request Response:"+request.getValue().toString());
+			System.out.println("Request Id:" + request.getKey());
+			System.out.println("Request Response:"
+					+ request.getValue().toString());
 
 		}
 	}
@@ -200,7 +207,7 @@ public class RequestManager implements RequestStrategy {
 
 	public static void main(String args[]) {
 		SmartCabData data = new SmartCabData();
-		RequestManager.getInstance().processRequest(data,null);
+		RequestManager.getInstance().processRequest(data, null);
 	}
 
 }

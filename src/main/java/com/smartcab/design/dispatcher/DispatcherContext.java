@@ -1,5 +1,6 @@
 package com.smartcab.design.dispatcher;
 
+import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Request;
 import com.smartcab.request.domain.ServiceType;
 
@@ -7,9 +8,9 @@ public class DispatcherContext {
 		
 		private DispatcherStrategy ds;
 		
-		public String dispatch(Request request ) { 
+		public String dispatch(SmartCabData data,Request request ) { 
 			ds = setDispatcherStrategy(request); 
-			return ds.dispatch(request);
+			return ds.dispatch(data,request);
 		}
 	
 		public DispatcherStrategy setDispatcherStrategy (Request request) { 
