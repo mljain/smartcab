@@ -9,6 +9,7 @@ import java.util.Random;
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Request;
+import com.smartcab.vehicle.domain.Driver;
 
 public class MemberManager implements RequestStrategy{
 
@@ -103,14 +104,39 @@ public class MemberManager implements RequestStrategy{
 
 	public static Member addMember(){
 		Random r= new Random();
-		Member m =new Member();
+		Member m = null;
 		String input ="";
+		int id, choice;
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
 		
-		m.setMemberId(r.nextInt());
+		id = r.nextInt();
 
 		try {
+			while( m == null){
+				System.out.println("Enter Member type \n 1. Member\n 2. Driver\n 3. Supervisor\n");
+				input = bufferedReader.readLine();
+				choice = Integer.parseInt(input);
+				switch(choice){
+					case 1:
+						System.out.println("Chose member.\n");
+						m = new Member();
+						break;
+					case 2: 
+						System.out.println("Chose Driver\n");
+						m = new Driver();
+						break;
+					case 3:
+						System.out.println("Chose Supervisor\n");
+						m = new Supervisor();
+						break;
+					default:
+						System.out.println("Enter correctchoice\n");
+				}
+				
+			}
+			
+			
 			System.out.println("Enter First Name");
 			input = bufferedReader.readLine();
 			m.setFirstName(input);
