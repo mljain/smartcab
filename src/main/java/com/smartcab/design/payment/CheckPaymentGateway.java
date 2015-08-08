@@ -2,6 +2,10 @@ package com.smartcab.design.payment;
 
 import java.util.Scanner;
 
+import com.smartcab.design.notification.NotificationManager;
+import com.smartcab.design.notification.NotifyDispatch;
+import com.smartcab.design.notification.PaymentNotify;
+import com.smartcab.design.notification.RequestNotify;
 import com.smartcab.design.recipt.EmailReceipt;
 import com.smartcab.design.recipt.MessageReceipt;
 import com.smartcab.design.recipt.PaperReceipt;
@@ -59,5 +63,12 @@ public class CheckPaymentGateway extends PaymenProcessor {
 
 		
 	}
+	static {
+		NotificationManager manager = new NotificationManager();
 
+		new PaymentNotify(manager);
+		new NotifyDispatch(manager);
+		new RequestNotify(manager);
+		manager.setState(10);
+	}
 }
