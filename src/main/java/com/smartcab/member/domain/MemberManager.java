@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.Random;
 
 import com.smartcab.model.SmartCabData;
 
@@ -55,19 +56,19 @@ public class MemberManager {
 
 				switch (numericOption) {
 				case ADD:
-					//addRequest(requestKind);
+					addMember();
 					break;
 
 				case VIEW:
-					//cancelRequest(requestKind);
+					viewMembers();
 					break;
 
 				case DELETE:
-					//updateRequest(requestKind);
+					deleteMember();
 					break;
 
 				case UPDATE:
-					//retrieveRequest(requestKind);
+					updateMember();
 					break;
 				default:
 					System.out.println("Enter valid option.")
@@ -79,6 +80,73 @@ public class MemberManager {
 			}
 		} while (numericOption != EXIT);
 
+	}
+	
+	public void addMember(){
+		Random r= new Random();
+		Member m =new Member();
+		String input ="";
+		BufferedReader bufferedReader = new BufferedReader(
+				new InputStreamReader(System.in));
+		
+		m.setMemberId(r.nextInt());
+
+		try {
+			System.out.println("Enter First Name");
+			input = bufferedReader.readLine();
+			m.setFirstName(input);
+
+			System.out.println("Enter Last Name");
+			input = bufferedReader.readLine();
+			m.setLastName(input);
+			
+			m.setMemberType(MemberType.SILVER);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		memberList.put(m.getMemberId(), m);
+		
+	}
+	
+	public void viewMembers(){
+		for (Integer i : memberList.keySet()){
+			System.out.println("Member: "+memberList.get(i).toString());						
+		}
+	}
+	
+	public void deleteMember(){
+		
+		BufferedReader bufferedReader = new BufferedReader(
+				new InputStreamReader(System.in));
+
+		Member m =null;
+
+		System.out.println("Enter Member ID");
+		int id;
+		try {
+			id = bufferedReader.read();
+
+			for (Integer i : memberList.keySet()){
+				m = memberList.get(i);	
+				
+				if(m.getMemberId() == id)
+				{
+					memberList.remove(m);
+					System.out.println("Member: " +m.getFirstName() + " " + m.getLastName() +" removed.");
+					return;
+				}
+			}
+			System.out.println("Member: " +m.getFirstName() +" " + m.getLastName() +" nout found.");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("Incorrect ID.");
+		}
+	}
+	
+	public void updateMember(){
+		
 	}
 
 }
