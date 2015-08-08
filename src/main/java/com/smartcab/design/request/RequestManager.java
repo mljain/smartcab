@@ -152,7 +152,7 @@ public class RequestManager implements RequestStrategy {
 
 	private void createNewRequest(SmartCabData data, REQUESTKind kind, int reqId) {
 		Request request = new Request();
-		if (reqId != 0) {
+		if (reqId == 0) {
 			Random random = new Random();
 			request.setRequestId(Math.abs(random.nextInt()));
 		} else {

@@ -6,6 +6,10 @@ import com.smartcab.design.payment.PaymnetController;
 import com.smartcab.design.utill.PaymentCalculator;
 import com.smartcab.design.utill.ShareRidePayment;
 import com.smartcab.design.utill.TaxiPayment;
+import com.smartcab.design.vehicle.Economy;
+import com.smartcab.design.vehicle.EconomyDecorator;
+import com.smartcab.design.vehicle.Luxury;
+import com.smartcab.design.vehicle.LuxuryDecorator;
 import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Request;
 import com.smartcab.vehicle.domain.Driver;
@@ -22,8 +26,14 @@ public class ShareRide implements DispatcherStrategy{
 		System.out.println("Vehicle Details:"+vehicle.get(0));
 		
 		
+		Luxury luxury = new Luxury();
+		LuxuryDecorator luxuryDecorator = new LuxuryDecorator(luxury);
+		Vehicle finalVehicle=luxuryDecorator.bookLuxuary(10, vehicle.get(0));
+		
+		
+		
 		System.out.println("\n Getting driver informations");
-		Driver driver=data.getDriver(vehicle.get(0));
+		Driver driver=data.getDriver(finalVehicle);
 		System.out.println("\n Driver Informations:"+driver.toString());
 		
 		
