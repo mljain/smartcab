@@ -8,6 +8,7 @@ import java.util.Random;
 
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
+import com.smartcab.request.domain.Request;
 
 public class MemberManager implements RequestStrategy{
 
@@ -28,7 +29,7 @@ public class MemberManager implements RequestStrategy{
 		return mm;
 	}
 	
-	public void processRequest(SmartCabData data) {
+	public void processRequest(SmartCabData data,Request request) {
 		memberList = data.memberList;
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
