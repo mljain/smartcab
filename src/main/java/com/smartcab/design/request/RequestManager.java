@@ -9,6 +9,8 @@ import java.util.Random;
 
 import com.smartcab.design.dispatcher.DispatcherManager;
 import com.smartcab.main.RequestStrategy;
+import com.smartcab.member.domain.Member;
+import com.smartcab.member.domain.MemberManager;
 import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Address;
 import com.smartcab.request.domain.GeoLocation;
@@ -63,19 +65,19 @@ public class RequestManager implements RequestStrategy {
 				REQUESTKind requestKind = REQUESTKind.values()[numericOption];
 				switch (requestOperation) {
 				case ADD_REQUEST:
-					addRequest(requestKind);
+					addRequest(data,requestKind);
 					break;
 
 				case REMOVE_REQUEST:
-					cancelRequest(requestKind);
+					cancelRequest(data,requestKind);
 					break;
 
 				case UPDATE_REQUEST:
-					updateRequest(requestKind);
+					updateRequest(data,requestKind);
 					break;
 
 				case RETRIEVE_REQUEST:
-					retrieveRequest(requestKind);
+					retrieveRequest(data,requestKind);
 					break;
 
 				}
@@ -87,7 +89,7 @@ public class RequestManager implements RequestStrategy {
 
 	}
 
-	public Entry<Integer, Request> updateRequest(REQUESTKind kind)
+	public Entry<Integer, Request> updateRequest(SmartCabData data,REQUESTKind kind)
 			throws IOException {
 		System.out.println("\nEnter the Request id to update : ");
 		BufferedReader bufferedReader = new BufferedReader(
@@ -96,14 +98,14 @@ public class RequestManager implements RequestStrategy {
 		Integer requestId = Integer.parseInt(option);
 		for (Entry<Integer, Request> request : requestQueue.entrySet()) {
 			if (request.getKey() == requestId) {
-				addRequest(kind);
+				createNewRequest(data,kind, request.getKey().intValue());
 			}
 
 		}
 		return null;
 	}
 
-	public Entry<Integer, Request> retrieveRequest(REQUESTKind kind)
+	public Entry<Integer, Request> retrieveRequest(SmartCabData data,REQUESTKind kind)
 			throws IOException {
 		System.out.println("\nEnter the Request id to Delete : ");
 		BufferedReader bufferedReader = new BufferedReader(
@@ -112,6 +114,7 @@ public class RequestManager implements RequestStrategy {
 		Integer requestId = Integer.parseInt(option);
 		for (Entry<Integer, Request> request : requestQueue.entrySet()) {
 			if (request.getKey() == requestId) {
+				System.out.println("Request Retrieved:" + requestId.toString());
 				return request;
 			}
 
@@ -119,7 +122,7 @@ public class RequestManager implements RequestStrategy {
 		return null;
 	}
 
-	public Entry<Integer, Request> cancelRequest(REQUESTKind kind)
+	public Entry<Integer, Request> cancelRequest(SmartCabData data,REQUESTKind kind)
 			throws IOException {
 		System.out.println("\nEnter the Request id to Delete : ");
 		BufferedReader bufferedReader = new BufferedReader(
@@ -141,17 +144,36 @@ public class RequestManager implements RequestStrategy {
 		return null;
 	}
 
-	public void addRequest(REQUESTKind kind) {
-		Random random = new Random();
+	public void addRequest(SmartCabData data,REQUESTKind kind) {
+		createNewRequest(data,kind, 0);
+
+	}
+
+	private void createNewRequest(SmartCabData data, REQUESTKind kind, int reqId) {
 		Request request = new Request();
-		request.setRequestId(random.nextInt());
+		if (reqId != 0) {
+			Random random = new Random();
+			request.setRequestId(Math.abs(random.nextInt()));
+		} else {
+			request.setRequestId(reqId);
+		}
+		try {
+		System.out.println("Enter valid Member Id to process request \n:");
+		BufferedReader bufferedReader2 = new BufferedReader(
+				new InputStreamReader(System.in));
+		String memberId = bufferedReader2.readLine();
+		Member member = new Member();
+		member.setMemberId(Integer.parseInt(memberId));
+		request.setClient(member);
+		MemberManager.getInstance().processRequest(data, request);
+		
 		System.out.println("\n Enter The pick up location:");
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
-		try {
+
 			String sourceLocation = bufferedReader.readLine();
 			System.out.println("Source Location:" + sourceLocation);
-			SmartCabData data = new SmartCabData();
+			//SmartCabData data = new SmartCabData();
 			GeoLocation geo1 = data.getGpsByLocation(sourceLocation);
 			System.out.println("Getting geolocation from the gps:" + geo1);
 
@@ -174,10 +196,10 @@ public class RequestManager implements RequestStrategy {
 			request.receiveRequest();
 			request.setGeoLocation(geo1);
 			requestQueue.put(new Integer(request.getRequestId()), request);
-			System.out.println("Request is in Processing State:::"
+			System.out.println("Request is in Processing State"
 					+ request.toString());
-			System.out.println(":::Current Request Queue:::");
-			printQueue();
+			// System.out.println(":::Current Request Queue:::");
+			// printQueue();
 
 			DispatcherManager.getInstance().ProcessRequest(data, request);
 
@@ -185,7 +207,6 @@ public class RequestManager implements RequestStrategy {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	public void printQueue() {

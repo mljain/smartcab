@@ -169,6 +169,8 @@ public class SmartCabData {
 	}
 
 	public static List<Vehicle> getvehicleByGpsLocation(GeoLocation geo) {
+		if(geo!=null){
+		
 		ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
 		double latitude = Math.abs(geo.getLatitude());
 		double longitude = Math.abs(geo.getLongitude());
@@ -200,6 +202,8 @@ public class SmartCabData {
 		}
 
 		return vehicleList;
+		}
+		return null;
 	}
 
 	public static Driver getDriver(Vehicle vehicle) {
@@ -210,5 +214,7 @@ public class SmartCabData {
 		}
 		return null;
 	}
-	
+	public static void setRequstQ(Request request) {
+		requestQ.put(request.getRequestId(), request);
+	}
 }

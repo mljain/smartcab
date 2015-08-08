@@ -19,7 +19,8 @@ public class MemberManager implements RequestStrategy{
 	public final int VIEW = 1;
 	public final int DELETE = 2;
 	public final int UPDATE = 3;
-	public final int EXIT=4;
+	public final int CHECK = 4;
+	public final int EXIT=5;
 	private Integer numericOption;
 	
 	public static MemberManager getInstance() {
@@ -31,15 +32,17 @@ public class MemberManager implements RequestStrategy{
 	
 	public void processRequest(SmartCabData data,Request request) {
 		memberList = data.memberList;
+		
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
 
 		StringBuilder strBuilder = new StringBuilder();
-		strBuilder.append("\nAdd Member")
-				.append("\n1. View Member")
-				.append("\n2. Delete Member")
+		strBuilder.append("\n1 Add Member")
+				.append("\n2. View Member")
+				.append("\n3. Delete Member")
 				.append("\n4. Update Member")
-				.append("\n5. Exit System");
+				.append("\n5. Check Member")
+				.append("\n6. Exit System");
 
 		StringBuilder requestOptionBuilder = new StringBuilder();
 		numericOption = 0;
@@ -72,6 +75,10 @@ public class MemberManager implements RequestStrategy{
 				case UPDATE:
 					updateMember();
 					break;
+					
+				case CHECK:
+					checkMember(request);
+					break;
 				default:
 					System.out.println("Enter valid option.")
 ;
@@ -84,6 +91,16 @@ public class MemberManager implements RequestStrategy{
 
 	}
 	
+	private void checkMember(Request request) {
+		for(int i=0;i<memberList.size();i++){
+			if(request.getClient().getMemberId()==memberList.get(i).getMemberId()){
+				System.out.println("Found the member with member id"+memberList.get(i).getMemberId());
+				System.out.println(memberList.get(i).toString());
+			}
+		}
+		
+	}
+
 	public void addMember(){
 		Random r= new Random();
 		Member m =new Member();

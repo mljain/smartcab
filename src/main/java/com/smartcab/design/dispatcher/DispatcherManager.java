@@ -4,40 +4,35 @@
 package com.smartcab.design.dispatcher;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
-import java.util.Map.Entry;
 
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Request;
 
-
 /**
  * @author mahesh
  *
  */
-public class DispatcherManager implements RequestStrategy{
+public class DispatcherManager implements RequestStrategy {
 
 	static DispatcherManager pm;
 
-	public static DispatcherManager getInstance(){
-		if(pm==null) {
+	public static DispatcherManager getInstance() {
+		if (pm == null) {
 			pm = new DispatcherManager();
 		}
 		return pm;
 	}
 
-	public void processRequest(SmartCabData data,Request request1) {
+	public void processRequest(SmartCabData data, Request request1) {
 
-		ProcessRequest(data,request1);
-
-
+		ProcessRequest(data, request1);
 
 	}
 
-	public void ProcessRequest(SmartCabData data,Request request1) {
+	public void ProcessRequest(SmartCabData data, Request request1) {
 		Scanner s = new Scanner(System.in);
 		BufferedReader bufferedReader = null;
 		boolean continueFlag = true;
@@ -53,7 +48,6 @@ public class DispatcherManager implements RequestStrategy{
 
 			try {
 				i = s.nextInt();
-				// i = new Integer(input )
 			} catch (Exception e) {
 				System.out.println("Please select correct type.");
 				continue;
@@ -70,33 +64,39 @@ public class DispatcherManager implements RequestStrategy{
 				System.out.println("Fetch Vehicle available in the Queue.");
 				System.out.println(data.vehicleInventory.toString());
 				break;
-			case 3:				
+			case 3:
 				System.out.println("Dispatching the vehicle.");
-				
-				if(request1!=null){
-					System.out.println("\n processing Dispatch for the request Id: "+request1.getRequestId());
-					bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-					String option = null;
+
+				if (request1 != null) {
+					System.out
+							.println("\n processing Dispatch for the request Id: "
+									+ request1.getRequestId());
+					bufferedReader = new BufferedReader(new InputStreamReader(
+							System.in));
 					try {
-						//option = bufferedReader.readLine();
-						//Integer requestId = Integer.parseInt(option);
-						Request request = data.requestQ.get(request1.getRequestId());
-						if(request != null){
-							System.out.println("Request to be dispatched: " + request.toString());
-							DispatcherStrategyApp.getInstance().dispatch(data,request);
-						}else{
-							System.out.println("Request NOT found. Please enter valid request id.");
+						Request request = data.requestQ.get(request1
+								.getRequestId());
+						if (request != null) {
+							System.out.println("Request to be dispatched: "
+									+ request.toString());
+							DispatcherStrategyApp.getInstance().dispatch(data,
+									request);
+						} else {
+							System.out
+									.println("Request NOT found. Please enter valid request id.");
 						}
-					} catch (Exception e) {						
+					} catch (Exception e) {
 						e.printStackTrace();
 					}
-					
-				}else{
-					System.out.println("No Request to be processed. Enter a new request.");
+
+				} else {
+					System.out
+							.println("No Request to be processed. Enter a new request.");
 				}
 				break;
 			case 4:
 				continueFlag = false;
+				System.exit(0);
 				break;
 			default:
 				System.out.println("Please select correct type.");
