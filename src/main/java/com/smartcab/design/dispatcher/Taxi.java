@@ -23,7 +23,7 @@ public class Taxi implements DispatcherStrategy {
 		// Request request = data.requestQ.get(request.getRequestId());
 		List<Vehicle> vehicle = SmartCabData.getvehicleByGpsLocation(request,
 				request.getGeoLocation());
-		if (vehicle.size() > 0) {
+		if (vehicle!=null && vehicle.size() > 0) {
 			System.out.println("\n Found vehicle");
 			System.out.println("Vehicle Details:" + vehicle.get(0));
 			Economy economy = new Economy();

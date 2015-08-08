@@ -12,7 +12,7 @@ public class LuxuryDecorator extends VehicleDecorator {
 	}
 
 	public Vehicle bookLuxuary(int numberOfPassenger,Vehicle vehicle) {
-		System.out.println("Building Ride using Decorator pattern");
+		System.out.println("Building Ride using  LuxuryDecorator pattern");
 		//vehicleBuilder.setBudget(Budget.ECONOMICAL);
 		vehicleBuilder.setNumPassenger(numberOfPassenger);
 		vehicle.setBudget(Budget.LUXUARY);
