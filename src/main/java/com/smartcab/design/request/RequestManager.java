@@ -44,7 +44,7 @@ public class RequestManager implements RequestStrategy {
 
 		StringBuilder requestOptionBuilder = new StringBuilder();
 		requestOptionBuilder.append("\n\t VehicleType").append("\n1. TAXI")
-				.append("\n2. Share Ride").append("\n3. Exit");
+				.append("\n2. Share Ride").append("\n3. Rent A Car").append("\n4. Exit");
 
 		do {
 			System.out.println(strBuilder.toString());
