@@ -146,7 +146,7 @@ public String toString() {
 			+ ", vehicleColor=" + vehicleColor + ", modelName=" + modelName
 			+ ", driverId=" + driverId + ", vehicleType=" + vehicleType
 			+ ", geolocation=" + geolocation + ", licencePlate=" + licencePlate
-			+ ", state=" + state + "]";
+			+ ", state=" + state.getCurrentState() + "]";
 }
 
 	
