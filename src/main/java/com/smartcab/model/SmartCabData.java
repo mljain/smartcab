@@ -34,6 +34,7 @@ public class SmartCabData {
 	public static HashMap<String, Driver> driverData;
 	static {
 		// intitializing some gps data
+		System.out.println("Booting System using preloaded data");
 		dummyGps = new HashMap<String, GeoLocation>();
 		vehicleInventory = new HashMap<Integer, Vehicle>();
 		requestQ = new HashMap<Integer, Request>();
@@ -172,6 +173,8 @@ public class SmartCabData {
 		
 		memberList.put(m.getMemberId(), m);
 		memberList.put(sp.getMemberId(), sp);
+		System.out.println("Booting System using preloaded data Done");
+		System.out.println("*******");
 
 	}
 
