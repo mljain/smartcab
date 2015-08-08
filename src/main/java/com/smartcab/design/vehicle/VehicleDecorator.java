@@ -1,9 +1,9 @@
 package com.smartcab.design.vehicle;
 
-public class VehicleDecorator extends VehicleBuilder {
-	protected VehicleBuilder vehicleBuilder;
+public class VehicleDecorator extends RideBuilder {
+	protected RideBuilder vehicleBuilder;
 	
-	public VehicleDecorator(VehicleBuilder vehicleBuilder){
+	public VehicleDecorator(RideBuilder vehicleBuilder){
 		this.vehicleBuilder =vehicleBuilder;
 		
 	}

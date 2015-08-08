@@ -3,7 +3,7 @@ package com.smartcab.design.vehicle;
 import com.smartcab.vehicle.domain.Vehicle;
 import com.smartcab.vehicle.domain.VehicleType;
 
-public abstract class VehicleBuilder {
+public abstract class RideBuilder {
 	private int numPassenger;
 	private VehicleType type;
 	private Budget budget;

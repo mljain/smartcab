@@ -2,7 +2,7 @@ package com.smartcab.design.vehicle;
 
 
 
-public class Economy extends VehicleBuilder {
+public class Economy extends RideBuilder {
 
 	@Override
 	public void buildVehicle() {

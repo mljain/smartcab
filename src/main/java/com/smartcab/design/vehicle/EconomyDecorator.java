@@ -6,7 +6,7 @@ public class EconomyDecorator extends VehicleDecorator {
 	private int numberOfPassenger;
 	
 
-	public EconomyDecorator(VehicleBuilder vehicleBuilder) {
+	public EconomyDecorator(RideBuilder vehicleBuilder) {
 		super(vehicleBuilder);
 		// TODO Auto-generated constructor stub
 	}
