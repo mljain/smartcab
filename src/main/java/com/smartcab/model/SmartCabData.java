@@ -29,8 +29,8 @@ public class SmartCabData {
 	public static HashMap<Integer, Request> requestQ;
 	public static HashMap<Integer, Dispatcher> dispatcher;
 	public static HashMap<Integer, Member> memberList;
-	public static HashMap<Integer,DriverBackgroundCheck> driverbc;
-	public static HashMap<String,Driver> driverData;
+	public static HashMap<Integer, DriverBackgroundCheck> driverbc;
+	public static HashMap<String, Driver> driverData;
 	static {
 		// intitializing some gps data
 		dummyGps = new HashMap<String, GeoLocation>();
@@ -38,9 +38,9 @@ public class SmartCabData {
 		requestQ = new HashMap<Integer, Request>();
 		dispatcher = new HashMap<Integer, Dispatcher>();
 		memberList = new HashMap<Integer, Member>();
-		driverbc = new HashMap<Integer,DriverBackgroundCheck>();
-		driverData =new  HashMap<String,Driver>();
-		
+		driverbc = new HashMap<Integer, DriverBackgroundCheck>();
+		driverData = new HashMap<String, Driver>();
+
 		GeoLocation geo = new GeoLocation();
 		geo.setLatitude(-111.23);
 		geo.setLongitude(222.11);
@@ -76,18 +76,18 @@ public class SmartCabData {
 		geo6.setLongitude(228.11);
 		dummyGps.put("sanfrancisco", geo6);
 
-		//populate some vehicle data....
+		// populate some vehicle data....
 		Vehicle vehicle = new Vehicle();
 		vehicle.setDriverId("1234");
 		vehicle.setGeolocation(geo);
 		vehicle.setLicencePlate("1234");
 		vehicle.setVehicleType(VehicleType.YELLOWCAB);
-		//vehicle.setVehicleType(VehicleKind.CAR);
-		
+		// vehicle.setVehicleType(VehicleKind.CAR);
+
 		vehicle.setModelName("Honda Civic");
 		vehicle.setVehicleId(1234);
-		vehicleInventory.put(vehicle.getVehicleId(),vehicle);
-		
+		vehicleInventory.put(vehicle.getVehicleId(), vehicle);
+
 		Vehicle vehicle1 = new Vehicle();
 		vehicle1.setDriverId("12345");
 		vehicle1.setGeolocation(geo1);
@@ -95,9 +95,8 @@ public class SmartCabData {
 		vehicle1.setModelName("BMW");
 		vehicle1.setVehicleType(VehicleType.UBER);
 		vehicle1.setVehicleId(12345);
-		vehicleInventory.put(vehicle1.getVehicleId(),vehicle1);
-		
-		
+		vehicleInventory.put(vehicle1.getVehicleId(), vehicle1);
+
 		Vehicle vehicle2 = new Vehicle();
 		vehicle2.setDriverId("123456");
 		vehicle2.setGeolocation(geo1);
@@ -105,9 +104,8 @@ public class SmartCabData {
 		vehicle2.setModelName("BMW");
 		vehicle2.setVehicleType(VehicleType.UBER);
 		vehicle2.setVehicleId(123456);
-		vehicleInventory.put(vehicle2.getVehicleId(),vehicle2);
-		
-		
+		vehicleInventory.put(vehicle2.getVehicleId(), vehicle2);
+
 		Vehicle vehicle3 = new Vehicle();
 		vehicle3.setDriverId("1234567");
 		vehicle3.setGeolocation(geo1);
@@ -115,52 +113,46 @@ public class SmartCabData {
 		vehicle3.setModelName("BMW");
 		vehicle3.setVehicleType(VehicleType.UBER);
 		vehicle3.setVehicleId(1234567);
-		vehicleInventory.put(vehicle3.getVehicleId(),vehicle3);
-		
-		
-		//populate some Driver data
-		
+		vehicleInventory.put(vehicle3.getVehicleId(), vehicle3);
+
+		// populate some Driver data
+
 		Driver driver = new Driver();
 		driver.setDriverId("1234");
 		driver.setDriverType(DriverType.YELLOWCAB);
-		//driver.setBgCheck();
+		// driver.setBgCheck();
 		driver.setFirstName("Soumya");
 		driver.setLastname("Acharya");
 		driver.setLicenceId("1234");
 		driverData.put(driver.getDriverId(), driver);
-		
-		
+
 		Driver driver2 = new Driver();
 		driver2.setDriverId("12345");
 		driver2.setDriverType(DriverType.UBER);
-		//driver.setBgCheck();
+		// driver.setBgCheck();
 		driver2.setFirstName("Parnit");
 		driver2.setLastname("Sanion");
 		driver2.setLicenceId("12345");
 		driverData.put(driver2.getDriverId(), driver2);
-		
-		
+
 		Driver driver3 = new Driver();
 		driver3.setDriverId("123456");
 		driver3.setDriverType(DriverType.UBER);
-		//driver.setBgCheck();
+		// driver.setBgCheck();
 		driver3.setFirstName("Sweer");
 		driver3.setLastname("Kaul");
 		driver3.setLicenceId("123456");
 		driverData.put(driver3.getDriverId(), driver3);
-		
-		
+
 		Driver driver4 = new Driver();
 		driver4.setDriverId("1234567");
 		driver4.setDriverType(DriverType.UBER);
-		//driver.setBgCheck();
+		// driver.setBgCheck();
 		driver4.setFirstName("Mahesh");
 		driver4.setLastname("Jain");
 		driver4.setLicenceId("1234567");
 		driverData.put(driver4.getDriverId(), driver4);
-		
-		
-		
+
 	}
 
 	public GeoLocation getGpsByLocation(String location) {
@@ -178,19 +170,47 @@ public class SmartCabData {
 
 	public static List<Vehicle> getvehicleByGpsLocation(GeoLocation geo) {
 		ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
-		double latitude=Math.abs(geo.getLatitude());
-		double longitude=Math.abs(geo.getLongitude());
+		double latitude = Math.abs(geo.getLatitude());
+		double longitude = Math.abs(geo.getLongitude());
+		double vehiclelatitude = 0.0;
+		double vehiclelongitude = 0.0;
+		double finalLat = Math.abs(geo.getLatitude());;
+		double finallong = Math.abs(geo.getLongitude());;
 		for (Entry<Integer, Vehicle> vehicle : vehicleInventory.entrySet()) {
+			int vehicleId=0;
+
+			vehiclelatitude = Math.abs(vehicle.getValue().getGeolocation()
+					.getLatitude());
+			vehiclelongitude = Math.abs(vehicle.getValue().getGeolocation()
+					.getLongitude());
 			
-			double vehiclelatitude=Math.abs(vehicle.getValue().getGeolocation().getLatitude());
-			double vehiclelongitude=Math.abs(vehicle.getValue().getGeolocation().getLongitude());
-			double finalLat=vehiclelatitude-latitude;
-			double finallong=vehiclelatitude-latitude;
+			if(finalLat<(vehiclelatitude - latitude) && finallong<(vehiclelatitude - longitude)){
+				finalLat = vehiclelatitude - latitude;
+				finallong = vehiclelongitude - longitude;
+				vehicleId=vehicle.getValue().getVehicleId();
+			}
+
+			if(vehicleId!=0){
+				for (Entry<Integer, Vehicle> vehicle1 : vehicleInventory.entrySet()) {
+                  if(vehicle1.getValue().getVehicleId()==vehicleId){
+                	  vehicleList.add(vehicle1.getValue());
+                  }
+				}
+			}
+			
 
 		}
-		
+
 		return vehicleList;
 	}
-	
 
+	public static Driver getDriver(Vehicle vehicle) {
+		for (Entry<String, Driver> driver : driverData.entrySet()) {
+			if(driver.getValue().getDriverId().equalsIgnoreCase(vehicle.getDriverId())){
+				return driver.getValue();
+			}
+		}
+		return null;
+	}
+	
 }

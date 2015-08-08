@@ -4,7 +4,7 @@ import com.smartcab.design.vehicle.VehicleState;
 import com.smartcab.design.vehicle.VehicleWaitingState;
 import com.smartcab.request.domain.GeoLocation;
 
-public class Vehicle {
+public class Vehicle  {
 private int vehicleId;
 private String vehicleBrand;
 private String vehicleColor;
