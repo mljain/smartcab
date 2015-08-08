@@ -3,16 +3,21 @@
  */
 package com.smartcab.model;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map.Entry;
 
+import com.smartcab.design.vehicle.VehicleKind;
 import com.smartcab.member.domain.Member;
 import com.smartcab.request.domain.GeoLocation;
 import com.smartcab.request.domain.Request;
 import com.smartcab.vehicle.domain.Dispatcher;
 import com.smartcab.vehicle.domain.Driver;
 import com.smartcab.vehicle.domain.DriverBackgroundCheck;
+import com.smartcab.vehicle.domain.DriverType;
 import com.smartcab.vehicle.domain.Vehicle;
+import com.smartcab.vehicle.domain.VehicleType;
 
 /**
  * @author mahesh
@@ -25,7 +30,7 @@ public class SmartCabData {
 	public static HashMap<Integer, Dispatcher> dispatcher;
 	public static HashMap<Integer, Member> memberList;
 	public static HashMap<Integer,DriverBackgroundCheck> driverbc;
-	public static HashMap<Integer,Driver> driver;
+	public static HashMap<String,Driver> driverData;
 	static {
 		// intitializing some gps data
 		dummyGps = new HashMap<String, GeoLocation>();
@@ -34,7 +39,7 @@ public class SmartCabData {
 		dispatcher = new HashMap<Integer, Dispatcher>();
 		memberList = new HashMap<Integer, Member>();
 		driverbc = new HashMap<Integer,DriverBackgroundCheck>();
-		driver =new  HashMap<Integer,Driver>();
+		driverData =new  HashMap<String,Driver>();
 		
 		GeoLocation geo = new GeoLocation();
 		geo.setLatitude(-111.23);
@@ -76,18 +81,83 @@ public class SmartCabData {
 		vehicle.setDriverId("1234");
 		vehicle.setGeolocation(geo);
 		vehicle.setLicencePlate("1234");
+		vehicle.setVehicleType(VehicleType.YELLOWCAB);
+		//vehicle.setVehicleType(VehicleKind.CAR);
+		
 		vehicle.setModelName("Honda Civic");
 		vehicle.setVehicleId(1234);
 		vehicleInventory.put(vehicle.getVehicleId(),vehicle);
 		
 		Vehicle vehicle1 = new Vehicle();
-		vehicle1.setDriverId("1234");
-		vehicle1.setGeolocation(geo);
-		vehicle1.setLicencePlate("1234");
-		vehicle1.setModelName("Honda Civic");
-		vehicle1.setVehicleId(1234);
-		vehicleInventory.put(vehicle.getVehicleId(),vehicle);
+		vehicle1.setDriverId("12345");
+		vehicle1.setGeolocation(geo1);
+		vehicle1.setLicencePlate("12345");
+		vehicle1.setModelName("BMW");
+		vehicle1.setVehicleType(VehicleType.UBER);
+		vehicle1.setVehicleId(12345);
+		vehicleInventory.put(vehicle1.getVehicleId(),vehicle1);
 		
+		
+		Vehicle vehicle2 = new Vehicle();
+		vehicle2.setDriverId("123456");
+		vehicle2.setGeolocation(geo1);
+		vehicle2.setLicencePlate("123456");
+		vehicle2.setModelName("BMW");
+		vehicle2.setVehicleType(VehicleType.UBER);
+		vehicle2.setVehicleId(123456);
+		vehicleInventory.put(vehicle2.getVehicleId(),vehicle2);
+		
+		
+		Vehicle vehicle3 = new Vehicle();
+		vehicle3.setDriverId("1234567");
+		vehicle3.setGeolocation(geo1);
+		vehicle3.setLicencePlate("1234567");
+		vehicle3.setModelName("BMW");
+		vehicle3.setVehicleType(VehicleType.UBER);
+		vehicle3.setVehicleId(1234567);
+		vehicleInventory.put(vehicle3.getVehicleId(),vehicle3);
+		
+		
+		//populate some Driver data
+		
+		Driver driver = new Driver();
+		driver.setDriverId("1234");
+		driver.setDriverType(DriverType.YELLOWCAB);
+		//driver.setBgCheck();
+		driver.setFirstName("Soumya");
+		driver.setLastname("Acharya");
+		driver.setLicenceId("1234");
+		driverData.put(driver.getDriverId(), driver);
+		
+		
+		Driver driver2 = new Driver();
+		driver2.setDriverId("12345");
+		driver2.setDriverType(DriverType.UBER);
+		//driver.setBgCheck();
+		driver2.setFirstName("Parnit");
+		driver2.setLastname("Sanion");
+		driver2.setLicenceId("12345");
+		driverData.put(driver2.getDriverId(), driver2);
+		
+		
+		Driver driver3 = new Driver();
+		driver3.setDriverId("123456");
+		driver3.setDriverType(DriverType.UBER);
+		//driver.setBgCheck();
+		driver3.setFirstName("Sweer");
+		driver3.setLastname("Kaul");
+		driver3.setLicenceId("123456");
+		driverData.put(driver3.getDriverId(), driver3);
+		
+		
+		Driver driver4 = new Driver();
+		driver4.setDriverId("1234567");
+		driver4.setDriverType(DriverType.UBER);
+		//driver.setBgCheck();
+		driver4.setFirstName("Mahesh");
+		driver4.setLastname("Jain");
+		driver4.setLicenceId("1234567");
+		driverData.put(driver4.getDriverId(), driver4);
 		
 		
 		
@@ -106,7 +176,21 @@ public class SmartCabData {
 		return dummyGps;
 	}
 
-	public static HashMap<Integer, Vehicle> getvehicleData() {
-		return vehicleInventory;
+	public static List<Vehicle> getvehicleByGpsLocation(GeoLocation geo) {
+		ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
+		double latitude=Math.abs(geo.getLatitude());
+		double longitude=Math.abs(geo.getLongitude());
+		for (Entry<Integer, Vehicle> vehicle : vehicleInventory.entrySet()) {
+			
+			double vehiclelatitude=Math.abs(vehicle.getValue().getGeolocation().getLatitude());
+			double vehiclelongitude=Math.abs(vehicle.getValue().getGeolocation().getLongitude());
+			double finalLat=vehiclelatitude-latitude;
+			double finallong=vehiclelatitude-latitude;
+
+		}
+		
+		return vehicleList;
 	}
+	
+
 }

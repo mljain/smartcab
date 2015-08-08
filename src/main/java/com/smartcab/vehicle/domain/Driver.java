@@ -3,7 +3,7 @@ package com.smartcab.vehicle.domain;
 import java.util.List;
 
 public class Driver {
-	private int driverId;
+	private String driverId;
 	private List<Vehicle> vehicle;
 	private String firstName;
 	private String lastname;
@@ -25,7 +25,7 @@ public class Driver {
 	/**
 	 * @return the driverId
 	 */
-	public int getDriverId() {
+	public String getDriverId() {
 		return driverId;
 	}
 	/**
@@ -61,7 +61,7 @@ public class Driver {
 	/**
 	 * @param driverId the driverId to set
 	 */
-	public void setDriverId(int driverId) {
+	public void setDriverId(String driverId) {
 		this.driverId = driverId;
 	}
 	/**

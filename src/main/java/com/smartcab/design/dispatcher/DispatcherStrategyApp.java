@@ -1,7 +1,5 @@
 package com.smartcab.design.dispatcher;
 
-import java.util.Scanner;
-
 import com.smartcab.request.domain.Request;
 
 public class DispatcherStrategyApp {
