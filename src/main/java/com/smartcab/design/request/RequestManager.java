@@ -203,13 +203,21 @@ public class RequestManager implements RequestStrategy {
 			System.out.println("Source Location:" + sourceLocation);
 			//SmartCabData data = new SmartCabData();
 			GeoLocation geo1 = data.getGpsByLocation(sourceLocation);
-			System.out.println("Getting geolocation from the gps:" + geo1);
+			System.out.println("**********************************************");
+			System.out.println("Source GPS");
+			System.out.println("Getting geolocation from the gps for source:" + geo1);
+			System.out.println("**********************************************");
 
 			System.out.println("\n Enter The Destination:");
 			BufferedReader bufferedReader1 = new BufferedReader(
 					new InputStreamReader(System.in));
 			String destination = bufferedReader1.readLine();
 			System.out.println("Destination Location:" + destination);
+			GeoLocation geo2 = data.getGpsByLocation(destination);
+			System.out.println("**********************************************");
+			System.out.println("Destination GPS");
+			System.out.println("Getting geolocation from gps for destination:" + geo2);
+			System.out.println("**********************************************");
 			Address address = new Address();
 			address.setSourceAddrsss(sourceLocation);
 			address.setDestinationAddrsss(destination);
