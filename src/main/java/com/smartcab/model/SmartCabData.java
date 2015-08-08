@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
 
+import com.smartcab.design.vehicle.Economy;
+import com.smartcab.design.vehicle.EconomyDecorator;
 import com.smartcab.design.vehicle.VehicleKind;
 import com.smartcab.member.domain.Member;
 import com.smartcab.request.domain.GeoLocation;
@@ -168,7 +170,7 @@ public class SmartCabData {
 		return dummyGps;
 	}
 
-	public static List<Vehicle> getvehicleByGpsLocation(GeoLocation geo) {
+	public static List<Vehicle> getvehicleByGpsLocation(Request request,GeoLocation geo) {
 		if(geo!=null){
 		
 		ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
@@ -201,6 +203,12 @@ public class SmartCabData {
 
 		}
 
+		
+		if(vehicleList.size()>0){
+
+			
+		}
+		
 		return vehicleList;
 		}
 		return null;

@@ -6,7 +6,7 @@ public class Economy extends VehicleBuilder {
 
 	@Override
 	public void buildVehicle() {
-		// TODO Auto-generated method stub
+		System.out.println("Processing the Economy vehicle");
 		
 	}
 

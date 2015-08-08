@@ -15,7 +15,7 @@ public class Taxi implements DispatcherStrategy{
 
 	public String dispatch (SmartCabData data,Request request){
 		//Request request = data.requestQ.get(request.getRequestId());
-		List<Vehicle> vehicle=SmartCabData.getvehicleByGpsLocation(request.getGeoLocation());
+		List<Vehicle> vehicle=SmartCabData.getvehicleByGpsLocation(request,request.getGeoLocation());
 		if(vehicle.size()>0){
 		System.out.println("\n Found vehicle");
 		System.out.println("Vehicle Details:"+vehicle.get(0));
