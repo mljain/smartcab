@@ -137,6 +137,17 @@ public void completeProcess(){
 public String getCurrentState(){
 	return state.getCurrentState();
 }
+/* (non-Javadoc)
+ * @see java.lang.Object#toString()
+ */
+@Override
+public String toString() {
+	return "Vehicle [vehicleId=" + vehicleId + ", vehicleBrand=" + vehicleBrand
+			+ ", vehicleColor=" + vehicleColor + ", modelName=" + modelName
+			+ ", driverId=" + driverId + ", vehicleType=" + vehicleType
+			+ ", geolocation=" + geolocation + ", licencePlate=" + licencePlate
+			+ ", state=" + state + "]";
+}
 
 	
 

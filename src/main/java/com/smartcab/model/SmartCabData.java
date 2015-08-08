@@ -174,19 +174,17 @@ public class SmartCabData {
 		double longitude = Math.abs(geo.getLongitude());
 		double vehiclelatitude = 0.0;
 		double vehiclelongitude = 0.0;
-		double finalLat = Math.abs(geo.getLatitude());;
-		double finallong = Math.abs(geo.getLongitude());;
 		for (Entry<Integer, Vehicle> vehicle : vehicleInventory.entrySet()) {
 			int vehicleId=0;
-
 			vehiclelatitude = Math.abs(vehicle.getValue().getGeolocation()
 					.getLatitude());
 			vehiclelongitude = Math.abs(vehicle.getValue().getGeolocation()
 					.getLongitude());
 			
-			if(finalLat<(vehiclelatitude - latitude) && finallong<(vehiclelatitude - longitude)){
-				finalLat = vehiclelatitude - latitude;
-				finallong = vehiclelongitude - longitude;
+			if(Math.abs(vehiclelatitude - latitude)==0 && Math.abs(vehiclelongitude - longitude)==0){
+				vehicleId=vehicle.getValue().getVehicleId();
+			}
+			else if((Math.abs(vehiclelatitude - latitude)>0 && Math.abs(vehiclelatitude - latitude)<100) && (Math.abs(vehiclelongitude - longitude)==0)&&Math.abs(vehiclelongitude - longitude)<100){
 				vehicleId=vehicle.getValue().getVehicleId();
 			}
 

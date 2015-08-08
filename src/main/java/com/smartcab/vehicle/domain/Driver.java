@@ -93,6 +93,16 @@ public class Driver {
 	 */
 	public void setDriverType(DriverType driverType) {
 		this.driverType = driverType;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Driver [driverId=" + driverId + ", vehicle=" + vehicle
+				+ ", firstName=" + firstName + ", lastname=" + lastname
+				+ ", licenceId=" + licenceId + ", driverType=" + driverType
+				+ ", bgCheck=" + bgCheck + "]";
 	} 
 
 }
