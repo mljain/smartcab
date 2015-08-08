@@ -14,13 +14,15 @@ public class Supervisor extends Member{
 	
 	@Override
 	public String toString(){
-		String output ="";
+		String output ="******************************\nSupervisor:  ";
 		
 		output += super.toString()+"\n Employees:\n";
 		for (Employee e: employees)
 		{
 			output+= e.toString()+"\n";
 		}
+
+		output+= "******************************\n";
 		return output;
 	}
 
