@@ -79,7 +79,7 @@ public class RequestController {
 			default:
 				System.out
 						.println("Thank You for using Smart Cab Application.");
-				System.exit(0);
+				//System.exit(0);
 
 			}
 
