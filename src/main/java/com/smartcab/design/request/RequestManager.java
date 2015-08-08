@@ -37,14 +37,17 @@ public class RequestManager implements RequestStrategy {
 		REQUESTOP requestOperation = REQUESTOP.NO_OP;
 
 		StringBuilder strBuilder = new StringBuilder();
-		strBuilder.append("\nRequest Manager Manu")
+		strBuilder.append("\n ************************************").append("\n Request Manager Manu")
 				.append("\n1. Create New Request")
 				.append("\n2. Cancel Request").append("\n3. Update Request")
-				.append("\n4. Retrieve Request").append("\n5. Exit System");
+				.append("\n4. Retrieve Request").append("\n5. Exit System")
+				.append("\n ************************************");
 
 		StringBuilder requestOptionBuilder = new StringBuilder();
-		requestOptionBuilder.append("\n\t VehicleType").append("\n1. TAXI")
-				.append("\n2. Share Ride").append("\n3. Rent A Car").append("\n4. Exit");
+		requestOptionBuilder.append("\n ************************************").
+		append("\n\t VehicleType").append("\n1. TAXI")
+				.append("\n2. Share Ride").append("\n3. Rent A Car").append("\n4. Exit")
+				.append("\n ************************************");
 
 		do {
 			System.out.println(strBuilder.toString());
@@ -153,6 +156,8 @@ public class RequestManager implements RequestStrategy {
 	}
 
 	private void createNewRequest(SmartCabData data, REQUESTKind kind, int reqId) {
+		System.out.println("**********************************************");
+		System.out.println("Creating the Request Object");
 		Request request = new Request();
 		if (reqId == 0) {
 			Random random = new Random();
@@ -190,7 +195,6 @@ public class RequestManager implements RequestStrategy {
 		
 		request.setClient(member);
 		//MemberManager.getInstance().processRequest(data, request);
-		
 		System.out.println("\n Enter The pick up location:");
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
@@ -220,6 +224,8 @@ public class RequestManager implements RequestStrategy {
 			request.receiveRequest();
 			request.setGeoLocation(geo1);
 			requestQueue.put(new Integer(request.getRequestId()), request);
+			System.out.println("**********************************************");
+			System.out.println("Done Creating the request and put it into the Q");
 			System.out.println("Request is in Processing State"
 					+ request.toString());
 			// System.out.println(":::Current Request Queue:::");

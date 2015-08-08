@@ -46,6 +46,7 @@ public class RequestController {
 
 		while (true) {
 			System.out.println("\nMain menu::::");
+			System.out.println("*************************************");
 			System.out.println("select the option from the menu::");
 			System.out.println("1.Manage Service Request");
 			System.out.println("2.Manage Vehicle Inventory");
@@ -53,6 +54,7 @@ public class RequestController {
 			System.out.println("4.Operate Dispatcher");
 			System.out.println("6.Exit:");
 			System.out.println("Enter your choice:");
+			System.out.println("*************************************");
 			String requestType = "";
 			int i = 0;
 

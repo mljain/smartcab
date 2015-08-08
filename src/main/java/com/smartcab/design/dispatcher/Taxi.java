@@ -1,5 +1,6 @@
 package com.smartcab.design.dispatcher;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.smartcab.design.payment.PaymnetController;
@@ -18,7 +19,19 @@ public class Taxi implements DispatcherStrategy {
 		// Request request = data.requestQ.get(request.getRequestId());
 		List<Vehicle> vehicle = SmartCabData.getvehicleByGpsLocation(request,
 				request.getGeoLocation());
-		if (vehicle.size() > 0) {
+		boolean result=Process(data, request, vehicle);
+		if(result) return "Dispatching Taxi";
+		List<Vehicle> vehiclelist = new ArrayList<Vehicle>();
+		vehiclelist.add(SmartCabData.vehicleInventory.get(0));
+		result=Process(data, request,vehiclelist );
+		if(result) return "Dispatching Taxi";
+		System.out.println("Unable to find a proper vehicle providing random one from inventory");
+		return "unable to dispatch";
+	}
+
+	private boolean Process(SmartCabData data, Request request,
+			List<Vehicle> vehicle) {
+		if (vehicle!=null && vehicle.size() > 0) {
 			System.out.println("\n Found vehicle");
 			System.out.println("Vehicle Details:" + vehicle.get(0));
 			Economy economy = new Economy();
@@ -38,10 +51,10 @@ public class Taxi implements DispatcherStrategy {
 
 			vehicle.get(0).dispatchVehicle();
 			request.completeRequest("Done");
+			return true;
 
-			return "Dispatching Taxi";
 		}
-		return "unable to dispatch";
+		return false;
 	}
 
 }

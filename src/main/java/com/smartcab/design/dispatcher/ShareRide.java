@@ -1,5 +1,6 @@
 package com.smartcab.design.dispatcher;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.smartcab.design.payment.PaymnetController;
@@ -19,9 +20,22 @@ import com.smartcab.vehicle.domain.Vehicle;
 public class ShareRide implements DispatcherStrategy{
 
 	public String dispatch (SmartCabData data,Request request){
-		//Request request = data.requestQ.get(request.getRequestId());
-		List<Vehicle> vehicle=SmartCabData.getvehicleByGpsLocation(request,request.getGeoLocation());
-		if(vehicle.size()>0){
+		List<Vehicle> vehicle = SmartCabData.getvehicleByGpsLocation(request,
+				request.getGeoLocation());
+		boolean result=process(data, request, vehicle);
+		if(result) return "Dispatching Share Ride";
+		List<Vehicle> vehiclelist = new ArrayList<Vehicle>();
+		vehiclelist.add(SmartCabData.vehicleInventory.get(0));
+		result=process(data, request,vehiclelist );
+		System.out.println("Unable to find a proper vehicle providing random one from inventory");
+		if(result) return "Dispatching Share Ride";
+		return "unable to dispatch";
+
+}
+
+	private boolean process(SmartCabData data, Request request,
+			List<Vehicle> vehicle) {
+		if(vehicle!=null && vehicle.size()>0){
 		System.out.println("\n Found vehicle");
 		System.out.println("Vehicle Details:"+vehicle.get(0));
 		
@@ -44,9 +58,9 @@ public class ShareRide implements DispatcherStrategy{
 		System.out.println("\n Driver Informations:"+driver.toString());
 		vehicle.get(0).dispatchVehicle();
 		request.completeRequest("Done");
-		return "Dispatching ShareRide";
+		return true;
+		
 	}
-		return "not able to dispatch";
-
-}
+		return false;
+	}
 }
