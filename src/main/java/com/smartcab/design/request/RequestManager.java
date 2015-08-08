@@ -8,6 +8,7 @@ import java.util.Map.Entry;
 import java.util.Random;
 
 import com.smartcab.design.dispatcher.DispatcherManager;
+import com.smartcab.design.vehicle.Budget;
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.member.domain.Member;
 import com.smartcab.member.domain.MemberManager;
@@ -216,6 +217,7 @@ public class RequestManager implements RequestStrategy {
 			}
 			request.receiveRequest();
 			request.setGeoLocation(geo1);
+			request.setBudget(Budget.ECONOMICAL);
 			requestQueue.put(new Integer(request.getRequestId()), request);
 			System.out.println("Request is in Processing State"
 					+ request.toString());

@@ -1,11 +1,29 @@
 package com.smartcab.design.vehicle;
 
+import com.smartcab.vehicle.domain.Vehicle;
 import com.smartcab.vehicle.domain.VehicleType;
 
 public abstract class VehicleBuilder {
 	private int numPassenger;
 	private VehicleType type;
 	private Budget budget;
+	/**
+	 * @return the vehicle
+	 */
+	public Vehicle getVehicle() {
+		return vehicle;
+	}
+
+
+	/**
+	 * @param vehicle the vehicle to set
+	 */
+	public void setVehicle(Vehicle vehicle) {
+		this.vehicle = vehicle;
+	}
+
+
+	private Vehicle vehicle;
 
 
 	/**

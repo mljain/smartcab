@@ -6,12 +6,9 @@ package com.smartcab.model;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Random;
 import java.util.Map.Entry;
+import java.util.Random;
 
-import com.smartcab.design.vehicle.Economy;
-import com.smartcab.design.vehicle.EconomyDecorator;
-import com.smartcab.design.vehicle.VehicleKind;
 import com.smartcab.member.domain.Member;
 import com.smartcab.request.domain.GeoLocation;
 import com.smartcab.request.domain.Request;

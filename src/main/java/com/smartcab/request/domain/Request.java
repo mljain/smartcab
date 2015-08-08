@@ -6,6 +6,7 @@ import com.google.gson.Gson;
 import com.smartcab.design.request.ReceiveRequestState;
 import com.smartcab.design.request.ServiceRequest;
 import com.smartcab.design.request.State;
+import com.smartcab.design.vehicle.Budget;
 import com.smartcab.member.domain.Member;
 import com.smartcab.notification.domain.Notification;
 import com.smartcab.vehicle.domain.VehicleType;
@@ -22,6 +23,21 @@ public class Request implements ServiceRequest {
 	private Member client;
 	private State state;
 	private ServiceType type;
+	private Budget budget;
+
+	/**
+	 * @return the budget
+	 */
+	public Budget getBudget() {
+		return budget;
+	}
+
+	/**
+	 * @param budget the budget to set
+	 */
+	public void setBudget(Budget budget) {
+		this.budget = budget;
+	}
 
 	/**
 	 * @return the type

@@ -5,6 +5,8 @@ import java.util.List;
 import com.smartcab.design.payment.PaymnetController;
 import com.smartcab.design.utill.PaymentCalculator;
 import com.smartcab.design.utill.TaxiPayment;
+import com.smartcab.design.vehicle.Economy;
+import com.smartcab.design.vehicle.EconomyDecorator;
 import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Request;
 import com.smartcab.vehicle.domain.Driver;
@@ -19,10 +21,13 @@ public class Taxi implements DispatcherStrategy{
 		if(vehicle.size()>0){
 		System.out.println("\n Found vehicle");
 		System.out.println("Vehicle Details:"+vehicle.get(0));
+		Economy economy = new Economy();
+		EconomyDecorator economyDecorator = new EconomyDecorator(economy);
+		Vehicle finalVehicle=economyDecorator.bookEconomyCar(5, vehicle.get(0));
 		
 		
 		System.out.println("\n Getting driver informations");
-		Driver driver=data.getDriver(vehicle.get(0));
+		Driver driver=data.getDriver(finalVehicle);
 		System.out.println("\n Driver Informations:"+driver.toString());
 		
 		
