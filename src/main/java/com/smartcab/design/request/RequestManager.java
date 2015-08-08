@@ -108,7 +108,7 @@ public class RequestManager implements RequestStrategy {
 
 	public Entry<Integer, Request> retrieveRequest(SmartCabData data,REQUESTKind kind)
 			throws IOException {
-		System.out.println("\nEnter the Request id to Delete : ");
+		System.out.println("\nEnter the Request id to Retrieve : ");
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
 		String option = bufferedReader.readLine();
