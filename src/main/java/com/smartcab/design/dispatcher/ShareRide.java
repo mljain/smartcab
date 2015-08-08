@@ -42,6 +42,8 @@ public class ShareRide implements DispatcherStrategy{
 		
 		PaymnetController.processPayment(calc.finalPayment(request));
 		System.out.println("\n Driver Informations:"+driver.toString());
+		vehicle.get(0).dispatchVehicle();
+		request.completeRequest("Done");
 		return "Dispatching ShareRide";
 	}
 		return "not able to dispatch";

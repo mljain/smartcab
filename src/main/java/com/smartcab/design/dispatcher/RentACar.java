@@ -31,6 +31,8 @@ public class RentACar implements DispatcherStrategy{
 		
 		PaymnetController.processPayment(calc.finalPayment(request));
 		System.out.println("\n Driver Informations:"+driver.toString());
+		vehicle.get(0).dispatchVehicle();
+		request.completeRequest("Done");
 		return "Dispatching Rent A Car";
 	}
 		return "not able to dispatch";
