@@ -102,5 +102,10 @@ public class Member {
 		//TODO ...
 		// Need to implement later 
 	}
+	
+	@Override
+	public String toString(){
+		return firstName + " " + lastName +"  id: " + memberId;
+	}
 
 }
