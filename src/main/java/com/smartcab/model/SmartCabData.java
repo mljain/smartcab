@@ -71,7 +71,7 @@ public class SmartCabData {
 		GeoLocation geo5 = new GeoLocation();
 		geo5.setLatitude(-116.23);
 		geo5.setLongitude(227.11);
-		dummyGps.put("san mateo", geo5);
+		dummyGps.put("sanmateo", geo5);
 
 		GeoLocation geo6 = new GeoLocation();
 		geo6.setLatitude(-117.23);
