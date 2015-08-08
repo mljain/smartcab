@@ -145,6 +145,8 @@ public class MemberManager implements RequestStrategy{
 			input = bufferedReader.readLine();
 			m.setLastName(input);
 			
+			m.setMemberId(id);
+			
 			m.setMemberType(MemberType.SILVER);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
