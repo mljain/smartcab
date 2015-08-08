@@ -15,8 +15,7 @@ public class MobilePaymentGateway extends PaymenProcessor {
 
 	@Override
 	public void updateTransaction() {
-		// TODO Auto-generated method stub
-
+		System.out.println("Updating the Transaction after Payment.");
 	}
 
 	@Override
