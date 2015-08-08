@@ -263,7 +263,7 @@ public class Request implements ServiceRequest {
 		if (client != null)
 			builder.append("client=").append(client).append(", ");
 		if (state != null)
-			builder.append("state=").append(state).append(", ");
+			builder.append("state=").append(state.getCurrentState()).append(", ");
 		if (type != null)
 			builder.append("type=").append(type).append(", ");
 		if (notification != null)

@@ -221,7 +221,6 @@ public class RequestManager implements RequestStrategy {
 			} else if (kind.name().equals("RENTCAR")) {
 				request.setType(ServiceType.RENTCAR);
 			}
-			request.receiveRequest();
 			request.setGeoLocation(geo1);
 			requestQueue.put(new Integer(request.getRequestId()), request);
 			System.out.println("**********************************************");
