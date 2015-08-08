@@ -1,9 +1,9 @@
 package com.smartcab.design.dispatcher;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.smartcab.design.payment.PaymnetController;
+import com.smartcab.design.request.State;
 import com.smartcab.design.utill.PaymentCalculator;
 import com.smartcab.design.utill.TaxiPayment;
 import com.smartcab.design.vehicle.Economy;
@@ -16,22 +16,14 @@ import com.smartcab.vehicle.domain.Vehicle;
 public class Taxi implements DispatcherStrategy {
 
 	public String dispatch(SmartCabData data, Request request) {
+
+		System.out.println("\n Request Status :" + request.toString());
+		request.receiveRequest();;
+		
 		// Request request = data.requestQ.get(request.getRequestId());
 		List<Vehicle> vehicle = SmartCabData.getvehicleByGpsLocation(request,
 				request.getGeoLocation());
-		boolean result=Process(data, request, vehicle);
-		if(result) return "Dispatching Taxi";
-		List<Vehicle> vehiclelist = new ArrayList<Vehicle>();
-		vehiclelist.add(SmartCabData.vehicleInventory.get(0));
-		result=Process(data, request,vehiclelist );
-		if(result) return "Dispatching Taxi";
-		System.out.println("Unable to find a proper vehicle providing random one from inventory");
-		return "unable to dispatch";
-	}
-
-	private boolean Process(SmartCabData data, Request request,
-			List<Vehicle> vehicle) {
-		if (vehicle!=null && vehicle.size() > 0) {
+		if (vehicle.size() > 0) {
 			System.out.println("\n Found vehicle");
 			System.out.println("Vehicle Details:" + vehicle.get(0));
 			Economy economy = new Economy();
@@ -42,19 +34,30 @@ public class Taxi implements DispatcherStrategy {
 			System.out.println("\n Getting driver informations");
 			Driver driver = data.getDriver(finalVehicle);
 			System.out.println("\n Driver Informations:" + driver.toString());
+			
+			System.out.println("\n Driver Informations:" + driver.toString());
+			vehicle.get(0).dispatchVehicle();
+			
+			System.out.println("Vehicle: " + vehicle.get(0).toString());
+			
+			System.out.println("\n Request Status :" + request.toString());
+			request.processRequest();
 
 			System.out.println("\n processing Payment");
 			PaymentCalculator calc = new TaxiPayment();
 
 			PaymnetController.processPayment(calc.finalPayment(request));
-			System.out.println("\n Driver Informations:" + driver.toString());
+			
+			request.completeRequest(State.COMPLETED);
+			
+			System.out.println("\n Request Status :" + request.toString());
 
-			vehicle.get(0).dispatchVehicle();
-			request.completeRequest("Done");
-			return true;
+			vehicle.get(0).completeProcess();			
+			System.out.println("Vehicle: " + vehicle.get(0).toString());
 
+			return "Dispatching Taxi";
 		}
-		return false;
+		return "unable to dispatch";
 	}
 
 }
