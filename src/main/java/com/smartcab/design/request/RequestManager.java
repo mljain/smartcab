@@ -219,7 +219,6 @@ public class RequestManager implements RequestStrategy {
 			}
 			request.receiveRequest();
 			request.setGeoLocation(geo1);
-			request.setBudget(Budget.ECONOMICAL);
 			requestQueue.put(new Integer(request.getRequestId()), request);
 			System.out.println("Request is in Processing State"
 					+ request.toString());
