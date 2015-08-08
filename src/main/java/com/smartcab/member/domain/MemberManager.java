@@ -224,12 +224,12 @@ public class MemberManager implements RequestStrategy{
 		m.setMemberId(1212);
 		
 		mm.memberList.put(1, m);
-		/*
+		
 		mm.viewMembers();
 		mm.addMember();
 		mm.viewMembers();
 		mm.deleteMember();
-		mm.viewMembers();*/
+		mm.viewMembers();
 		mm.updateMember();
 		
 		mm.viewMembers();
