@@ -10,6 +10,8 @@ import com.smartcab.member.domain.Member;
 import com.smartcab.request.domain.GeoLocation;
 import com.smartcab.request.domain.Request;
 import com.smartcab.vehicle.domain.Dispatcher;
+import com.smartcab.vehicle.domain.Driver;
+import com.smartcab.vehicle.domain.DriverBackgroundCheck;
 import com.smartcab.vehicle.domain.Vehicle;
 
 /**
@@ -18,9 +20,22 @@ import com.smartcab.vehicle.domain.Vehicle;
  */
 public class SmartCabData {
 	public static HashMap<String, GeoLocation> dummyGps;
+	public static HashMap<Integer, Vehicle> vehicleInventory;
+	public static HashMap<Integer, Request> requestQ;
+	public static HashMap<Integer, Dispatcher> dispatcher;
+	public static HashMap<Integer, Member> memberList;
+	public static HashMap<Integer,DriverBackgroundCheck> driverbc;
+	public static HashMap<Integer,Driver> driver;
 	static {
-
+		// intitializing some gps data
 		dummyGps = new HashMap<String, GeoLocation>();
+		vehicleInventory = new HashMap<Integer, Vehicle>();
+		requestQ = new HashMap<Integer, Request>();
+		dispatcher = new HashMap<Integer, Dispatcher>();
+		memberList = new HashMap<Integer, Member>();
+		driverbc = new HashMap<Integer,DriverBackgroundCheck>();
+		driver =new  HashMap<Integer,Driver>();
+		
 		GeoLocation geo = new GeoLocation();
 		geo.setLatitude(-111.23);
 		geo.setLongitude(222.11);
@@ -56,11 +71,27 @@ public class SmartCabData {
 		geo6.setLongitude(228.11);
 		dummyGps.put("sanfrancisco", geo6);
 
+		//populate some vehicle data....
+		Vehicle vehicle = new Vehicle();
+		vehicle.setDriverId("1234");
+		vehicle.setGeolocation(geo);
+		vehicle.setLicencePlate("1234");
+		vehicle.setModelName("Honda Civic");
+		vehicle.setVehicleId(1234);
+		vehicleInventory.put(vehicle.getVehicleId(),vehicle);
+		
+		Vehicle vehicle1 = new Vehicle();
+		vehicle1.setDriverId("1234");
+		vehicle1.setGeolocation(geo);
+		vehicle1.setLicencePlate("1234");
+		vehicle1.setModelName("Honda Civic");
+		vehicle1.setVehicleId(1234);
+		vehicleInventory.put(vehicle.getVehicleId(),vehicle);
+		
+		
+		
+		
 	}
-	public HashMap<Integer, Vehicle> vehicleInventory = new HashMap<Integer, Vehicle>();
-	public HashMap<Integer, Request> requestQ = new HashMap<Integer, Request>();
-	public HashMap<Integer, Dispatcher> dispatcher = new HashMap<Integer, Dispatcher>();
-	public HashMap<Integer, Member>  memberList = new HashMap<Integer, Member>();
 
 	public GeoLocation getGpsByLocation(String location) {
 		for (Entry<String, GeoLocation> geo : dummyGps.entrySet()) {
@@ -69,5 +100,13 @@ public class SmartCabData {
 			}
 		}
 		return null;
+	}
+
+	public static HashMap<String, GeoLocation> getGpsData() {
+		return dummyGps;
+	}
+
+	public static HashMap<Integer, Vehicle> getvehicleData() {
+		return vehicleInventory;
 	}
 }

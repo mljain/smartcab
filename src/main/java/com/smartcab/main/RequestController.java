@@ -11,6 +11,7 @@ import com.smartcab.design.payment.PaymentManager;
 import com.smartcab.design.request.RequestManager;
 import com.smartcab.design.vehicle.VehicleFacadeController;
 import com.smartcab.model.SmartCabData;
+import com.smartcab.request.domain.Request;
 
 
 
@@ -74,7 +75,7 @@ public class RequestController {
 	        }
 
 	        requestStrategy = setProcessRequestStrategy(requestType);
-	        requestStrategy.processRequest(data);
+	        requestStrategy.processRequest(data,null);
 	    }
 
 	   }

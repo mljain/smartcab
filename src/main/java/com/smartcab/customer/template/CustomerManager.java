@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
+import com.smartcab.request.domain.Request;
 
 public class CustomerManager implements RequestStrategy{
 	private ArrayList<Customer> customers;
@@ -37,7 +38,7 @@ public class CustomerManager implements RequestStrategy{
 
 
 
-	public void processRequest(SmartCabData data) {
+	public void processRequest(SmartCabData data,Request request) {
 		// TODO Auto-generated method stub
 		
 		

@@ -29,8 +29,15 @@ public class DispatcherManager implements RequestStrategy{
 		return pm;
 	}
 
-	public void processRequest(SmartCabData data) {
+	public void processRequest(SmartCabData data,Request request1) {
 
+		ProcessRequest(data,request1);
+
+
+
+	}
+
+	public void ProcessRequest(SmartCabData data,Request request1) {
 		Scanner s = new Scanner(System.in);
 		BufferedReader bufferedReader = null;
 		boolean continueFlag = true;
@@ -66,21 +73,21 @@ public class DispatcherManager implements RequestStrategy{
 			case 3:				
 				System.out.println("Dispatching the vehicle.");
 				
-				if(data.requestQ.size() > 0){
-					System.out.println("\nEnter the Request id to Dispatch: ");
+				if(request1!=null){
+					System.out.println("\n processing Dispatch for the request Id: "+request1.getRequestId());
 					bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 					String option = null;
 					try {
-						option = bufferedReader.readLine();
-						Integer requestId = Integer.parseInt(option);
-						Request request = data.requestQ.get(requestId);
-						if(request != null){
-							System.out.println("Request to be dispatched: " + request.toString());
-							DispatcherStrategyApp.getInstance().dispatch(request);
+						//option = bufferedReader.readLine();
+						//Integer requestId = Integer.parseInt(option);
+						Request request = data.requestQ.get(request1.getRequestId());
+						if(request1 != null){
+							System.out.println("Request to be dispatched: " + request1.toString());
+							DispatcherStrategyApp.getInstance().dispatch(request1);
 						}else{
 							System.out.println("Request NOT found. Please enter valid request id.");
 						}
-					} catch (IOException e) {						
+					} catch (Exception e) {						
 						e.printStackTrace();
 					}
 					
@@ -102,9 +109,6 @@ public class DispatcherManager implements RequestStrategy{
 		if (s != null) {
 			s.close();
 		}
-
-
-
 	}
 
 }

@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Random;
 
+import com.smartcab.design.dispatcher.DispatcherManager;
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
 import com.smartcab.request.domain.Address;
@@ -26,7 +27,7 @@ public class RequestManager implements RequestStrategy {
 		return pm;
 	}
 
-	public void processRequest(SmartCabData data) {
+	public void processRequest(SmartCabData data,Request request) {
 		requestQueue = data.requestQ;
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
@@ -171,6 +172,8 @@ public class RequestManager implements RequestStrategy {
 					+ request.toString());
 			System.out.println(":::Current Request Queue:::");
 			printQueue();
+			
+			DispatcherManager.getInstance().ProcessRequest(data, request);
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -197,7 +200,7 @@ public class RequestManager implements RequestStrategy {
 
 	public static void main(String args[]) {
 		SmartCabData data = new SmartCabData();
-		RequestManager.getInstance().processRequest(data);
+		RequestManager.getInstance().processRequest(data,null);
 	}
 
 }

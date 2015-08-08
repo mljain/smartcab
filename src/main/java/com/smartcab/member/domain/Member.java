@@ -98,7 +98,7 @@ public class Member {
 		this.memberType = memberType;
 	}
 	
-	public void updateMember(){
+	public void updateMember(Member member){
 		//TODO ...
 		// Need to implement later 
 	}

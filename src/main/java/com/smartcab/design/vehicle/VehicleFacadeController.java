@@ -9,6 +9,7 @@ import java.util.UUID;
 
 import com.smartcab.main.RequestStrategy;
 import com.smartcab.model.SmartCabData;
+import com.smartcab.request.domain.Request;
 import com.smartcab.vehicle.domain.Vehicle;
 
 public class VehicleFacadeController implements RequestStrategy{
@@ -23,7 +24,7 @@ public class VehicleFacadeController implements RequestStrategy{
 	}
 
 	
-	public void processRequest(SmartCabData data) {
+	public void processRequest(SmartCabData data,Request request) {
 		// TODO Auto-generated method stub
 		
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
