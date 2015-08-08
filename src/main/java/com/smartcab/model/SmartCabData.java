@@ -10,6 +10,7 @@ import java.util.Map.Entry;
 import java.util.Random;
 
 import com.smartcab.member.domain.Member;
+import com.smartcab.member.domain.Supervisor;
 import com.smartcab.request.domain.GeoLocation;
 import com.smartcab.request.domain.Request;
 import com.smartcab.vehicle.domain.Dispatcher;
@@ -159,7 +160,18 @@ public class SmartCabData {
 		Random r = new Random();
 		m.setMemberId(1212);
 		
+		Supervisor sp = new Supervisor();
+		sp.setFirstName("Jane");
+		sp.setLastName("Doe");
+		sp.setMemberId(0);
+		
+		sp.addEmployee(driver);
+		sp.addEmployee(driver2);
+		sp.addEmployee(driver3);
+		sp.addEmployee(driver4);
+		
 		memberList.put(m.getMemberId(), m);
+		memberList.put(sp.getMemberId(), sp);
 
 	}
 
