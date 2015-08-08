@@ -164,7 +164,7 @@ public class SmartCabData {
 		Supervisor sp = new Supervisor();
 		sp.setFirstName("Jane");
 		sp.setLastName("Doe");
-		sp.setMemberId(0);
+		sp.setMemberId(1234);
 		
 		sp.addEmployee(driver);
 		sp.addEmployee(driver2);
@@ -193,44 +193,47 @@ public class SmartCabData {
 
 	public static List<Vehicle> getvehicleByGpsLocation(Request request,GeoLocation geo) {
 		if(geo!=null){
-		
-		ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
-		double latitude = Math.abs(geo.getLatitude());
-		double longitude = Math.abs(geo.getLongitude());
-		double vehiclelatitude = 0.0;
-		double vehiclelongitude = 0.0;
-		for (Entry<Integer, Vehicle> vehicle : vehicleInventory.entrySet()) {
-			int vehicleId=0;
-			vehiclelatitude = Math.abs(vehicle.getValue().getGeolocation()
-					.getLatitude());
-			vehiclelongitude = Math.abs(vehicle.getValue().getGeolocation()
-					.getLongitude());
-			
-			if(Math.abs(vehiclelatitude - latitude)==0 && Math.abs(vehiclelongitude - longitude)==0){
-				vehicleId=vehicle.getValue().getVehicleId();
-			}
-			else if((Math.abs(vehiclelatitude - latitude)>0 && Math.abs(vehiclelatitude - latitude)<100) && (Math.abs(vehiclelongitude - longitude)==0)&&Math.abs(vehiclelongitude - longitude)<100){
-				vehicleId=vehicle.getValue().getVehicleId();
+
+			ArrayList<Vehicle> vehicleList = new ArrayList<Vehicle>();
+			double latitude = Math.abs(geo.getLatitude());
+			double longitude = Math.abs(geo.getLongitude());
+			double vehiclelatitude = 0.0;
+			double vehiclelongitude = 0.0;
+			for (Entry<Integer, Vehicle> vehicle : vehicleInventory.entrySet()) {
+				int vehicleId=0;
+				vehiclelatitude = Math.abs(vehicle.getValue().getGeolocation()
+						.getLatitude());
+				vehiclelongitude = Math.abs(vehicle.getValue().getGeolocation()
+						.getLongitude());
+
+				if(Math.abs(vehiclelatitude - latitude)==0 && Math.abs(vehiclelongitude - longitude)==0){
+					vehicleId=vehicle.getValue().getVehicleId();
+				}
+				else if((Math.abs(vehiclelatitude - latitude)>0 && Math.abs(vehiclelatitude - latitude)<100) && (Math.abs(vehiclelongitude - longitude)==0)&&Math.abs(vehiclelongitude - longitude)<100){
+					vehicleId=vehicle.getValue().getVehicleId();
+				}
+
+				if(vehicleId!=0){
+					for (Entry<Integer, Vehicle> vehicle1 : vehicleInventory.entrySet()) {
+						if(vehicle1.getValue().getVehicleId()==vehicleId){
+							vehicleList.add(vehicle1.getValue());
+						}
+					}
+				}
+
+
 			}
 
-			if(vehicleId!=0){
-				for (Entry<Integer, Vehicle> vehicle1 : vehicleInventory.entrySet()) {
-                  if(vehicle1.getValue().getVehicleId()==vehicleId){
-                	  vehicleList.add(vehicle1.getValue());
-                  }
+
+			if(vehicleList.size() == 0){
+				try{
+					vehicleList.add(vehicleInventory.get(vehicleInventory.keySet().iterator().next()));
+				}catch(Exception e){
+					
 				}
 			}
-			
 
-		}
-
-		
-		if(vehicleList.size()>0){
-
-			
-		}
-		
-		return vehicleList;
+			return vehicleList;
 		}
 		return null;
 	}

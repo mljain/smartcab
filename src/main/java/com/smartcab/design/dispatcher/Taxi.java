@@ -43,7 +43,7 @@ public class Taxi implements DispatcherStrategy {
 			System.out.println("\n Request Status :" + request.toString());
 			request.processRequest();
 
-			System.out.println("\n processing Payment");
+			System.out.println("\nProcessing Payment");
 			PaymentCalculator calc = new TaxiPayment();
 
 			PaymnetController.processPayment(calc.finalPayment(request));

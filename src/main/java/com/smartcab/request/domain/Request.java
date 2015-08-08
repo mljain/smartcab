@@ -268,7 +268,7 @@ public class Request implements ServiceRequest {
 			builder.append("type=").append(type).append(", ");
 		if (notification != null)
 			builder.append("notification=").append(notification);
-		builder.append("]");
+		builder.append("]/n");
 		return builder.toString();
 	}
 

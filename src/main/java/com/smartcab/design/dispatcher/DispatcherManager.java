@@ -69,7 +69,7 @@ public class DispatcherManager implements RequestStrategy {
 
 				if (request1 != null) {
 					System.out
-							.println("\n processing Dispatch for the request Id: "
+							.println("\n Processing Dispatch for the request Id: "
 									+ request1.getRequestId());
 					bufferedReader = new BufferedReader(new InputStreamReader(
 							System.in));
