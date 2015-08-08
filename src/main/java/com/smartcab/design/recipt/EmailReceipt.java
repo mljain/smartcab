@@ -14,11 +14,11 @@ public class EmailReceipt extends PaymentReceipt {
 
 	@Override
 	public void processReceipt(double finalamount) {
-	System.out.println("******Sending Email Receipt*******"+"\\n");
-	System.out.println("******Final Amount*******"+"\\n");
-	System.out.println(finalamount+"\\n");
+	System.out.println("******Sending Email Receipt******* \n");
+	System.out.println("******Final Amount******* \n");
+	System.out.println(finalamount+"");
 	
-	System.out.println("******Email Receipt Send*******"+"\\n");
+	System.out.println("******Email Receipt Send******* \n");
 		
 	}
 
