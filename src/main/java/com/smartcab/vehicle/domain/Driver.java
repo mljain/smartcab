@@ -2,7 +2,9 @@ package com.smartcab.vehicle.domain;
 
 import java.util.List;
 
-public class Driver {
+import com.smartcab.member.domain.Employee;
+
+public class Driver extends Employee{
 	private String driverId;
 	private List<Vehicle> vehicle;
 	private String firstName;
